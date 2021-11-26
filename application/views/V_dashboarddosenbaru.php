@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Responsive progress bar</title>
-      <!-- <link href="<?php echo base_url().'assets/css/main.css'?>" rel="stylesheet" />-->
+      <!-- <link href="<?php echo base_url().'assets/css/main.css?v=1'?>" rel="stylesheet" />-->
     </head>
 <div class="content-wrapper">
 <section class="content">
