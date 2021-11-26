@@ -30,6 +30,4 @@ class M_Dosen extends CI_Model{
 		$q=$this->db->query("Select * from fakultas"); 
 		return $q->result();
 	}	
-
-
 } 

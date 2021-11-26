@@ -19,6 +19,7 @@ class M_biodata extends CI_Model
     //public $kode_pos;
     public $handphone;
     //public $status;
+    public $id_unit_kerja;
     public $unit_kerja;
     //public $npwp;
     public $universitas;
@@ -184,13 +185,13 @@ class M_biodata extends CI_Model
         $this->ipk = null;
         $this->gelar_depan = $data['GELAR_DEPAN'];
         $this->gelar_belakang = $data['GELAR_BELAKANG'];
-        //$this->unit_kerja  = $data['NM_FAKULTAS'];
-        $this->unit_kerja = null;
+        $this->unit_kerja  = 'Fakultas '.$data['NM_FAKULTAS'];
+        // $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
         $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
-        $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_PEGAWAI'];
+        $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
         $this->status_jabatan = null;
         $this->nama_jabatan = null;
 
@@ -236,13 +237,19 @@ class M_biodata extends CI_Model
         $this->ipk = null;
         $this->gelar_depan = $data['GELAR_DEPAN'];
         $this->gelar_belakang = $data['GELAR_BELAKANG'];
-        //$this->unit_kerja  = $data['NM_FAKULTAS'];
-        $this->unit_kerja = null;
+        $this->unit_kerja  = 'Fakultas '.$data['NM_FAKULTAS'];
+
+        $fakultas = $this->getUnitKerjaByName($this->unit_kerja);
+        if ($fakultas->num_rows() > 0) {
+            $this->id_unit_kerja = $fakultas->row_array()['ID_UNIT_KERJA'];
+        }else{
+            $this->id_unit_kerja = 321;
+        }
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
         $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
-        $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_PEGAWAI'];
+        $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
         $this->status_jabatan = null;
         $this->nama_jabatan = null;
 
@@ -293,6 +300,7 @@ class M_biodata extends CI_Model
         $this->gelar_depan = $data['GELAR_DEPAN'];
         $this->gelar_belakang = $data['GELAR_BELAKANG'];
         //$this->unit_kerja  = $data['NM_FAKULTAS'];
+        $this->id_unit_kerja = $datadiri['pegawai']['ID_UNIT_KERJA'];
         $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
@@ -349,6 +357,7 @@ class M_biodata extends CI_Model
         $this->gelar_depan = $data['GELAR_DEPAN'];
         $this->gelar_belakang = $data['GELAR_BELAKANG'];
         //$this->unit_kerja  = $data['NM_FAKULTAS'];
+        $this->id_unit_kerja = $datadiri['pegawai']['ID_UNIT_KERJA'];
         $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
@@ -410,5 +419,10 @@ class M_biodata extends CI_Model
         }
         //return "default.jpg";
     }
+
+    public function getUnitKerjaByName($name){  
+		$query = $this->db->query("select * from fakultas where FAKULTAS = '$name'"); 
+		return $query;
+	}
 
 }

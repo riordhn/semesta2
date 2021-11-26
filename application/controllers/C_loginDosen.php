@@ -89,10 +89,11 @@ class C_loginDosen extends CI_Controller
             $cek_user = $this->M_dosen->getAuth($username);
 
             //Cek Apakah user sudah tersimpan di database
+
             if ($cek_user->num_rows() == 0) {
-                $bio->updateDosen($data_dosen, $dataken);
-            }else{
                 $bio->insertDosen($data_dosen, $dataken);
+            }else{
+                $bio->updateDosen($data_dosen, $dataken);
             }
         }else{
             $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1?access-token=" . $token . "&nip=" . $nik;

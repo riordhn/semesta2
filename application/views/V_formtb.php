@@ -25,7 +25,7 @@
 
                   <div class="form-group" <?php if($data->STATUS_PEGAWAI=='Tendik'){ echo 'style="display: none;"'; } ?> >
                       <label for="NIDN">NIDN</label>
-                        <input type="text" class="form-control" name="NIDN" placeholder="NIDN" value="<?php echo $data->NIDN ?>"/>
+                        <input type="text" readonly="" class="form-control" name="NIDN" placeholder="NIDN" value="<?php echo $data->NIDN ?>"/>
                   </div>
 
                     <div class="form-group">
@@ -66,10 +66,9 @@
                         </datalist> -->
 
                         <select name="unitfak" class="form-control" required>
-                          <option value="<?php echo $data->UNIT_KERJA ?>" selected><?php echo $data->UNIT_KERJA ?></option>
                           <option value="">------Pilih Unit Kerja-------</option>
                            <?php foreach($unit as $uni){?>
-                          <option value="<?php echo $uni->FAKULTAS;?>"><?php echo $uni->FAKULTAS;?></option>
+                          <option <?php if($data->ID_UNIT_KERJA == $uni->ID_UNIT_KERJA) { echo 'selected'; } ?> value="<?php echo $uni->FAKULTAS;?>"><?php echo $uni->FAKULTAS;?></option>
 
                           <?php } ?>
                         </select>
@@ -110,7 +109,7 @@
 
                     <div class="form-group">
                       <label for="Pangkat">Pangkat/Gol</label></br>
-                      <select name="golongan" id="golongan" class="form-control"  required>
+                      <!-- <select name="golongan" id="golongan" class="form-control"  required>
                           <?php if ($data->PANGKAT_GOLONGAN==NULL) {?>
                           <option selected>Pilih Pangkat/Gol</option>
                         <?php } else {?>
@@ -134,7 +133,9 @@
                           <option value="Juru Muda Tk.I (Gol.I/b)">Juru Muda Tk.I (Gol.I/b)</option>
                           <option value="Juru Muda (Gol.I/a)">Juru Muda (Gol.I/a)</option>
 
-                      </select>
+                      </select> -->
+
+                      <input type="text" readonly class="form-control" name="golongan" value="<?php echo $data->PANGKAT_GOLONGAN ?>" required/>
                     </div>
 
                     <div class="form-group">
