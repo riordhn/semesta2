@@ -1,0 +1,2 @@
+[25-Feb-2020 15:54:53 Asia/Jakarta] PHP Fatal error:  Call to a member function getBiodata() on null in /home/sdmsemesta/public_html/application/controllers/C_dosen.php on line 17
+[25-Feb-2020 15:56:18 Asia/Jakarta] PHP Fatal error:  Call to a member function getBiodata() on null in /home/sdmsemesta/public_html/application/controllers/C_dosen.php on line 17
