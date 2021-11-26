@@ -25,6 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = 'http://localhost';
 // $config['base_url'] = 'https://semesta.sdm.unair.ac.id/';
+$config['secure_base_url'] = true;
 
 /*
 |--------------------------------------------------------------------------

@@ -305,6 +305,11 @@ class CI_Config {
 	public function base_url($uri = '', $protocol = NULL)
 	{
 		$base_url = $this->slash_item('base_url');
+		$secure_base_url = $this->slash_item('secure_base_url');
+
+		if($secure_base_url){
+			$protocol = 'https';
+		}
 
 		if (isset($protocol))
 		{
