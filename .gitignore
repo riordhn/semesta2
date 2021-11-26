@@ -17,3 +17,6 @@ application/logs/*
 /vendor/
 
 application/config/database.php
+
+.ftpquota
+.well-known/*
