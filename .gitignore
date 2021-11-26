@@ -16,8 +16,8 @@ application/logs/*
 !application/logs/.htaccess
 /vendor/
 
-application/config/database.php
 application/config/config.php
+application/config/database.php
 
 .ftpquota
 .well-known/*
