@@ -85,7 +85,7 @@ class M_Ibel_Dosen extends CI_Model{
 
 	public function getBiodata(){  
 		$id=$this->session->userdata('NIK');
-		$q=$this->db->query("SELECT * FROM Biodata WHERE NIK='$id'"); 
+		$q=$this->db->query("SELECT * FROM biodata WHERE NIK='$id'"); 
 		return $q->result();
 	}
 
