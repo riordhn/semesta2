@@ -599,7 +599,9 @@ class C_fakultas extends CI_Controller
 
             $model->updateIbel($config);
             redirect('C_fakultas/fileDitangguhkan');
-
+            
+        }else{
+            redirect('C_fakultas/fileDitangguhkan');
         }
 
     }

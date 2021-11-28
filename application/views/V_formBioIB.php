@@ -49,7 +49,7 @@
                             <div class="form-group">
                                 <label for="Rumpun">NIP</label>
                                 <input type="text" readonly="" class="form-control" name="NIP" placeholder="NIP"
-                                    value="<?php echo $data->NO_KTP ?>" required />
+                                    value="<?php echo $data->NIK ?>" required />
                             </div>
 
                             <div class="form-group">

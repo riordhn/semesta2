@@ -19,8 +19,8 @@
 
                   <div class="form-group">
                       <!-- <label for="Rumpun">NIK</label> -->
-                        <input type="Hidden" class="form-control" name="NIK" placeholder="NIK" value="<?php echo $data->NIK ?>"/>
-                        <input type="Hidden" class="form-control" name="fotoname" placeholder="NIK" value="<?php echo $data->FOTO1 ?>"/>
+                        <input type="Hidden" class="form-control" name="NIK" value="<?php echo $data->NIK ?>"/>
+                        <input type="Hidden" class="form-control" name="fotoname" value="<?php echo $data->FOTO1 ?>"/>
                   </div>
 
                   <div class="form-group" <?php if($data->STATUS_PEGAWAI=='Tendik'){ echo 'style="display: none;"'; } ?> >
@@ -45,7 +45,7 @@
 
                     <div class="form-group">
                       <label for="Rumpun">NIP</label>
-                        <input type="text" readonly="" class="form-control" name="NIP" placeholder="NIP" value="<?php echo $data->NO_KTP ?>" required/>
+                        <input type="text" readonly="" class="form-control" name="NIP" placeholder="NIP" value="<?php echo $data->NIK ?>" required/>
                     </div>
 
                     <!-- <div class="form-group">

@@ -50,25 +50,25 @@ class M_biodata extends CI_Model
                 'label' => 'Gelar Belakang',
                 'rules' => 'required'],
 
-            ['field' => 'NIK',
-                'label' => 'NIK',
-                'rules' => 'required'],
+            // ['field' => 'NIK',
+            //     'label' => 'NIK',
+            //     'rules' => 'required'],
 
             // ['field' => 'unitker',
             // 'label' => 'Unit Kerja',
             // 'rules' => 'required'],
 
-            ['field' => 'unitfak',
-                'label' => 'Unit Kerja Fakultas',
-                'rules' => 'required'],
+            // ['field' => 'unitfak',
+            //     'label' => 'Unit Kerja Fakultas',
+            //     'rules' => 'required'],
 
             ['field' => 'tempatlahir',
                 'label' => 'Tempat Lahir',
                 'rules' => 'required'],
 
-            ['field' => 'NIP',
-                'label' => 'No.KTP',
-                'rules' => 'required'],
+            // ['field' => 'NIP',
+            //     'label' => 'No.KTP',
+            //     'rules' => 'required'],
 
             ['field' => 'tgllahir',
                 'label' => 'Tgl Lahir',
@@ -147,7 +147,7 @@ class M_biodata extends CI_Model
         // print_r($this);
         // die;
 
-        $this->db->update($this->table, $this, array('NIK' => $post['NIK']));
+        $this->db->update($this->table, $this, array('NIP' => $post['NIP']));
 
     }
 

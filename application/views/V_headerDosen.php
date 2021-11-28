@@ -57,12 +57,21 @@
                                         class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="<?php echo base_url().'C_dosen/formtb' ?>">Pendaftaran Tugas
-                                            Belajar</a></li>
+                                            Belajar
+                                            <?php if($this->session->userdata('tugas_belajar_active') && !in_array($this->session->userdata('tugas_belajar_active')->ID_STATUS_SL, [7])){ ?>
+                                                (Proses pengajuan)
+                                            <?php } else if($this->session->userdata('tugas_belajar_active') && in_array($this->session->userdata('tugas_belajar_active')->ID_STATUS_SL, [7])){ ?>
+                                                (Sudah diajukan)
+                                            <?php } ?>
+                                        </a>
+                                    </li>
+                                    <?php if($this->session->userdata('tugas_belajar_active') && $this->session->userdata('tugas_belajar_active')->ID_STATUS_SL == 7){ ?>
                                     <li><a href="<?php echo base_url().'C_dosen/cekMonitoring' ?>">Monitoring</a></li>
                                     <li><a href="<?php echo base_url().'C_dosen/formPerpanjangan' ?>">Perpanjangan Tugas
                                             Belajar</a></li>
                                     <li><a href="<?php echo base_url().'C_dosen/formPengaktifan' ?>">Pengaktifan Kembali
                                             Tugas Belajar</a></li>
+                                    <?php } ?>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -71,7 +80,9 @@
                                 <ul class="dropdown-menu" role="menu">
                                     <li><a href="<?php echo base_url().'C_dosen/formBioIb' ?>"> 
                                             Pendaftaran Izin Belajar
-                                            <?php if($this->session->userdata('izin_belajar_active')){ ?>
+                                            <?php if($this->session->userdata('izin_belajar_active') && !in_array($this->session->userdata('izin_belajar_active')->ID_STATUS_SL, [7])){ ?>
+                                                (Proses pengajuan)
+                                            <?php } else if($this->session->userdata('izin_belajar_active') && in_array($this->session->userdata('izin_belajar_active')->ID_STATUS_SL, [7])){ ?>
                                                 (Sudah diajukan)
                                             <?php } ?>
                                         </a>

@@ -28,10 +28,10 @@
                         <td><?php echo $data->TAMBAHAN_SEMESTER." Semester" ?></td>
                         <td><?php echo $data->MULAI_PERPANJANGAN ?></td>
                         <td><?php echo $data->SELESAI_PERPANJANGAN ?></td>
-                        <td><a href="<?php echo base_url().'C_Fakultas/unduhperpanjangan/'.$data->ID_PERPANJANGAN?>">Lihat/Unduh Berkas</a></td>
-                        <!-- <td><a href="<?php echo base_url().'C_Fakultas/outputSKPjg/'.$data->ID_PERPANJANGAN?>">Unduh Template Surat Permohonan</a></td> -->
+                        <td><a href="<?php echo base_url().'C_fakultas/unduhperpanjangan/'.$data->ID_PERPANJANGAN?>">Lihat/Unduh Berkas</a></td>
+                        <!-- <td><a href="<?php echo base_url().'C_fakultas/outputSKPjg/'.$data->ID_PERPANJANGAN?>">Unduh Template Surat Permohonan</a></td> -->
                         <td><?php echo $data->status_sl ?></td>
-                        <form action="<?php echo base_url().'C_Fakultas/upload_perpanjangan/'.$data->ID_PERPANJANGAN ?>" class="form-group" method="POST" enctype="multipart/form-data">
+                        <form action="<?php echo base_url().'C_fakultas/upload_perpanjangan/'.$data->ID_PERPANJANGAN ?>" class="form-group" method="POST" enctype="multipart/form-data">
                         <td>
                             <li><b>Surat Rekomendasi Perpanjangan Tubel dari pimpinan unit kerja (ttd. Kedep mengetahui Dekan Fak) :</b></li> 
                             <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file30" required><br><b><li>SK Kenaikan Pangkat Terakhir (*jika mengalami kenaikan pangkat saat masa studi)</b>:</li> <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file56">

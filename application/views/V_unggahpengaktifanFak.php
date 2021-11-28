@@ -40,7 +40,7 @@
                       <!-- <tr>
                         <td>4.</td>
                         <td>Surat Permohonan SK Pengaktifan Kembali</td>
-                        <td><a href="<?php echo base_url().'C_Fakultas/outputSKAktif/'.$id?>">Unduh Template</a></td>
+                        <td><a href="<?php echo base_url().'C_fakultas/outputSKAktif/'.$id?>">Unduh Template</a></td>
                         <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file3" required></td>
                         <td></td>
                       </tr> -->

@@ -318,14 +318,8 @@ class C_dosen extends CI_Controller
         $diff = $today->diff($birth);
         $this->session->set_userdata('age', $diff->y);
 
-        // echo "<pre>";
-        // print_r($this->session->userdata('age'));
-        // die;
-        $id = $post['NIK'];
-        $this->session->set_userdata('NIK', $id);
-        // echo '<pre>';
-        // print_r($post['foto']);
-        // die;
+        $id = $post['NIP'];
+        $this->session->set_userdata('NIP', $id);
 
         if ($validasi->run()) {
             $save->saveBiodata();

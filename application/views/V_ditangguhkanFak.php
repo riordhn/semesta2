@@ -76,7 +76,7 @@
 
 
                             <?php $a=1; foreach($tubel1 as $id){ ?>
-                            <form role="form" action="<?php echo base_url().'C_Fakultas/upload_filePanjangulang/'.$id->ID_PERPANJANGAN; ?>" method="POST" enctype="multipart/form-data"/>
+                            <form role="form" action="<?php echo base_url().'C_fakultas/upload_filePanjangulang/'.$id->ID_PERPANJANGAN; ?>" method="POST" enctype="multipart/form-data"/>
                               <input type="hidden" name="idjenis" value="<?php echo $id->ID_JENIS ?>">
                               <input type="hidden" name="namajenis" value="<?php echo $id->NAMA_FILE_PJG ?>">
                               <input type="hidden" name="NIK" value="<?php echo $id->NIK ?>">
@@ -128,7 +128,7 @@
                             <?php $a++; }?>
 
                             <?php $a=1; foreach($takt as $id){ ?>
-                            <form role="form" action="<?php echo base_url().'C_Fakultas/upload_fileAktifulang/'.$id->ID_PENGAKTIFAN; ?>" method="POST" enctype="multipart/form-data"/>
+                            <form role="form" action="<?php echo base_url().'C_fakultas/upload_fileAktifulang/'.$id->ID_PENGAKTIFAN; ?>" method="POST" enctype="multipart/form-data"/>
                               <input type="hidden" name="idjenis" value="<?php echo $id->ID_JENIS ?>">
                               <input type="hidden" name="namajenis" value="<?php echo $id->NAMA_FILE_AKT ?>">
                               <input type="hidden" name="NIK" value="<?php echo $id->NIK ?>">
@@ -189,7 +189,7 @@
                             <?php $a++; }?>
 
                             <?php $a=1; foreach($ibel as $id){ ?>
-                            <form role="form" action="<?php echo base_url().'C_Fakultas/upload_fileIbelulang/'.$id->ID_IB; ?>" method="POST" enctype="multipart/form-data"/>
+                            <form role="form" action="<?php echo base_url().'C_fakultas/upload_fileIbelulang/'.$id->ID_IB; ?>" method="POST" enctype="multipart/form-data"/>
                               <input type="hidden" name="idjenis" value="<?php echo $id->ID_JENIS ?>">
                               <input type="hidden" name="namajenis" value="<?php echo $id->NAMA_FILE_IB ?>">
                               <input type="hidden" name="NIK" value="<?php echo $id->NIK ?>">
