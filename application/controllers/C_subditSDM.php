@@ -486,6 +486,7 @@ class C_subditSDM extends CI_Controller {
         $data['tugas_akhir']=$this->M_MonSubdit->getTA($idmon);
         $data['publikasi']=$this->M_MonSubdit->getPublikasi($idmon);
         $data['toefl']=$this->M_MonSubdit->getTOEFL($idmon);
+        $data['jenis_monitoring'] = 'monitoring';
         $this->load->view('V_headerSubdit');
         $this->load->view('V_detailMonevSDM1', $data);
         $this->load->view('V_footerSubdit');
@@ -614,6 +615,7 @@ class C_subditSDM extends CI_Controller {
         $data['publikasi']=$this->M_MonIbelSubdit->getPublikasi($idmon);
         $data['tugas_akhir']=$this->M_MonIbelSubdit->getTA($idmon);
         $data['toefl']=$this->M_MonIbelSubdit->getTOEFL($idmon);
+        $data['jenis_monitoring'] = 'monitoringIB';
         $this->load->view('V_headerSubdit');
         $this->load->view('V_detailMonevSDM1', $data);
         $this->load->view('V_footerSubdit');
