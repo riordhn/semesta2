@@ -54,6 +54,7 @@ class C_dosen extends CI_Controller
         } else {
             $id2 = 0;
         }
+
         $data['montb'] = $this->M_Tubel_Dosen->cekMonitoring($id1);
         if (!empty($data['montb'])) {
             foreach ($data['montb'] as $sal) {
@@ -87,14 +88,15 @@ class C_dosen extends CI_Controller
             $this->session->set_userdata('setalib', $tos);
         }
 
+        $fakultas = $this->M_Tubel_Dosen->getFak();
+        $array = json_decode(json_encode($fakultas), true);
+        $p = array();
+        foreach ($array as $key) {
+            array_push($p, $key['FAKULTAS']);
+        }
+        $un = $this->session->userdata('fak');
+        
         if (!empty($data['id'])) {
-            $fakultas = $this->M_Tubel_Dosen->getFak();
-            $array = json_decode(json_encode($fakultas), true);
-            $p = array();
-            foreach ($array as $key) {
-                array_push($p, $key['FAKULTAS']);
-            }
-            $un = $this->session->userdata('fak');
             if (in_array($un, $p)) {
                 $data['tubel'] = $this->M_Tubel_Dosen->fileTubelditangguhkan($id1);
                 $data['tubel1'] = $this->M_perpanjangan->filePerpanjanganditangguhkan($id1);
@@ -105,18 +107,17 @@ class C_dosen extends CI_Controller
                 $data['aktif'] = $this->M_pengaktifan->filePengaktifanditangguhkanNon($id1);
             }
 
-            if (!empty($data['id2'])) {
-                if (in_array($un, $p)) {
-                    $data['ibel'] = $this->M_Ibel_Dosen->fileIbelditangguhkan($id2);
-                } else {
-                    $data['ibel'] = $this->M_Ibel_Dosen->fileIbelditangguhkanNon($id2);
-                }
-            }
-
         }
-        //   echo "<pre>";
-        //   print_r($data['id']);
-        //   die;
+
+        if (!empty($data['id2'])) {
+            if (in_array($un, $p)) {
+                $data['ibel'] = $this->M_Ibel_Dosen->fileIbelditangguhkan($id2);
+            } else {
+                $data['ibel'] = $this->M_Ibel_Dosen->fileIbelditangguhkanNon($id2);
+            }
+        }
+
+        
         $this->load->view('V_headerDosen');
         $this->load->view('V_dashboardDosen', $data);
         $this->load->view('V_footerDosen');
