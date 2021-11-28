@@ -114,9 +114,9 @@ class M_biodata extends CI_Model
     {
         $post = $this->input->post();
 
-        $this->nik = $post['NIK'];
+        // $this->nik = $post['NIK'];
         //$this->email = $post['email'];
-        $this->nama = $post['nama'];
+        // $this->nama = $post['nama'];
         //$this->foto = $this->_uploadImage();
         if (!empty($_FILES["foto"]["tmp_name"])) {
 
@@ -125,21 +125,21 @@ class M_biodata extends CI_Model
             $this->foto1 = $post['fotoname'];
         }
 
-        $this->no_ktp = $post['NIP'];
-        $this->nidn = $post['NIDN'];
-        $this->tempat_lahir = $post['tempatlahir'];
-        $this->tgl_lahir = $post['tgllahir'];
+        // $this->no_ktp = $post['NIP'];
+        // $this->nidn = $post['NIDN'];
+        // $this->tempat_lahir = $post['tempatlahir'];
+        // $this->tgl_lahir = $post['tgllahir'];
         $this->alamat = $post['alamat'];
         $this->handphone = $post['nomor'];
-        $this->email = $post['email'];
-        $this->gelar_depan = $post['gelardepan'];
-        $this->gelar_belakang = $post['gelarbelakang'];
-        $this->unit_kerja = $post['unitfak'];
-        $this->universitas = "UNAIR";
-        $this->pangkat_golongan = $post['golongan'];
+        // $this->email = $post['email'];
+        // $this->gelar_depan = $post['gelardepan'];
+        // $this->gelar_belakang = $post['gelarbelakang'];
+        // $this->unit_kerja = $post['unitfak'];
+        // $this->universitas = "UNAIR";
+        // $this->pangkat_golongan = $post['golongan'];
         $this->tmt_pns = $post['TMT'];
-        $this->status_pegawai = $post['StatusPeg'];
-        $this->jenis_kepegawaian = $post['JenisPeg'];
+        // $this->status_pegawai = $post['StatusPeg'];
+        // $this->jenis_kepegawaian = $post['JenisPeg'];
         $this->status_jabatan = $post['StatusJab'];
         $this->nama_jabatan = $post['namaJab'];
 

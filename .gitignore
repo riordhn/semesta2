@@ -21,3 +21,5 @@ application/config/database.php
 
 .ftpquota
 .well-known/*
+
+file/*

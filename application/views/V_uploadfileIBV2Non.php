@@ -17,7 +17,7 @@
                               <th>No.</th>
                               <th>Dokumen</th>
                               <th>Status Berkas</th>
-                              <th>Upload(Format: pdf max size 2mb)</th>
+                              <th>Upload(Format: pdf/image max size 2mb)</th>
                             </tr>
                             
                             <form role="form" action="<?php echo base_url().'C_dosen/upload_fileIBV2/'.$id->id_ib; ?>" method="POST" enctype="multipart/form-data"/>

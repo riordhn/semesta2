@@ -65,10 +65,10 @@
                           <?php } ?>
                         </datalist> -->
 
-                        <select name="unitfak" class="form-control" required>
+                        <select name="unitfak" class="form-control" disabled>
                           <option value="">------Pilih Unit Kerja-------</option>
                            <?php foreach($unit as $uni){?>
-                          <option <?php if($data->ID_UNIT_KERJA == $uni->ID_UNIT_KERJA) { echo 'selected'; } ?> value="<?php echo $uni->FAKULTAS;?>"><?php echo $uni->FAKULTAS;?></option>
+                          <option <?php if($data->ID_UNIT_KERJA == $uni->ID_UNIT_KERJA) { echo 'selected'; } ?> value="<?php echo $uni->ID_UNIT_KERJA;?>"><?php echo $uni->FAKULTAS;?></option>
 
                           <?php } ?>
                         </select>
@@ -76,14 +76,6 @@
 
                     <div class="form-group">
                       <label for="Rumpun">Tempat Lahir</label></br>
-                      <!-- <select class="input" name="tempatlahir" id="tempatlahir">
-                          <option>Pilih Kota Lahir</option>
-                          <?php //foreach($Kota as $kot){?>
-                          <option value="<?php// echo $kot->ID_KOTA;?>"><?php //echo $kot->NAMA_KOTA;?></option>
-
-                          <?php //} ?>
-
-                      </select> -->
                         <input type="text" readonly class="form-control" name="tempatlahir" placeholder="Tempat Lahir" value="<?php echo $data->TEMPAT_LAHIR ?>" required/>
                     </div>
 

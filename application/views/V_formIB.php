@@ -17,11 +17,11 @@
 
                     <div class="form-group">
                       <label for="Rumpun">NIK</label>
-                        <input type="text" class="form-control" name="NIK" placeholder="NIK" value="<?php echo $this->session->userdata('NIK') ?>" required/>
+                        <input type="text" readonly="" class="form-control" name="NIK" placeholder="NIK" value="<?php echo $this->session->userdata('NIK') ?>" required/>
                     </div>
 
                     <div class="form-group">
-                      <label for="Rumpun">Nama Perguruan Tinggi</label>
+                      <label for="Rumpun">Nama Perguruan Tinggi Tujuan</label>
                         <input type="text" class="form-control" name="namaPT" placeholder="Nama Perguruan Tinggi" required />
                     </div>
 

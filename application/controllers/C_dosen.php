@@ -394,9 +394,11 @@ class C_dosen extends CI_Controller
     {
         $this->load->model('M_Ibel_Dosen');
         $this->load->model('M_dosen');
+        $this->load->model('M_biodata');
         $data['Tubel'] = $this->M_Ibel_Dosen->getIbel1();
         $data['negara'] = $this->M_dosen->getNegara();
         $data['jenjang'] = $this->M_dosen->getJenjang();
+        $data['biodata'] = $this->M_biodata->getBiodata($this->session->userdata('NIK'))[0];
         $data['id'] = $id;
 
         if (!empty($data['Tubel'])) {
@@ -1273,7 +1275,7 @@ class C_dosen extends CI_Controller
         $nama = basename($_FILES['file']['name']);
         $size = $_FILES['file']['size'];
         $ext = pathinfo($nama, PATHINFO_EXTENSION);
-        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.pdf';
+        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.'.$ext;
         $config['file_name'] = $new_name;
         $config['jenis_file'] = $idjenis;
         $config['file_size'] = $size;
