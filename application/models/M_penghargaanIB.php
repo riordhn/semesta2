@@ -82,7 +82,7 @@ class M_penghargaanIB extends CI_Model{
 	    
 	    $nama = basename($_FILES['sertif']['name']);
 	    $ext = pathinfo($nama, PATHINFO_EXTENSION);
-	    $new_name = 'penghargaan'.'_'.$post['idmonitor'].'_'.date('y-m-d').'.pdf';
+	    $new_name = 'penghargaan'.'_'.$post['idmonitor'].'_'.date('y-m-d').'.'.$ext;
 
 	    $config['file_name']            = $new_name;
 	    $config['overwrite']			= true;
@@ -125,7 +125,7 @@ class M_penghargaanIB extends CI_Model{
 	    
 	    $nama = basename($_FILES['sertif']['name']);
 	    $ext = pathinfo($nama, PATHINFO_EXTENSION);
-	    $new_name = $namee.'.pdf';
+	    $new_name = $namee.'.'.$ext;
 
 	    $config['file_name']            = $new_name;
 	    $config['overwrite']			= true;

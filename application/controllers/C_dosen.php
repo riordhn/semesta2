@@ -1057,7 +1057,7 @@ class C_dosen extends CI_Controller
         $nama = basename($_FILES['file']['name']);
         $size = $_FILES['file']['size'];
         $ext = pathinfo($nama, PATHINFO_EXTENSION);
-        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.pdf';
+        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.'.$ext;
         $config['file_name'] = $new_name;
         $config['jenis_file'] = $idjenis;
         $config['file_size'] = $size;
@@ -1113,7 +1113,7 @@ class C_dosen extends CI_Controller
         $nama = basename($_FILES['file']['name']);
         $size = $_FILES['file']['size'];
         $ext = pathinfo($nama, PATHINFO_EXTENSION);
-        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.pdf';
+        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.'.$ext;
         $config['file_name'] = $new_name;
         $config['jenis_file'] = $idjenis;
         $config['file_size'] = $size;
@@ -1159,7 +1159,7 @@ class C_dosen extends CI_Controller
         $nama = basename($_FILES['file']['name']);
         $size = $_FILES['file']['size'];
         $ext = pathinfo($nama, PATHINFO_EXTENSION);
-        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.pdf';
+        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.'.$ext;
         $config['file_name'] = $new_name;
         $config['jenis_file'] = $idjenis;
         $config['file_size'] = $size;

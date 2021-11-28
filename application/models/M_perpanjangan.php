@@ -74,7 +74,7 @@ class M_perpanjangan extends CI_Model{
 	    
 	    $nama = basename($_FILES[$file]['name']);
 	    $ext = pathinfo($nama, PATHINFO_EXTENSION);
-	    $new_name = $file.'_'.$post['idmonitor'].'_'.date('y-m-d').'.pdf';
+	    $new_name = $file.'_'.$post['idmonitor'].'_'.date('y-m-d').'.'.$ext;
 
 	    $config['file_name']            = $new_name;
 	    $config['overwrite']			= true;

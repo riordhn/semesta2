@@ -35,7 +35,7 @@ class M_pengaktifanIB extends CI_Model{
 	    
 	    $nama = basename($_FILES['file']['name']);
 	    $ext = pathinfo($nama, PATHINFO_EXTENSION);
-	    $new_name = 'IjazahIbel_'.$post['idib'].'.pdf';
+	    $new_name = 'IjazahIbel_'.$post['idib'].'.'.$ext;
 
 	    $config['file_name']            = $new_name;
 	    $config['overwrite']			= true;
