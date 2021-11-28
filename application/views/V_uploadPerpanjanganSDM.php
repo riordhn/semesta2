@@ -44,7 +44,7 @@
                              <input type="hidden" class="form-control" name="nik" value="<?php echo $data->NIK; ?>" >
                              <input type="hidden" class="form-control" name="lokasi" value="<?php echo $data->LOKASI_TUBEL; ?>" >
                               <label>Surat Perjanjian Perpanjangan Tugas Belajar</label>
-                              <input type="file" class="form-control" name="<?php echo $data->ID_PERPANJANGAN?>">
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_PERPANJANGAN?>">
                                
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
@@ -59,7 +59,7 @@
                              <input type="hidden" class="form-control" name="nik" value="<?php echo $data->NIK; ?>" >
                              <input type="hidden" class="form-control" name="lokasi" value="<?php echo $data->LOKASI_TUBEL; ?>" >
                               <label>Surat Perpanjangan Tugas Belajar</label>
-                              <input type="file" class="form-control" name="<?php echo $data->ID_PERPANJANGAN?>">
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_PERPANJANGAN?>">
                               
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>

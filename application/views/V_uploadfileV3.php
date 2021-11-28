@@ -38,7 +38,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                             </form>
@@ -58,7 +58,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                             </form>
@@ -78,7 +78,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -98,7 +98,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -117,7 +117,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -136,7 +136,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -155,7 +155,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               }} ?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -174,7 +174,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -192,7 +192,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               }} ?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -211,7 +211,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -230,7 +230,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -249,7 +249,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -267,7 +267,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -285,7 +285,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -303,7 +303,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -321,7 +321,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -339,7 +339,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form>
@@ -349,7 +349,7 @@
                               <td>Surat Perjanjian TB</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file14"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file14"></td>
                             </tr> -->
                           </table>
 

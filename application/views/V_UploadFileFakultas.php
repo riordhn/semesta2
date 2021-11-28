@@ -31,7 +31,7 @@
                           <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                           <input type="text" class="form-control" name="JabAtasanRek" placeholder="Jabatan Atasan" required><br>
                           <strong>Unggah Surat Rekomendasi:</strong>
-                          <input type="file" class="form-control" name="file4" required></td>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file4" required></td>
                         <td></td>
                       </tr>
 
@@ -39,21 +39,21 @@
                         <td>2.</td>
                         <td>SK Kenaikan Jabatan Terakhir</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file15" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file15" required></td>
                         
                       </tr>
                       <tr style="background-color:  #F0F0F0">
                         <td>3.</td>
                         <td>SK Kenaikan Pangkat Terakhir</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file16" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file16" required></td>
                         
                       </tr>
                       <tr>
                         <td>4.</td>
                         <td>SK PNS / SK PT</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file17" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file17" required></td>
                       </tr>
                       
                       <tr style="background-color:  #F0F0F0">
@@ -68,7 +68,7 @@
                           <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                           <input type="text" class="form-control" name="JabAtasanCPNS" placeholder="Jabatan Atasan" required><br>
                           <strong>Unggah berkas SK CPNS:</strong>
-                          <input type="file" class="form-control" name="file18" required></td>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file18" required></td>
                         
                       </tr>
                       <tr>
@@ -82,35 +82,35 @@
                           <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                           <input type="text" class="form-control" name="JabAtasanPer" placeholder="Jabatan Atasan" required><br>
                           <strong>Unggah Berkas Surat Permohonan SK:</strong>
-                          <input type="file" class="form-control" name="file19" required></td>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file19" required></td>
                         
                       </tr>
                       
                       <tr style="background-color:  #F0F0F0">
                         <td>7.</td>
                         <td width="700px">Surat keterangan dari pimpinan unit kerja mengenai bidang studi yang akan ditempuh mempunyai hubungan atau sesuai dengan tugas pekerjaannya (ttd. Kedep & Mengetahui Dekan Fak)</td>
-                        <td><input type="file" class="form-control" name="file5" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file5" required></td>
                         <td></td>
                       </tr>
 
                       <tr>
                         <td>8.</td>
                         <td width="700px">Surat Pernyataan (9 Poin)</td>
-                        <td><input type="file" class="form-control" name="file7" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file7" required></td>
                         <td></td>
                       </tr>
 
                       <tr style="background-color:  #F0F0F0">
                         <td>9.</td>
                         <td width="700px">Kartu Pegawai / ID Card (untuk PT) <br><i>*diharapkan untuk bisa mengunggah karpeg</i></td>
-                        <td><input type="file" class="form-control" name="file10" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file10" required></td>
                         <td></td>
                       </tr>
 
                       <tr>
                         <td>10.</td>
                         <td width="700px">Konversi NIP <br><i><strong>*Tidak Wajib</strong>, Jika ada maka silahkan diunggah</i></td>
-                        <td><input type="file" class="form-control" name="file65"></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file65"></td>
                         <td></td>
                       </tr>
 
@@ -124,7 +124,7 @@
                           <input type="date" class="form-control" name="TglSuratPeng" placeholder="Tgl Surat" required><br>
                           <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                           <input type="text" class="form-control" name="JabAtasanPeng" placeholder="Jabatan Atasan" required><br>
-                          <input type="file" class="form-control" name="file67"></td>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file67"></td>
                         <td></td>
                       </tr>
                           </table>

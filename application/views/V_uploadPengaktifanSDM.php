@@ -40,7 +40,7 @@
                              <input type="hidden" class="form-control" name="nik" value="<?php echo $data->NIK; ?>" >
                              <input type="hidden" class="form-control" name="lokasi" value="<?php echo $data->LOKASI_TUBEL; ?>" >
                               <label>SK Pengaktifan Kembali</label>
-                              <input type="file" class="form-control" name="<?php echo $data->ID_PENGAKTIFAN?>">
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_PENGAKTIFAN?>">
                               
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>

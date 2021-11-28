@@ -21,21 +21,18 @@ class C_fakultas extends CI_Controller
 
     public function index()
     {
-        // $this->load->view('V_headerFakultas');
-        // $this->load->view('V_dashboardFakultas');
-        // $this->load->view('V_footerFakultas');
         if ($this->session->userdata('akses') == '1') {
 
             $this->load->model('M_Tubel_Fakultas');
             $this->load->model('M_Ibel_Fakultas');
             $data['tubel'] = $this->M_Tubel_Fakultas->getTubelall();
-            $data['Ibelall'] = $this->M_Ibel_Fakultas->getIbel();
             $data['tubel1'] = $this->M_Tubel_Fakultas->hitungDash('1');
             $data['tubel2'] = $this->M_Tubel_Fakultas->hitungDashSDM();
             $data['tubel3'] = $this->M_Tubel_Fakultas->hitungDash('5');
             $data['tubel4'] = $this->M_Tubel_Fakultas->hitungDash('7');
             $data['pp'] = $this->M_Tubel_Fakultas->hitungpp();
             $data['pk'] = $this->M_Tubel_Fakultas->hitungpk();
+            $data['Ibelall'] = $this->M_Ibel_Fakultas->getIbel();
             $data['ibel1'] = $this->M_Ibel_Fakultas->hitungDashIB('1');
             $data['ibel2'] = $this->M_Ibel_Fakultas->hitungDashSDMIB();
             $data['ibel4'] = $this->M_Ibel_Fakultas->hitungDashIB('7');
@@ -44,11 +41,6 @@ class C_fakultas extends CI_Controller
             $data['tpan'] = $this->M_Tubel_Fakultas->filePanjangditangguhkan();
             $data['takt'] = $this->M_Tubel_Fakultas->fileAktifditangguhkan();
             $data['ibel'] = $this->M_Ibel_Fakultas->fileIbelditangguhkan();
-
-            // echo "<pre>";
-            // // print_r($this->session->userdata('fak'));
-            // print_r($data['Ibelall']);
-            // die;
 
             $this->load->view('V_headerFakultas');
             $this->load->view('V_riwayatFakultas', $data);
@@ -892,7 +884,7 @@ class C_fakultas extends CI_Controller
     {
         if ($this->session->userdata('akses') == '1') {
             $this->load->model('M_Ibel_Fakultas');
-            $data['tubel'] = $this->M_Ibel_Fakultas->getIbel();
+            $data['tubel'] = $this->M_Ibel_Fakultas->getIbelAll();
             $this->load->view('V_headerFakultas');
             $this->load->view('V_riwayatFakultas3', $data);
             $this->load->view('V_footerFakultas');

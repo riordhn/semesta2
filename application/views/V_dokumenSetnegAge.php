@@ -34,7 +34,7 @@
 
                                <input type="date" class="form-control" name="tgl_surat" placeholder="tanggal surat" required="required"><br><br>
                               <label>File SETNEG</label>
-                              <input type="file" class="form-control" name="<?php echo $data->ID_TUBEL;?>"> <br>
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_TUBEL;?>"> <br>
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
                         </form>

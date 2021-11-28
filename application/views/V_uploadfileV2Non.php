@@ -34,7 +34,7 @@
                               <?php foreach ($file as $key) { 
                                 if ($key->FILE_A==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -65,7 +65,7 @@
                                 <strong>Tanggal Surat LOA:</strong>
                                 <input type="Date" class="form-control" name="TglSruat" placeholder="Tanggal Surat LOA" required><br>
                                 <strong>Unggah LOA:</strong>
-                                <input type="file" class="form-control" name="file" required><br>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required><br>
                               </td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
@@ -88,7 +88,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_C==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -112,7 +112,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form> -->
@@ -131,7 +131,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form> -->
@@ -147,7 +147,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_F==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -170,7 +170,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               }} ?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form> -->
@@ -189,7 +189,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form> -->
@@ -204,7 +204,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_I==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -227,7 +227,7 @@
                               } else {
                                 echo "&#9989; Berkas sudah diunggah";
                               } }?></td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                             </tr>
                           </form> -->
@@ -243,7 +243,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_K==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -263,7 +263,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_L==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -282,7 +282,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_M==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -301,7 +301,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_D==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -320,7 +320,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_E==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -339,7 +339,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_G==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -367,7 +367,7 @@
                                   <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                   <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" required><br>
                                   <strong>Unggah Surat Rekomendasi:</strong>
-                                  <input type="file" class="form-control" name="file" required></td>
+                                  <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -386,7 +386,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_O==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -405,7 +405,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_P==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -424,7 +424,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_Q==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -450,7 +450,7 @@
                                   <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                   <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" required><br>
                                   <strong>Unggah berkas SK CPNS:</strong>
-                                  <input type="file" class="form-control" name="file" required></td>
+                                  <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -476,7 +476,7 @@
                                   <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                   <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" required><br>
                                   <strong>Unggah Berkas Surat Permohonan SK:</strong>
-                                  <input type="file" class="form-control" name="file" required></td>
+                                  <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -495,7 +495,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_T==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -514,7 +514,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_U==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -533,7 +533,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_V==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -552,7 +552,7 @@
                               <?php foreach ($file as $key) {
                                 if ($key->FILE_W==NULL) {?>
                               <td>Berkas belum diunggah</td>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>
@@ -577,7 +577,7 @@
                                   <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" required><br>
                                   <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                   <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" required><br>
-                                  <input type="file" class="form-control" name="file"></td>
+                                  <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><strong>Berhasil diunggah</strong></td>

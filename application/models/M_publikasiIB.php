@@ -120,7 +120,7 @@ class M_publikasiIB extends CI_Model{
 	    
 	    $nama = basename($_FILES[$file]['name']);
 	    $ext = pathinfo($nama, PATHINFO_EXTENSION);
-	    $new_name = $file.'_'.$post['idmonitor'].'.pdf';
+	    $new_name = $file.'_'.trim($post['idmonitor'], ' ').'.'.$ext;
 
 	    $config['file_name']            = $new_name;
 	    $config['overwrite']			= true;

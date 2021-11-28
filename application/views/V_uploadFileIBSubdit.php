@@ -35,7 +35,7 @@
                           <td>
                              <input type="hidden" class="form-control" name="nik" value="<?php echo $data->NIK; ?>" >
                               <label>Surat Keputusan Izin Belajar</label>
-                              <input type="file" class="form-control" name="<?php echo $data->ID_IB?>">
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_IB?>">
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
                         </form>

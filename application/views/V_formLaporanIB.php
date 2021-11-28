@@ -28,7 +28,7 @@
 
                     <div class="form-group">
                       <label>File Upload Ijazah / Surat Keterangan Lulus:</label></br>
-                      <input type="file" class="form-control" name="file" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> <!-- /.form group -->
 

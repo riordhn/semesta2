@@ -48,7 +48,7 @@
 
                                <input type="date" class="form-control" name="tgl_surat" placeholder="tanggal surat" required="required">
                                <label>Surat Perjanjian</label>
-                                <input type="file" class="form-control" name="<?php echo $data->ID_TUBEL?>" required>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_TUBEL?>" required>
                             </td>
                             <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
                           </form>
@@ -69,7 +69,7 @@
 
                                <input type="date" class="form-control" name="tgl_surat" placeholder="tanggal surat" required="required">
                               <label>Surat Tugas Belajar</label>
-                              <input type="file" class="form-control" name="<?php echo $data->ID_TUBEL?>" required>
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_TUBEL?>" required>
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
                         </form>

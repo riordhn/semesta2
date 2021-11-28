@@ -26,7 +26,7 @@
                               <td>Surat Pernyataan Bermaterai (3 Poin Pernyataan)</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file42"  required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file42"  required></td>
                             </tr>
 
                             <tr>
@@ -34,7 +34,7 @@
                               <td>Bukti Akreditasi Prodi dan Instansi Izin Belajar</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file43" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file43" required></td>
                             </tr>
 
                             <tr>
@@ -42,7 +42,7 @@
                               <td>SKP 2 Tahun Terakhir</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file44" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file44" required></td>
                             </tr>
 
                             <tr>
@@ -50,7 +50,7 @@
                               <td>Surat Keterangan Sehat</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file45" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file45" required></td>
                             </tr>
 
                             <tr>
@@ -58,7 +58,7 @@
                               <td>Surat Keterangan Prodi yang ditempuh Linier</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file46" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file46" required></td>
                             </tr>
 
                             <tr>
@@ -66,7 +66,7 @@
                               <td>Bukti Penerimaan di Perguruan Tinggi tujuan Izin belajar</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file47" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file47" required></td>
                             </tr>
                           </table>
 

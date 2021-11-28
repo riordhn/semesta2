@@ -30,7 +30,7 @@
                   <div class="form-group">
                       <label>Unggah Bukti Bimbingan :</label>
                       <a href="<?php echo base_url().'/file/monitoring/tugas/'.$data->BUKTI_BIMBINGAN; ?>"><?php echo $data->BUKTI_BIMBINGAN; ?></a>
-                      <input type="file" class="form-control" name="buktibimbingan" />
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktibimbingan" />
                   </div> 
 
                   <div class="form-group" style="background-color: lightgrey">
@@ -121,7 +121,7 @@
                     <div class="form-group">
                       <label>Unggah bukti dukung / surat keterangan seminar :</label>
                       <a href="<?php echo base_url().'/file/monitoring/tugas/'.$data->BUKTI_SA; ?>"><?php echo $data->BUKTI_SA; ?></a>
-                      <input type="file" class="form-control" name="buktiseminar" />
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktiseminar" />
                     </div>
 
                     <?php } ?>                   

@@ -47,7 +47,7 @@
                                 <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                 <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" value="<?php echo $id->JABATAN_PIMPINAN ?>" required><br>
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } elseif ($id->NOMOR_SURAT != NULL && $id->TGL_SURAT != NULL && $id->JABATAN_PIMPINAN == NULL || $id->NOMOR_SURAT != NULL && $id->TGL_SURAT != "0000-00-00" && $id->JABATAN_PIMPINAN == NULL) { ?> <!-- jika inputan tgl & no saja -->
                                 <td>
@@ -58,13 +58,13 @@
                                 <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" value="<?php echo $id->TGL_SURAT ?>" required><br>
                                 <input type="hidden" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan">
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
 
                               <?php }else{ ?>
                               <td>
                                 <input type="hidden" class="form-control" name="kode" value="3">
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php }} else { ?>
                                 <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
@@ -99,7 +99,7 @@
                                 <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                 <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" value="<?php echo $id->JABATAN_PIMPINAN ?>" required><br>
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } elseif ($id->NOMOR_SURAT != NULL && $id->TGL_SURAT != NULL && $id->JABATAN_PIMPINAN == NULL) { ?> <!-- jika inputan tgl & no saja -->
                                 <td>
@@ -110,13 +110,13 @@
                                 <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" value="<?php echo $id->TGL_SURAT ?>" required><br>
                                 <input type="hidden" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan">
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
 
                               <?php }else{ ?>
                               <td>
                                 <input type="hidden" class="form-control" name="kode" value="3">
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } ?> 
                               <?php } else { ?>
@@ -151,7 +151,7 @@
                                 <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                 <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" value="<?php echo $id->JABATAN_PIMPINAN ?>" required><br>
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } elseif ($id->NOMOR_SURAT != NULL && $id->TGL_SURAT != NULL && $id->JABATAN_PIMPINAN == NULL) { ?> <!-- jika inputan tgl & no saja -->
                                 <td>
@@ -162,7 +162,7 @@
                                 <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" value="<?php echo $id->TGL_SURAT ?>" required><br>
                                 <input type="hidden" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan">
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
 
                               <?php } elseif ($id->NOMOR_SURAT == NULL && $id->TGL_SURAT != NULL && $id->JABATAN_PIMPINAN == NULL) { ?> <!-- jika inputan tgl & no saja -->
@@ -171,13 +171,13 @@
                                 <strong>Tanggal SPMT:</strong>
                                 <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" value="<?php echo $id->TGL_SURAT ?>" required><br>
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
 
                               <?php }else{ ?>
                               <td>
                                 <input type="hidden" class="form-control" name="kode" value="4">
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } ?> 
                               <?php } else { ?>
@@ -212,7 +212,7 @@
                                 <strong>Jabatan Pejabat Yang bertanda Tangan:</strong>
                                 <input type="text" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" value="<?php echo $id->JABATAN_PIMPINAN ?>" required><br>
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } elseif ($id->NOMOR_SURAT != NULL && $id->TGL_SURAT != NULL && $id->JABATAN_PIMPINAN == NULL) { ?> <!-- jika inputan tgl & no saja -->
                                 <td>
@@ -223,13 +223,13 @@
                                 <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" value="<?php echo $id->TGL_SURAT ?>" required><br>
                                 <input type="hidden" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan">
                                 <strong>Unggah Berkas:</strong>
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
 
                               <?php }else{ ?>
                               <td>
                                 <input type="hidden" class="form-control" name="kode" value="3">
-                                <input type="file" class="form-control" name="file" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } ?> 
                               <?php } else { ?>

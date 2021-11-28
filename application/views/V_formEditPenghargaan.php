@@ -45,7 +45,7 @@
                     <div class="form-group">
                       <label>Pindaian (Scan) Sertifikat:</label></br>
                       <a href="<?php echo base_url();?>file/monitoring/<?php echo $data->FILE_UPLOAD_PENGHARGAAN ?>" target="_blank"><?php echo $data->FILE_UPLOAD_PENGHARGAAN ?></a> 
-                      <input type="file" class="form-control" name="sertif" /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="sertif" /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div><!-- /.form group -->
 

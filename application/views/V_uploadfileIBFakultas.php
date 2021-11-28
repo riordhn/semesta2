@@ -16,36 +16,36 @@
                             <tr>
                               <th>No.</th>
                               <th>Dokumen</th>
-                              <th>Unggah (format PDF, maks. 2 MB)</th>
+                              <th>Unggah (format PDF/image, maks. 2 MB)</th>
                             </tr>
                             <tr>
                               <td>1. </td>
                               <td>Surat Keterangan dari pimpinan unit kerja mengenai bidang studi<br> yang akan ditempuh mempunyai hubungan atau sesuai dengan tugas pekerjaannya <br>(ttd. Kedep & Mengetahui Dekan Fak)</td>
 <!--                               <td><a href="<?php echo base_url().'C_fakultas/outputPermohonanIB/'.$id; ?>">Unduh Template Surat</a></td> -->
-                              <td><input type="file" class="form-control" name="file46"  required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file46"  required></td>
                             </tr>
                             <tr>
                               <td>2. </td>
                               <td>SK CPNS / Calon Pegawai tetap</td>
-                              <td><input type="file" class="form-control" name="file49"  required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file49"  required></td>
                             </tr>
 
                             <tr>
                               <td>3. </td>
                               <td>SK PNS / Pegawai Tetap</td>
-                              <td><input type="file" class="form-control" name="file50" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file50" required></td>
                             </tr>
 
                             <tr>
                               <td>4. </td>
                               <td>SK Kenaikan Pangkat Terakhir</td>
-                              <td><input type="file" class="form-control" name="file51" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file51" required></td>
                             </tr>
 
                             <tr>
                               <td>5. </td>
                               <td>SK Kenaikan Jabatan Terakhir</td>
-                              <td><input type="file" class="form-control" name="file52" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file52" required></td>
                             </tr>
                             <tr>
                               <td>6. </td>
@@ -57,7 +57,7 @@
                                 <label><b>Jabatan Pejabat Yang bertanda Tangan:</b></label><br>
                                 <input type="text" class="form-control" name="jabatan" required><br>
                                 <label>Unggah Berkas Pengantar:</label>
-                                <input type="file" class="form-control" name="file70" required></td>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file70" required></td>
                             </tr>
 
                           </table>

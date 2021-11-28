@@ -26,13 +26,13 @@
 
                     <div class="form-group">
                       <label>Surat Keterangan Lulus / Ijazah / Surat Keterangan Drop Out:</label></br>
-                      <input type="file" class="form-control" name="file0" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file0" required /></br>
                       *Format berkas PDF dengan ukuran maksimal 2 MB
                     </div><!-- /.form group -->
 
                     <!-- <div class="form-group">
                       <label>Penyetaraan Ijazah (Bagi Tubel Luar Negeri) :</label></br>
-                      <input type="file" class="form-control" name="file1" /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file1" /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> --><!-- /.form group -->
 

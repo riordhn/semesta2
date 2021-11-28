@@ -26,7 +26,7 @@
                               <td>Surat Jaminan memperoleh beasiswa/pembiayaan Tubel</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file1"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file1"></td>
                             </tr>
 
                             <tr>
@@ -34,7 +34,7 @@
                               <td>LOA</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file2"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file2"></td>
                             </tr>
 
                             <tr>
@@ -42,7 +42,7 @@
                               <td>Surat Keterangan Sehat</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file3"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file3"></td>
                             </tr>
 
                             <tr>
@@ -50,7 +50,7 @@
                               <td>Surat Rekomendasi Pimpinan</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file4"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file4"></td>
                             </tr>
 
                             <tr>
@@ -58,7 +58,7 @@
                               <td>Surat Keterangan Linear</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file5"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file5"></td>
                             </tr>
 
                             <tr>
@@ -66,7 +66,7 @@
                               <td>SKP 2 Tahun Terakhir</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file6"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file6"></td>
                             </tr>
 
                             <tr>
@@ -74,7 +74,7 @@
                               <td>Surat Pernyataan Bermaterai (9 Poin Pernyataan)</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file7"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file7"></td>
                             </tr>
 
                             <tr>
@@ -82,7 +82,7 @@
                               <td>Bukti Akreditasi Prodi dan Instansi</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file8"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file8"></td>
                             </tr>
 
                             <tr>
@@ -90,7 +90,7 @@
                               <td>Akta Nikah</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file9"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file9"></td>
                             </tr>
 
                             <tr>
@@ -98,7 +98,7 @@
                               <td>KARPEG</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file10"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file10"></td>
                             </tr>
 
                             <tr>
@@ -106,7 +106,7 @@
                               <td>Scan KTP</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file11"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file11"></td>
                             </tr>
 
                             <tr>
@@ -114,7 +114,7 @@
                               <td>Scan CV / Riwayat Hidup</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file12"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file12"></td>
                             </tr>
 
                             <tr>
@@ -122,7 +122,7 @@
                               <td>Scan Paspor</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file13"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file13"></td>
                             </tr>
 
                             <!-- <tr>
@@ -130,7 +130,7 @@
                               <td>Surat Perjanjian TB</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
-                              <td><input type="file" class="form-control" name="file14"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file14"></td>
                             </tr> -->
                           </table>
 

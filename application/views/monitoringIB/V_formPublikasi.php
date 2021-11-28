@@ -68,7 +68,7 @@
 
                     <div class="form-group">
                       <label>Unggah Bukti:</label>
-                      <input type="file" class="form-control" name="buktipublikasi" />
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktipublikasi" />
                     </div>                   
 
                   </div>

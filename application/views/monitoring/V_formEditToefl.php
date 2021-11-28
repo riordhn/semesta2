@@ -53,7 +53,7 @@
                     <div class="form-group">
                       <label>Unggah Bukti Sertifikat:</label>
                       <a href="<?php echo base_url().'/file/monitoring/toefl/'.$data->BUKTI_TOEFL; ?>"><?php echo $data->BUKTI_TOEFL; ?></a>
-                      <input type="file" class="form-control" name="buktitoefl" accept="application/pdf"/>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktitoefl" accept="application/pdf"/>
                     </div>  
                     <?php } ?>                 
 

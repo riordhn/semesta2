@@ -11,7 +11,7 @@
                         <h4 class="text-center">Formulir Data Diri</h4>
                     </div>
                     <?php foreach($Biodata as $data) { ?>
-                    <form action="<?php echo base_url().'C_dosen/BiodataIB' ?>" method="POST"
+                    <form action="<?php echo base_url().'C_dosen/simpanBiodataIB' ?>" method="POST"
                         enctype="multipart/form-data">
                         <div class="box-body">
                             <div class="form-group">
@@ -189,7 +189,7 @@
                             <?php if (empty($data->FOTO1)) { ?>
                             <div class="form-group">
                                 <label>Unggah Pas Foto:</label></br>
-                                <input type="file" class="form-control" name="foto" required /></br>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto" required /></br>
                                 format berkas jpg. dengan ukuran maksimal 2 MB
                             </div><!-- /.form group -->
                             <?php } else { ?>
@@ -198,7 +198,7 @@
                                         href="<?php echo $data->FOTO1; ?>"
                                         target="_blank"><?php echo $data->FOTO1 ?></a></p>
                                 <p><strong>Jika ingin merubah</strong>, silahkan unggah kembali Pas Foto:</p></br>
-                                <input type="file" class="form-control" name="foto" /></br>
+                                <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto" /></br>
                                 format berkas jpg. dengan ukuran maksimal 2 MB
                             </div><!-- /.form group -->
                             <?php } ?>

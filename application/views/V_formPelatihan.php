@@ -44,7 +44,7 @@
 
                     <div class="form-group">
                       <label>Pindaian (Scan) Sertifikat:</label></br>
-                      <input type="file" class="form-control" name="foto" /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto" /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div><!-- /.form group -->
 

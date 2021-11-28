@@ -64,7 +64,7 @@
                       <label>Unggah Bukti:</label>
                       <a href="<?php echo base_url().'/file/monitoring/publikasi/'.$data->BUKTI_PUBLIKASI; ?>"><?php echo $data->BUKTI_PUBLIKASI; ?></a>
 
-                      <input type="file" class="form-control" name="buktipublikasi" accept="application/pdf"/>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktipublikasi" accept="application/pdf"/>
                     </div>            
                 <?php }?>
 

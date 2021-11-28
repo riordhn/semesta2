@@ -21,7 +21,7 @@
                     </div>
 
                     <div class="form-group">
-                      <label for="Rumpun">Nama Perguruan Tinggi Tujuan</label>
+                      <label for="Rumpun">Nama Perguruan Tinggi Tujuan (Harus Dalam Negeri)</label>
                         <input type="text" class="form-control" name="namaPT" placeholder="Nama Perguruan Tinggi" required />
                     </div>
 

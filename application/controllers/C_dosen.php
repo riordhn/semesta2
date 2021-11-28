@@ -7,11 +7,24 @@ class C_dosen extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->library('form_validation');
+        $this->load->database();
+        $this->load->model('ORMBiodata');
+        $this->load->model('ORMTugasBelajar');
+        $this->load->model('ORMIzinBelajar');
+        $this->load->model('ORMPengaktifanIzinBelajar');
+        $this->load->model('ORMFakultas');
+
         $this->load->model('M_biodata');
+
         $this->load->helper(array('form'));
         $this->load->library('session');
+        $this->load->library('form_validation');
 
+        $nik = $this->session->userdata('NIK');
+        $izin_belajar_active = ORMIzinBelajar::where('NIK', $nik)->where('HAS_REACTIVE', 0)->first();
+        $tugas_belajar_active = ORMTugasBelajar::where('NIK', $nik)->where('HAS_REACTIVE', 0)->first();
+        $this->session->set_userdata('izin_belajar_active', $izin_belajar_active);
+        $this->session->set_userdata('tugas_belajar_active', $tugas_belajar_active);
     }
 
     public function index()
@@ -184,47 +197,47 @@ class C_dosen extends CI_Controller
 
         $data['cektubel'] = $this->M_Tubel_Dosen->cekTubel();
         if (!empty($data['cektubel'])) {
-            $cekTub = 1;
+            $cek_tb = 1;
             foreach ($data['cektubel'] as $k) {
                 $idtubel = $k->ID_TUBEL;
                 $status = $k->ID_STATUS_SL;
             }
             $data['cekpengaktifan'] = $this->M_Tubel_Dosen->cekPengaktifan($idtubel);
             if (!empty($data['cekpengaktifan'])) {
-                $cekpeng = 1;
+                $cek_pengaktifan_tb = 1;
             } else {
-                $cekpeng = 0;
+                $cek_pengaktifan_tb = 0;
             }
         } else {
-            $cekTub = 0;
-            $cekpeng = 0;
+            $cek_tb = 0;
+            $cek_pengaktifan_tb = 0;
             $status = 30;
         }
         $data['cekibel'] = $this->M_Ibel_Dosen->cekIbel();
         if (!empty($data['cekibel'])) {
 
-            $cekIb = 1;
+            $cek_ib = 1;
             foreach ($data['cekibel'] as $s) {
-                $idibel = $s->ID_IB;
-                $staib = $s->ID_STATUS_SL;
+                $id_izin_belajar = $s->ID_IB;
+                $status_ib = $s->ID_STATUS_SL;
             }
-            $data['ceklaporan'] = $this->M_Ibel_Dosen->cekLaporan($idibel);
+            $data['ceklaporan'] = $this->M_Ibel_Dosen->cekLaporan($id_izin_belajar);
             if (!empty($data['ceklaporan'])) {
-                $ceklap = 1;
+                $cek_laporan = 1;
             } else {
-                $ceklap = 0;
+                $cek_laporan = 0;
             }
         } else {
-            $cekIb = 0;
-            $ceklap = 0;
-            $staib = 30;
+            $cek_ib = 0;
+            $cek_laporan = 0;
+            $status_ib = 30;
         }
 
-        if (($cekTub == 1 && $cekIb == 1) || ($cekTub == 1 && $cekIb == 0) || ($cekTub == 0 && $cekIb == 1)) {
+        if (($cek_tb == 1 && $cek_ib == 1) || ($cek_tb == 1 && $cek_ib == 0) || ($cek_tb == 0 && $cek_ib == 1)) {
 
-            if ($status == 0 || $status == 7 || $status == 9 || $status == 11 || $staib == 7 || $staib == 9 || $staib == 11) {
+            if ($status == 0 || $status == 7 || $status == 9 || $status == 11 || $status_ib == 7 || $status_ib == 9 || $status_ib == 11) {
 
-                if ($cekpeng == 1 && $ceklap == 1 || $cekpeng == 1 && $ceklap == 0 || $cekpeng == 0 && $ceklap == 1 || $cekpeng == 0 && $ceklap == 0 && $status == 0 || $cekpeng == 0 && $ceklap == 0 && $status == 11 || $cekpeng == 0 && $ceklap == 0 && $status == 9 || $cekpeng == 0 && $ceklap == 0 && $staib == 11 || $cekpeng == 0 && $ceklap == 0 && $staib == 9) {
+                if ($cek_pengaktifan_tb == 1 && $cek_laporan == 1 || $cek_pengaktifan_tb == 1 && $cek_laporan == 0 || $cek_pengaktifan_tb == 0 && $cek_laporan == 1 || $cek_pengaktifan_tb == 0 && $cek_laporan == 0 && $status == 0 || $cek_pengaktifan_tb == 0 && $cek_laporan == 0 && $status == 11 || $cek_pengaktifan_tb == 0 && $cek_laporan == 0 && $status == 9 || $cek_pengaktifan_tb == 0 && $cek_laporan == 0 && $status_ib == 11 || $cek_pengaktifan_tb == 0 && $cek_laporan == 0 && $status_ib == 9) {
                     $this->load->view('V_headerDosen', $data);
                     $this->load->view('V_formtb');
                     $this->load->view('V_footerDosen');
@@ -250,71 +263,41 @@ class C_dosen extends CI_Controller
 
     public function formBioIb()
     {
+        $nik = $this->session->userdata('NIK');
+        
         $this->load->model('M_dosen');
         $this->load->model('M_Tubel_Dosen');
         $this->load->model('M_Ibel_Dosen');
+
         $data['unit'] = $this->M_dosen->getUnitKer();
         $data['Biodata'] = $this->M_dosen->getBiodata();
         $data['Kota'] = $this->M_dosen->getKota();
         $data['cektubel'] = $this->M_Tubel_Dosen->cekTubel();
-        if (!empty($data['cektubel'])) {
-            $cekTub = 1;
-            foreach ($data['cektubel'] as $k) {
-                $idtubel = $k->ID_TUBEL;
-                $status = $k->ID_STATUS_SL;
-            }
-            $data['cekpengaktifan'] = $this->M_Tubel_Dosen->cekPengaktifan($idtubel);
-            if (!empty($data['cekpengaktifan'])) {
-                $cekpeng = 1;
-            } else {
-                $cekpeng = 0;
-            }
-        } else {
-            $cekTub = 0;
-            $cekpeng = 0;
-            $status = 30;
+
+        // CEK TUGAS BELAJAR yang belum aktif kembali
+        $proses_tugas_belajar = ORMTugasBelajar::where('NIK', $nik)->where('HAS_REACTIVE', 0)->first();
+        if ($proses_tugas_belajar) {
+            $this->load->view('V_headerDosen');
+            $this->load->view('V_BlockPengajuan');
+            $this->load->view('V_footerDosen');
         }
+
         $data['cekibel'] = $this->M_Ibel_Dosen->cekIbel();
-        if (!empty($data['cekibel'])) {
 
-            $cekIb = 1;
-            foreach ($data['cekibel'] as $s) {
-                $idibel = $s->ID_IB;
-                $staib = $s->ID_STATUS_SL;
-            }
-            $data['ceklaporan'] = $this->M_Ibel_Dosen->cekLaporan($idibel);
-            if (!empty($data['ceklaporan'])) {
-                $ceklap = 1;
-            } else {
-                $ceklap = 0;
-            }
-        } else {
-            $cekIb = 0;
-            $ceklap = 0;
-            $staib = 30;
-        }
-
-        if ($cekTub == 1 && $cekIb == 1 || $cekTub == 1 && $cekIb == 0 || $cekTub == 0 && $cekIb == 1) {
-
-            if ($status == 0 || $status == 7 || $status == 9 || $status == 11 || $staib == 7 || $staib == 9 || $staib == 11) {
-
-                if ($cekpeng == 1 && $ceklap == 1 || $cekpeng == 1 && $ceklap == 0 || $cekpeng == 0 && $ceklap == 1) {
-
-                    $this->load->view('V_headerDosen');
-                    $this->load->view('V_formBioIB', $data);
-                    $this->load->view('V_footerDosen');
-                } else {
-                    $this->load->view('V_headerDosen');
-                    $this->load->view('V_BlockPengajuan');
-                    $this->load->view('V_footerDosen');
-                }
-
+        // CEK IZIN BELAJAR yang belum aktif kembali
+        $proses_izin_belajar = ORMIzinBelajar::where('NIK', $nik)->where('HAS_REACTIVE', 0)->first();
+        if ($proses_izin_belajar) {
+            $status_ib = $proses_izin_belajar->ID_STATUS_SL;
+            
+            if (in_array($status_ib, [9, 11, 13]) ) {
+                $this->load->view('V_headerDosen');
+                $this->load->view('V_formBioIB', $data);
+                $this->load->view('V_footerDosen');
             } else {
                 $this->load->view('V_headerDosen');
                 $this->load->view('V_BlockPengajuan');
                 $this->load->view('V_footerDosen');
             }
-
         } else {
             $this->load->view('V_headerDosen');
             $this->load->view('V_formBioIB', $data);
@@ -358,29 +341,30 @@ class C_dosen extends CI_Controller
         echo "gagal";
     }
 
-    public function BiodataIb()
+    public function simpanBiodataIB()
     {
-        $this->load->model('M_biodata');
         $post = $this->input->post();
-        $save = $this->M_biodata;
-        $validasi = $this->form_validation;
-        $validasi->set_rules($save->rules());
-        $id = $post['NIK'];
-        $this->session->set_userdata('NIK', $id);
-        // echo '</pre>';
-        // print_r($post);
-        // echo '</pre>';
-        // die;
+        $nik = $post['NIK'];
 
-        if ($validasi->run()) {
-            $save->saveBiodata();
-
+        // $validasi = $this->form_validation;
+        // $validasi->set_rules($this->M_biodata->rules());
+        
+        // if ($validasi->run()) {
+            $biodata = ORMBiodata::find($nik);
+            $biodata->HANDPHONE = $post['nomor'];
+            $biodata->ALAMAT = $post['alamat'];
+            $biodata->TMT_PNS = $post['TMT'];
+            $biodata->STATUS_JABATAN = $post['StatusJab'];
+            $biodata->NAMA_JABATAN = $post['namaJab'];
+            $biodata->save();
+            
+            $this->session->set_userdata('NIK', $nik);
             $this->session->set_userdata('unit', $post['unitfak']);
 
             redirect('C_dosen/formib');
-        }
+        // }
 
-        redirect('C_dosen/formib');
+        // redirect('C_dosen/formib');
     }
 
     public function Tolak()
@@ -618,14 +602,12 @@ class C_dosen extends CI_Controller
 
         if ($validasi->run()) {
             $save->saveIB();
-            $fakultas = $this->M_Ibel_Dosen->getFak();
-            $array = json_decode(json_encode($fakultas), true);
-            $p = array();
-            foreach ($array as $key) {
-                array_push($p, $key['FAKULTAS']);
-            }
-            $un = $this->session->userdata('unit');
-            if (in_array($un, $p)) {
+            $nik = $this->session->userdata('NIK');
+
+            $biodata = ORMBiodata::find($nik);
+            $fakultas = ORMFakultas::where('ID_UNIT_KERJA', $biodata->ID_UNIT_KERJA)->first();
+
+            if($fakultas->ID_FAKULTAS < 16){
                 redirect('C_dosen/uploadfileIB/');
             } else {
                 redirect('C_dosen/uploadfileIBNon/');
@@ -769,7 +751,7 @@ class C_dosen extends CI_Controller
         // echo "<pre>";
         // print_r($data['tubel']);
         // die;
-        $this->load->view('V_riwayatDosen2', $data);
+        $this->load->view('V_riwayatDosenIB', $data);
         $this->load->view('V_footerDosen');
     }
 
@@ -939,29 +921,32 @@ class C_dosen extends CI_Controller
         $save = $this->M_Ibel_Dosen;
         $post = $this->input->post();
 
-        if ($this->input->post('status') == 11) {
-            if ($post['jenis'] == 1) {
+        $status_sl = $this->input->post('status');
+        $jenis_actor = $post['jenis']; // 1: Fakultas; 2: Non-Fakultas;
+
+        if ($status_sl == 11) {
+            if ($jenis_actor == 1) {
                 $save->status();
                 redirect('C_dosen/uploadfileIB');
             } else {
                 $save->status();
                 redirect('C_dosen/uploadfileIBNon');
             }
-        } elseif ($this->input->post('status') == 1 || $this->input->post('status') == 2) {
-            if ($post['jenis'] == 2) {
-                $save->status($this->input->post('status'));
+        } elseif ($status_sl == 1 || $status_sl == 2) {
+            if ($jenis_actor == 2) {
+                $save->status($status_sl);
                 redirect('C_dosen/');
             } else {
-                $save->statusNon($this->input->post('status'));
+                $save->status($status_sl);
                 redirect('C_dosen/');
             }
         }
 
-        if ($this->input->post('status') == 11) {
-            $save->status($this->input->post('status'));
+        if ($status_sl == 11) {
+            $save->status($status_sl);
             redirect('C_dosen/uploadfileIB');
-        } elseif ($this->input->post('status') == 1) {
-            $save->status($this->input->post('status'));
+        } elseif ($status_sl == 1) {
+            $save->status($status_sl);
             redirect('C_dosen/submitIB');
         }
 
@@ -2118,7 +2103,8 @@ class C_dosen extends CI_Controller
             $id = $key->id_ib;
         }
         $data['idmonitor'] = $this->M_monitoringIB->getIdMonitor($id);
-
+        
+        $id1=null;
         foreach ($data['idmonitor'] as $k) {
             $id1 = $k->ID_MONITORING_IB;
         }
@@ -2183,6 +2169,7 @@ class C_dosen extends CI_Controller
         }
         $data['idmonitor'] = $this->M_monitoringIB->getIdMonitor($id);
 
+        $id1 = null;
         foreach ($data['idmonitor'] as $k) {
             $id1 = $k->ID_MONITORING_IB;
         }

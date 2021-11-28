@@ -26,19 +26,19 @@
 
                     <div class="form-group">
                       <label>Surat Keterangan Lulus / Ijazah / Surat Keterangan Drop Out:</label></br>
-                      <input type="file" class="form-control" name="file0" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file0" required /></br>
                       *Format berkas PDF dengan ukuran maksimal 2 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <label>Berita Acara Pemeriksan (bagi pegawai pelajar yang melebihi ketentuan studi/tidak segera melakukan pengaktifan ketika kembali):</label></br>
-                      <input type="file" class="form-control" name="file1" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file1" required /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> 
 
                     <div class="form-group">
                       <label>DP-3 Tahun Terakhir:</label></br>
-                      <input type="file" class="form-control" name="file2" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file2" required /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> 
 
@@ -47,7 +47,7 @@
                           <label><b>Tanggal SPMT:</b></label><br>
                           <input type="date" class="form-control" name="spmt" required><br>
                           <label>Unggah Berkas SPMT:</label>
-                          <input type="file" class="form-control" name="file3" required></br>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file3" required></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> 
 
@@ -60,19 +60,19 @@
                           <label><b>Jabatan Pejabat Yang bertanda Tangan:</b></label><br>
                           <input type="text" class="form-control" name="jabatan" placeholder="Jabatan Pejabat" required><br>
                           <label>Unggah Berkas:</label>
-                          <input type="file" class="form-control" name="file4" required></br>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file4" required></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> 
 
                     <div class="form-group">
                       <label>SK Kenaikan Pangkat:</label></br>
-                      <input type="file" class="form-control" name="file5" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file5" required /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> 
 
                     <div class="form-group">
                       <label>SK Kenaikan Jabatan:</label></br>
-                      <input type="file" class="form-control" name="file6" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file6" required /></br>
                       Format berkas PDF dengan ukuran maksimal 2 MB
                     </div> 
 

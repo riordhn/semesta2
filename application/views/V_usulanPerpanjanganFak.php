@@ -34,8 +34,8 @@
                         <form action="<?php echo base_url().'C_Fakultas/upload_perpanjangan/'.$data->ID_PERPANJANGAN ?>" class="form-group" method="POST" enctype="multipart/form-data">
                         <td>
                             <li><b>Surat Rekomendasi Perpanjangan Tubel dari pimpinan unit kerja (ttd. Kedep mengetahui Dekan Fak) :</b></li> 
-                            <input type="file" class="form-control" name="file30" required><br><b><li>SK Kenaikan Pangkat Terakhir (*jika mengalami kenaikan pangkat saat masa studi)</b>:</li> <input type="file" class="form-control" name="file56">
-                            <br><li><b>SK Kenaikan Jabatan Terakhir (*jika mengalami kenaikan jabatan saat masa studi)</b>:</li> <input type="file" class="form-control" name="file57">
+                            <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file30" required><br><b><li>SK Kenaikan Pangkat Terakhir (*jika mengalami kenaikan pangkat saat masa studi)</b>:</li> <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file56">
+                            <br><li><b>SK Kenaikan Jabatan Terakhir (*jika mengalami kenaikan jabatan saat masa studi)</b>:</li> <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file57">
                             <br><li><b>Surat Pengantar Pengajuan Perpanjangan</b>:</li>
                             <strong>Nomor Surat:</strong><br>
                             <input type="text" class="form-control" name="nosurat" placeholder="Nomor Surat" required><br>
@@ -44,7 +44,7 @@
                             <strong>Jabatan Pejabat Yang bertanda Tangan:</strong><br>
                             <input type="text" class="form-control" name="jabatan" placeholder="Jabatan Atasan" required><br>
                             <strong>Unggah Berkas:</strong><br>
-                            <input type="file" class="form-control" name="file68" required>
+                            <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file68" required>
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Unggah</button></td>
                           </form>

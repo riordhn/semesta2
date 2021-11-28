@@ -8,6 +8,12 @@ class M_Ibel_Fakultas extends CI_Model{
 		return $q->result();
 	}
 
+	public function getIbelAll(){
+		$unit=$this->session->userdata('fak');  
+		$q=$this->db->query("Select t.*, b.NAMA, b.UNIT_KERJA, b.PANGKAT_GOLONGAN, b.STATUS_PEGAWAI, b.TEMPAT_LAHIR, b.TGL_LAHIR, s.STATUS_SL, s.LOKASI_DATA from biodata b, izin_belajar t,  status_studilanjut s where t.NIK=b.NIK and t.ID_status_sl=s.ID_status_sl and b.UNIT_KERJA='$unit'"); 
+		return $q->result();
+	}
+
 	public function getLaporan(){  
 		$q=$this->db->query("Select t.*,p.*, b.NAMA, b.STATUS_PEGAWAI, b.PANGKAT_GOLONGAN, b.TEMPAT_LAHIR, b.TGL_LAHIR, s.STATUS_SL, s.LOKASI_DATA, j.NAMA_JENJANG from biodata b, izin_belajar t, jenjang_pendidikan j, pengaktifan_ib p, status_studilanjut s where t.NIK=b.NIK and t.ID_status_sl=s.ID_status_sl and t.ID_JENJANG=j.ID_JENJANG and p.ID_status_sl=12 and p.ID_IB=t.ID_IB"); 
 		return $q->result();

@@ -41,10 +41,10 @@
                               <input type="date" class="form-control" name="TglSurat" placeholder="Tgl Surat" value="<?php echo $id->TGL_SURAT ?>" required><br>
                               <input type="hidden" class="form-control" name="JabAtasan" placeholder="Jabatan Atasan" value="">
                               <strong>Unggah Surat Rekomendasi:</strong>
-                              <input type="file" class="form-control" name="file" required></td>
+                              <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <td></td>
                               <?php }} else { ?>
@@ -67,7 +67,7 @@
                               <td><?php echo $id->TGL_UPDATE?></td>
                               <td><?php echo $id->KETERANGAN_REVISI_PERPANJANGAN?></td>
                               <?php if($id->ID_JENIS == 26 || $id->ID_JENIS == 27 || $id->ID_JENIS == 28) { ?>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
@@ -89,7 +89,7 @@
                               <td><?php echo $id->TGL_UPDATE?></td>
                               <td><?php echo $id->KETERANGAN_REVISI_PENGAKTIFAN?></td>
                               <?php if($id->ID_JENIS == 33) { ?>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
@@ -111,7 +111,7 @@
                               <td><?php echo $id->TGL_UPDATE?></td>
                               <td><?php echo $id->KETERANGAN_REVISI_IB?></td>
                               <?php if($id->ID_JENIS == 42 || $id->ID_JENIS == 43 || $id->ID_JENIS == 44 || $id->ID_JENIS == 45 || $id->ID_JENIS == 47 || $id->ID_JENIS == 48) { ?>
-                              <td><input type="file" class="form-control" name="file"></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                               <td><button type='submit' class="btn btn-primary" name="submit" value="Simpan">Simpan</button></td>
                               <?php } else { ?>
                                 <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>

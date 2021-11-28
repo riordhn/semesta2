@@ -60,7 +60,7 @@
 
                     <div class="form-group">
                       <label>Unggah Bukti Sertifikat:</label>
-                      <input type="file" class="form-control" name="buktitoefl" />
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktitoefl" />
                     </div>                   
 
                   </div>

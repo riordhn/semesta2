@@ -16,7 +16,7 @@
 
                     <div class="form-group">
                       <label>Upload Pas Foto:</label></br>
-                      <input type="file" class="form-control" name="skor" /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="skor" /></br>
                       format file jpg Max.Size 2 MB
                     </div><!-- /.form group -->
 

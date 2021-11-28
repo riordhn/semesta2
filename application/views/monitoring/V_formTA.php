@@ -23,7 +23,7 @@
 
                   <div class="form-group">
                       <label>Unggah Bukti Bimbingan :</label>
-                      <input type="file" class="form-control" name="buktibimbingan" accept="application/pdf"/>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktibimbingan" accept="application/pdf"/>
                   </div> 
 
                   <div class="form-group" style="background-color: lightgrey">
@@ -109,7 +109,7 @@
 
                     <div class="form-group">
                       <label>Unggah bukti dukung / surat keterangan seminar :</label>
-                      <input type="file" class="form-control" name="buktiseminar" accept="application/pdf"/>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="buktiseminar" accept="application/pdf"/>
                     </div>                   
 
                   </div>

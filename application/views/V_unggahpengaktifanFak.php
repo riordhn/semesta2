@@ -26,7 +26,7 @@
                         <td>1.</td>
                         <td>Berita Acara Pemeriksan (bagi pegawai pelajar yang melebihi ketentuan studi/tidak segera melakukan pengaktifan ketika kembali)</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file0"></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file0"></td>
                         <!-- <td></td> -->
                       </tr>
 
@@ -34,14 +34,14 @@
                         <td>2.</td>
                         <td>DP-3 Tahun Terakhir</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file1"></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file1"></td>
                         <!-- <td></td> -->
                       </tr>
                       <!-- <tr>
                         <td>4.</td>
                         <td>Surat Permohonan SK Pengaktifan Kembali</td>
                         <td><a href="<?php echo base_url().'C_Fakultas/outputSKAktif/'.$id?>">Unduh Template</a></td>
-                        <td><input type="file" class="form-control" name="file3" required></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file3" required></td>
                         <td></td>
                       </tr> -->
                       <tr>
@@ -50,7 +50,7 @@
                         <td><label><b>Tanggal SPMT:</b></label><br>
                           <input type="date" class="form-control" name="spmt" required><br>
                           <label>Unggah Berkas SPMT:</label>
-                          <input type="file" class="form-control" name="file2" required></td>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file2" required></td>
                         <!-- <td></td> -->
                       </tr>
                       <tr>
@@ -63,7 +63,7 @@
                           <label><b>Jabatan Pejabat Yang bertanda Tangan:</b></label><br>
                           <input type="text" class="form-control" name="jabatan" required><br>
                           <label>Unggah Berkas:</label>
-                          <input type="file" class="form-control" name="file3" required></td>
+                          <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file3" required></td>
                         <!-- <td></td> -->
                       </tr>
 
@@ -71,7 +71,7 @@
                         <td>5.</td>
                         <td>SK Kenaikan Pangkat Terakhir</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file4"></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file4"></td>
                         <!-- <td></td> -->
                       </tr>
 
@@ -79,7 +79,7 @@
                         <td>6.</td>
                         <td>SK Kenaikan Jabatan Terakhir</td>
                         <!-- <td></td> -->
-                        <td><input type="file" class="form-control" name="file5"></td>
+                        <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file5"></td>
                         <!-- <td></td> -->
                       </tr>
                           </table>

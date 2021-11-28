@@ -188,14 +188,14 @@
                     <?php if (empty($data->FOTO1)) { ?>
                     <div class="form-group">
                       <label>Unggah Pas Foto:</label></br>
-                      <input type="file" class="form-control" name="foto" required /></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto" required /></br>
                       format berkas jpg. dengan ukuran maksimal 2 MB
                     </div><!-- /.form group -->
                   <?php } else { ?>
                     <div class="form-group">
                       <p>Foto sudah terunggah. Lihat Foto Klik <a href="<?php echo $data->FOTO1; ?>" target="_blank"><?php echo $data->FOTO1 ?></a></p>
                       <p><strong>Jika ingin merubah</strong>, silahkan unggah kembali Pas Foto:</p></br>
-                      <input type="file" class="form-control" name="foto"/></br>
+                      <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto"/></br>
                       format berkas jpg. dengan ukuran maksimal 2 MB
                     </div><!-- /.form group -->
                   <?php } ?>
