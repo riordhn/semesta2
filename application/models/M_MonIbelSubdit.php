@@ -22,7 +22,7 @@ class M_MonIbelSubdit extends CI_Model{
 	}
 
 	public function getMonitoringIndi(){  
-		$q=$this->db->query("SELECT biodata.NAMA, izin_belajar.ID_IB, izin_belajar.PERGURUAN_TINGGI_PENYELENGGARA , monitoring_ib.ID_MONITORING_IB as a , monitoring_ib.SEMESTER_SEKARANG, date_format(izin_belajar.MULAI_IB,'%d/%m/%Y') as MULAI_IB, date_format(izin_belajar.SELESAI_IB,'%d/%m/%Y') as SELESAI_IB, (SELECT MAX(aktivitas_studi_ib.PRESENTASE_KELULUSAN) FROM aktivitas_studi_ib JOIN monitoring_ib on aktivitas_studi_ib.ID_MONITORING_IB = monitoring_ib.ID_MONITORING_IB WHERE aktivitas_studi_ib.ID_MONITORING_IB=a ORDER BY aktivitas_studi_ib.ID_AKTIVITAS_IB) PROGRES_DISERTASI FROM izin_belajar JOIN biodata ON izin_belajar.NIK = biodata.NIK JOIN monitoring_ib ON monitoring_ib.ID_IB = izin_belajar.ID_IB WHERE aktivitas_studi_ib.PRESENTASE_KELULUSAN >= '90'"); 
+		$q=$this->db->query("SELECT biodata.NAMA, izin_belajar.ID_IB, izin_belajar.PERGURUAN_TINGGI_PENYELENGGARA , monitoring_ib.ID_MONITORING_IB as a , monitoring_ib.SEMESTER_SEKARANG, date_format(izin_belajar.MULAI_IB,'%d/%m/%Y') as MULAI_IB, date_format(izin_belajar.SELESAI_IB,'%d/%m/%Y') as SELESAI_IB, (SELECT MAX(aktivitas_studi_ib.PRESENTASE_KELULUSAN) FROM aktivitas_studi_ib JOIN monitoring_ib on aktivitas_studi_ib.ID_MONITORING_IB = monitoring_ib.ID_MONITORING_IB WHERE aktivitas_studi_ib.ID_MONITORING_IB=a ORDER BY aktivitas_studi_ib.ID_AKTIVITAS_IB) PROGRES_DISERTASI FROM izin_belajar JOIN biodata ON izin_belajar.NIK = biodata.NIK JOIN monitoring_ib ON monitoring_ib.ID_IB = izin_belajar.ID_IB having PROGRES_DISERTASI >= '90'"); 
 		return $q->result();
 	}
 
