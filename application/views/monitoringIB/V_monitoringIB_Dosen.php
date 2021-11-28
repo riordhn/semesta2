@@ -17,9 +17,7 @@
                 <div class="col-xs-12 table-responsive">
                     <table class="table table-striped">
                         <tbody>
-                            <?php foreach($Biodata as $data) {
-                  
-                   ?>
+                            <?php foreach($Biodata as $data) { ?>
                             <tr>
                                 <td rowspan="10" width="10px"><img src="<?php echo $data->FOTO1; ?>" width="150px"></td>
                                 <td width="170px"><b>Nama Lengkap</b></td>
@@ -103,17 +101,13 @@
                                         name="semester" id="semester" required>
                                         <option value="">----Pilih Semester----</option>
                                         <?php foreach ($idmonitor as $key) { 
-                          for ($i=1; $i <= $key->TOTAL_SEMESTER; $i++) {
-                           echo  "<option value=".$i." >Semester ".$i." </option>"; } }?>
-                                        <!-- <option value="1" >Semester 1 </option>
-                          <option value="2" >Semester 2 </option>
-                          <option value="3" >Semester 3 </option>
-                          <option value="4" >Semester 4 </option>
-                          <option value="5" >Semester 5 </option>
-                          <option value="6" >Semester 6 </option> -->
-                                    </select>
-                                    <a
-                                        href="<?php echo base_url().'C_dosen/tabelMonitoringDosen/'.'$_POST[semester]' ?>"><button
+                                            for ($i=1; $i <= $key->TOTAL_SEMESTER; $i++) {
+                                                if($data->semester_now >= $i)
+                                                    echo  "<option value=".$i." >Semester ".$i." </option>"; } 
+                                            }
+                                        ?>
+                                        </select>
+                                    <a href="<?php echo base_url().'C_dosen/tabelMonitoringDosen/'.'$_POST[semester]' ?>"><button
                                             class="btn btn-success btn-xs">Pilih</button></a>
                                 </form>
                             </td><br><br>

@@ -8,6 +8,10 @@ class C_loginDosen extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->database();
+        $this->load->model('ORMBiodata');
+        $this->load->model('ORMFakultas');
+
         $this->load->model('M_dosen');
         $this->load->model('M_biodata');
         $this->load->model('m_login');
@@ -110,6 +114,12 @@ class C_loginDosen extends CI_Controller
                 $bio->insertTendik($data_pegawai, $dataken);
             }else{
                 $bio->updateTendik($data_pegawai, $dataken);
+            }
+
+            $biodata = ORMBiodata::find($nik);
+            if($fakultas = ORMFakultas::where('ID_UNIT_KERJA', $biodata->ID_UNIT_KERJA)->first()){
+                $biodata->UNIT_KERJA = $fakultas->FAKULTAS;
+                $biodata->save();
             }
         }
 

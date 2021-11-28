@@ -319,16 +319,23 @@ class C_dosen extends CI_Controller
         $diff = $today->diff($birth);
         $this->session->set_userdata('age', $diff->y);
 
-        $id = $post['NIP'];
-        $this->session->set_userdata('NIP', $id);
-
+        $nik = $post['NIP'];
+        $this->session->set_userdata('NIK', $nik);
         if ($validasi->run()) {
-            $save->saveBiodata();
+            $biodata = ORMBiodata::find($nik);
+            $biodata->HANDPHONE = $post['nomor'];
+            $biodata->ALAMAT = $post['alamat'];
+            $biodata->TMT_PNS = $post['TMT'];
+            $biodata->STATUS_JABATAN = $post['StatusJab'];
+            $biodata->NAMA_JABATAN = $post['namaJab'];
+            $biodata->save();
+
+            $fakultas = ORMFakultas::where('ID_UNIT_KERJA', $biodata->ID_UNIT_KERJA)->first();
+            $this->session->set_userdata('unit', $fakultas->FAKULTAS);
+
             if ($post['JenisPeg'] == "CPNS" || $post['jenjang'] = 'S3' && $post['jenjang'] = 'Sp2' && $this->session->userdata('age') >= 40 && $post['JenisPeg'] = 'PNS' || $this->session->userdata('age') >= 40 && $post['JenisPeg'] = 'PNS') {
                 redirect('C_dosen/Tolak/');
             } else {
-                $this->session->set_userdata('unit', $post['unitfak']);
-                $this->session->set_userdata('jenispeg', $post['JenisPeg']);
                 redirect('C_dosen/formdatatb/');}
         }
 

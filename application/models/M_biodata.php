@@ -147,7 +147,7 @@ class M_biodata extends CI_Model
         // print_r($this);
         // die;
 
-        $this->db->update($this->table, $this, array('NIP' => $post['NIP']));
+        $this->db->update($this->table, $this, array('NIK' => $post['NIP']));
 
     }
 
@@ -264,10 +264,6 @@ class M_biodata extends CI_Model
     public function insertTendik($data2, $datadiri)
     {
         $data = $data2[0];
-        // echo "<pre>";
-        //       print_r ($data);
-        //       print_r ($datadiri);
-        //       die;
 
         $this->nik = $data['NIP_PEGAWAI'];
         $this->email = $data['EMAIL_PENGGUNA'];
@@ -309,10 +305,6 @@ class M_biodata extends CI_Model
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
         $this->status_jabatan = null;
         $this->nama_jabatan = null;
-
-        // echo '<pre>';
-        // print_r($this);
-        // die;
 
         $this->db->insert($this->table, $this);
 
@@ -321,10 +313,6 @@ class M_biodata extends CI_Model
     public function updateTendik($data2, $datadiri)
     {
         $data = $data2[0];
-        // echo "<pre>";
-        //       print_r ($data);
-        //       print_r ($datadiri);
-        //       die;
 
         $this->nik = $data['NIP_PEGAWAI'];
         $this->email = $data['EMAIL_PENGGUNA'];
@@ -366,11 +354,6 @@ class M_biodata extends CI_Model
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
         $this->status_jabatan = null;
         $this->nama_jabatan = null;
-
-        // echo '<pre>';
-        // print_r($this);
-        // die;
-
         $this->db->update($this->table, $this, array('NIK' => $this->nik));
 
     }

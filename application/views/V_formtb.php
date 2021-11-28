@@ -19,7 +19,6 @@
 
                   <div class="form-group">
                       <!-- <label for="Rumpun">NIK</label> -->
-                        <input type="Hidden" class="form-control" name="NIK" value="<?php echo $data->NIK ?>"/>
                         <input type="Hidden" class="form-control" name="fotoname" value="<?php echo $data->FOTO1 ?>"/>
                   </div>
 
