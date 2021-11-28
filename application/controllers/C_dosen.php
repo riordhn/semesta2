@@ -95,7 +95,7 @@ class C_dosen extends CI_Controller
             array_push($p, $key['FAKULTAS']);
         }
         $un = $this->session->userdata('fak');
-        
+
         if (!empty($data['id'])) {
             if (in_array($un, $p)) {
                 $data['tubel'] = $this->M_Tubel_Dosen->fileTubelditangguhkan($id1);
@@ -1308,7 +1308,7 @@ class C_dosen extends CI_Controller
         $nama = basename($_FILES['file']['name']);
         $size = $_FILES['file']['size'];
         $ext = pathinfo($nama, PATHINFO_EXTENSION);
-        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.pdf';
+        $new_name = $namafile . '_' . $nik . '_' . $idnew . '.'.$ext;
         $config['file_name'] = $new_name;
         $config['jenis_file'] = $idjenis;
         $config['file_size'] = $size;
