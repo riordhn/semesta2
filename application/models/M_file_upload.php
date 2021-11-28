@@ -169,7 +169,10 @@ class M_file_upload extends CI_Model{
             'TGL_SURAT' => $config['tglsurat'],
             'JABATAN_PIMPINAN' => $config['jabatan'],
         ];
-        $this->db->where('ID_UP_FILE_T', $config['file_name']);
+
+		$new_id = preg_replace('/\\.[^.\\s]{3,4}$/', '', $config['file_name']);
+
+        $this->db->like('ID_UP_FILE_T', $new_id);
         $this->db->update('upload_file_tubel', $data);
 
 	}
@@ -183,8 +186,9 @@ class M_file_upload extends CI_Model{
             'TGL_SURAT' => $config['tglsurat'],
             'JABATAN_PIMPINAN' => $config['jabatan'],
         ];
-
-        $this->db->where('ID_UP_FILE_PJG', $config['file_name']);
+		$new_id = preg_replace('/\\.[^.\\s]{3,4}$/', '', $config['file_name']);
+		
+        $this->db->like('ID_UP_FILE_PJG', $new_id);
         $this->db->update('upload_file_perpanjangan', $data);
 	}
 
@@ -197,7 +201,9 @@ class M_file_upload extends CI_Model{
             'JABATAN_PIMPINAN' => $config['jabatan'],
         ];
 
-        $this->db->where('ID_UP_FILE_AKT', $config['file_name']);
+		$new_id = preg_replace('/\\.[^.\\s]{3,4}$/', '', $config['file_name']);
+
+        $this->db->like('ID_UP_FILE_AKT', $new_id);
         $this->db->update('upload_file_pengaktifan', $data);
 	}
 

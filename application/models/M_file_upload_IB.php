@@ -68,7 +68,9 @@ class M_file_upload_IB extends CI_Model{
             'JABATAN_PIMPINAN' => $config['jabatan'],
         ];
 
-        $this->db->where('ID_UP_FILE_IB', $config['file_name']);
+		$new_id = preg_replace('/\\.[^.\\s]{3,4}$/', '', $config['file_name']);
+
+        $this->db->like('ID_UP_FILE_IB', $new_id);
         $this->db->update('upload_file_ib', $data);
 	}
 
