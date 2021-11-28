@@ -1278,18 +1278,8 @@ class C_dosen extends CI_Controller
             }
 
             $model->save($config);
-            redirect('C_dosen/uploadfileIB/');
-
-            // echo "<pre>";
-            // print_r($config);
-            // echo "</pre>";
-
-            //echo "File berhasil di upload";
-            //print_r($_FILES) ;
+            redirect($_SERVER['HTTP_REFERER']);
         }
-
-        // die;
-        //redirect('C_dosen/submitTB/');
     }
 
     public function upload_fileIbelulang($id = null)
@@ -1331,9 +1321,6 @@ class C_dosen extends CI_Controller
                 $model->updateIbel($config);
                 redirect('C_dosen/fileDitangguhkan/');
             }
-            // echo "<pre>";
-            // print_r($config);
-            // echo "</pre>";
         }
 
     }
