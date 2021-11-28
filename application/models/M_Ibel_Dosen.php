@@ -230,7 +230,7 @@ class M_Ibel_Dosen extends CI_Model{
 
 	public function getfileIbel($id)
 	{
-		$q=$this->db->query("SELECT * FROM UPLOAD_FILE_IB WHERE ID_IB='$id' ORDER BY ID_JENIS ASC");
+		$q=$this->db->query("SELECT * FROM upload_file_ib WHERE ID_IB='$id' ORDER BY ID_JENIS ASC");
 		return $q->result();
 	}
 
