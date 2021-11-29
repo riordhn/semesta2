@@ -4,7 +4,7 @@
         <title>Responsive progress bar</title>
       <!-- <link href="<?php echo base_url().'assets/css/main.css?v=1'?>" rel="stylesheet" />-->
     </head>
-<div class="content-wrapper">
+<div class="container">
 <section class="content">
           <!-- Small boxes (Stat box) -->
     <div class="row">

@@ -1,4 +1,4 @@
-  <div class="content-wrapper">
+  <div class="container">
     <div class="container-fluid">
       <div class="row">
          <center><h3 class="box-title">Data Tugas Belajar</h3></center> <br>

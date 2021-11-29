@@ -1,5 +1,5 @@
 
-<div class="content-wrapper">
+<div class="container">
   <section class="invoice">
           <!-- title row -->
           <div class="row">

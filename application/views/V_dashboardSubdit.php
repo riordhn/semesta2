@@ -3,7 +3,7 @@
          font-size: 50px !important;
      }
  </style>
- <div class="content-wrapper">
+ <div class="container">
      <section class="content">
          <!-- Small boxes (Stat box) -->
          TUGAS BELAJAR
@@ -161,7 +161,7 @@
                              </tr>
                              <tr>
                                  <th>No.</th>
-                                 <th>Nama <br> NIP <br> TTL</th>
+                                 <th>Nama | NIP | TTL</th>
                                  <th>Unit Kerja</th>
                                  <th>Tanggal Submit</th>
                                  <th>Status</th>

@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
         <div class="container-fluid">
 <section class="invoice">
           <!-- title row -->

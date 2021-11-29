@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
     <div class="container-fluid">
        <div class="box">
                 <div class="box-header">
@@ -9,7 +9,7 @@
                     <thead>
                       <tr>
                         <th>No.</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Unit Kerja Fakultas</th>
                         <th>Dokumen</th>
                         <th>Tanggal Submit</th>

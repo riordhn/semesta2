@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
 <div class="container-fluid">
     <div class="box">
         <div class="box-header">
@@ -12,7 +12,7 @@
                     <tr>
                         <th>No.</th>
                         <th>No Referensi</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Unit Kerja Fakultas</th>
                         <th>Tanggal Mulai IB</th>
                         <th>Status</th>
@@ -61,7 +61,7 @@
                     <tr>
                         <th>No.</th>
                         <th>No Referensi</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Tanggal Pengajuan Pengaktifan Izin Belajar</th>
                         <th>Tanggal Lulus Izin Belajar</th>
                         <th>Detail Ibel</th>

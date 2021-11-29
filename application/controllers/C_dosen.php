@@ -281,6 +281,7 @@ class C_dosen extends CI_Controller
             $this->load->view('V_headerDosen');
             $this->load->view('V_BlockPengajuan');
             $this->load->view('V_footerDosen');
+            return ;
         }
 
         $data['cekibel'] = $this->M_Ibel_Dosen->cekIbel();

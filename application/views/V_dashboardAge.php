@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
 <section class="content">
           <!-- Small boxes (Stat box) -->
     <div class="row">

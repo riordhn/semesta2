@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
     <div class="container-fluid">
         <section class="invoice">
             <!-- title row -->
@@ -93,8 +93,7 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <i class="fa fa-globe"></i>
-                            <h2 class="box-title"><b>LEMBAR MONITORING</b></h2><br><br>
+                            <h2 class="box-title"><b><i class="fa fa-globe"></i> LEMBAR MONITORING</b></h2><br><br>
                             <td width="30%">
                                 <form method="post">
                                     <b>Tampil dan Tambahkan Laporan Semester</b> :&nbsp;&nbsp;&nbsp;<select

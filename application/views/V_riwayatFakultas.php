@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
 <section class="content">
           <!-- Small boxes (Stat box) -->
     <div class="row">
@@ -147,7 +147,7 @@
                     <thead>
                       <tr>
                         <th>No.</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Status Pegawai/Gol</th>
                         <th>Tanggal Pengajuan</th>
                         <th>Jenis Pengajuan</th>

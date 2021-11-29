@@ -2,7 +2,7 @@
 <html>
    
   <body class="skin-blue">
-  <div class="content-wrapper">
+  <div class="container">
         <div class="container-fluid">
           <div class="col-md-6 col-md-offset-3" >
               <!-- general form elements -->
@@ -86,4 +86,4 @@
     <!-- AdminLTE App -->
     <script src="<?php echo base_url().'assets/Admin/dist/js/app.min.js'?>" type="text/javascript"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="<?php echo base_url().'assets/Admin/dist/js/demo.js'?>" type="text/javascript"></script>
+    <!-- <script src="<?php echo base_url().'assets/Admin/dist/js/demo.js'?>" type="text/javascript"></script> -->

@@ -1,5 +1,5 @@
 
-<div class="content-wrapper">
+<div class="container">
         <div class="container-fluid">
         <section class="content-header">
           <div class="row">

@@ -1,4 +1,4 @@
-  <div class="content-wrapper">
+  <div class="container">
     <div class="container-fluid">
       <div class="box">
                 <div class="box-header">

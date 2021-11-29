@@ -1,4 +1,4 @@
-<div class="content-wrapper">
+<div class="container">
     <div class="container-fluid">
        <div class="box">
                 <div class="box-header">
@@ -9,7 +9,7 @@
                     <thead>
                       <tr>
                         <th>No.</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Unit Kerja Fakultas</th>
                         <th>Tanggal Submit TB</th>
                         <th>Status</th>
@@ -50,7 +50,7 @@
                     <thead>
                       <tr>
                         <th>No.</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Univ/Negara Tugas Belajar</th>
                         <th>Tanggal Submit Perpanjangan</th>
                         <th>Tanggal Usulan Mulai Perpanjangan</th>
@@ -95,7 +95,7 @@
                     <thead>
                       <tr>
                         <th>No.</th>
-                        <th>Nama <br> NIP <br> TTL</th>
+                        <th>Nama | NIP | TTL</th>
                         <th>Tanggal Pengajuan Pengaktifan</th>
                         <th>Tanggal Lulus</th>
                         <th>Tanggal SPMT</th>
