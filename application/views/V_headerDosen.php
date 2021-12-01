@@ -54,7 +54,7 @@
                                             <?php } ?>
                                         </a>
                                     </li>
-                                    <?php if($this->session->userdata('tugas_belajar_active') && $this->session->userdata('tugas_belajar_active')->ID_STATUS_SL == 7){ ?>
+                                    <?php if($this->session->userdata('tugas_belajar_active') && !in_array($this->session->userdata('tugas_belajar_active')->ID_STATUS_SL, [5,6,7])){ ?>
                                     <li><a href="<?php echo base_url().'C_dosen/cekMonitoring' ?>">Monitoring</a></li>
                                     <li><a href="<?php echo base_url().'C_dosen/formPerpanjangan' ?>">Perpanjangan Tugas
                                             Belajar</a></li>
@@ -76,7 +76,7 @@
                                             <?php } ?>
                                         </a>
                                     </li>
-                                    <?php if($this->session->userdata('izin_belajar_active') && $this->session->userdata('izin_belajar_active')->ID_STATUS_SL == 7){ ?>
+                                    <?php if($this->session->userdata('izin_belajar_active') && !in_array($this->session->userdata('izin_belajar_active')->ID_STATUS_SL, [5,6,7])){ ?>
                                     <li><a href="<?php echo base_url().'C_dosen/cekMonitoringIB' ?>">Monitoring</a></li>
 
                                     <!-- <li><a href="<?php echo base_url().'C_dosen/formPerpanjangan' ?>">Perpanjangan Izin Belajar</a></li> -->
