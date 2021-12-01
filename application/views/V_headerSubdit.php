@@ -79,7 +79,7 @@
                                     <li><a href="<?php echo base_url().'C_subditSDM/perpanjanganSubdit' ?>">Daftar
                                             Usulan Perpanjangan</a></li>
                                     <li><a href="<?php echo base_url().'C_subditSDM/uploadSP_perpanjanganSubdit' ?>">Unggah
-                                            Surat Perjanjian</a></li>
+                                    Perjanjian Tugas Belajar</a></li>
                                     <li><a href="<?php echo base_url().'C_subditSDM/uploadSKPerpanjangan' ?>">Unggah SK
                                             Perpanjangan</a></li>
                                 </ul>

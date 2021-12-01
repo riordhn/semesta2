@@ -17,7 +17,7 @@
                     
                       <tr>
                         <td>1.</td>
-                        <td>Surat Perjanjian</td>
+                        <td>Perjanjian Tugas Belajar</td>
                         <td align="center"><a href="<?php echo base_url();?>file/tubel/<?php echo 'SuratPerjanjian_'.$this->session->userdata('NIK').'_'.$fil.'.pdf'?>" target="_blank">Lihat</a></td>
                       </tr>
                       <tr>

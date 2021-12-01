@@ -1202,7 +1202,7 @@ class C_subditSDM extends CI_Controller
         $this->load->view('V_SP', $data);
     }
 
-    // Template Surat Pembebasan
+    // Template SK Pembebasan Sementara
     public function outputSPembebasan($id = null)
     {
         $this->load->model('M_Tubel_Subdit');

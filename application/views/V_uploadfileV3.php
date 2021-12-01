@@ -346,7 +346,7 @@
 
                             <!-- <tr>
                               <td>14. </td>
-                              <td>Surat Perjanjian TB</td>
+                              <td>Perjanjian Tugas Belajar</td>
                               <td>-</td>
                               <td>Dokumen belum diupload</td>
                               <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file14"></td>

@@ -23,7 +23,7 @@
                         <td><?php echo $data->NAMA ?><br> <?php echo $data->NIK ?><br> <?php echo $data->TEMPAT_LAHIR ?>, <?php echo $data->TGL_LAHIR ?></td>
                         <td><?php echo $data->UNIT_KERJA ?></td>
                         <td>
-                          <a href="<?php echo base_url();?>file/tubel/<?php echo 'Surat Perjanjian_'.$data->NIK.'_'.$data->ID_TUBEL.'.pdf'?>" target="_blank">Surat Perjanjian</a> <br>
+                          <a href="<?php echo base_url();?>file/tubel/<?php echo 'Perjanjian Tugas Belajar_'.$data->NIK.'_'.$data->ID_TUBEL.'.pdf'?>" target="_blank">Perjanjian Tugas Belajar</a> <br>
                           <a href="<?php echo base_url();?>file/tubel/<?php echo 'Surat Tugas Belajar_'.$data->NIK.'_'.$data->ID_TUBEL.'.pdf'?>" target="_blank">Surat Tugas Belajar</a> <br>
                           <a href="<?php echo base_url();?>file/tubel/<?php echo 'Scan CV_'.$data->NIK.'_'.$data->ID_TUBEL.'.pdf'?>" target="_blank">Riwayat Hidup</a> <br>
                           <a href="<?php echo base_url();?>file/tubel/<?php echo 'Scan KTP_'.$data->NIK.'_'.$data->ID_TUBEL.'.pdf'?>" target="_blank">KTP</a><br>

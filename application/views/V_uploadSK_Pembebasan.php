@@ -2,7 +2,7 @@
     <div class="container-fluid">
     	 <div class="box">
                 <div class="box-header">
-                  <center><h3 class="box-title">Unggah Berkas Surat Keputusan TB & Surat Pembebasan</h3></center> <br>
+                  <center><h3 class="box-title">Unggah Berkas Surat Keputusan TB & SK Pembebasan Sementara</h3></center> <br>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <table id="example1" class="table table-bordered table-striped">
@@ -34,7 +34,7 @@
                          <td  rowspan="2"><?php echo $data->PANGKAT_GOLONGAN?></td>
                         <td  rowspan="2"><?php echo $data->STATUS_PEGAWAI?></td>
                         <td  rowspan="2"><?php echo $data->JENIS_KEPEGAWAIAN?></td>
-                        <td rowspan="2"><a href="<?php echo base_url().'C_subditSDM/outputSKTB/'.$data->ID_TUBEL;?>">Unduh SK TB</a><br><a href="<?php echo base_url().'C_subditSDM/outputSPembebasan/'.$data->ID_TUBEL;?>">Unduh Surat Pembebasan</a></td>
+                        <td rowspan="2"><a href="<?php echo base_url().'C_subditSDM/outputSKTB/'.$data->ID_TUBEL;?>">Unduh SK TB</a><br><a href="<?php echo base_url().'C_subditSDM/outputSPembebasan/'.$data->ID_TUBEL;?>">Unduh SK Pembebasan Sementara</a></td>
                         <?php if($data->A==NULL){ ?>
                           <form role="form" action="<?php echo base_url().'C_subditSDM/uploadfile_SKP/'.$data->ID_TUBEL;?>"class="form-group" method="POST" enctype="multipart/form-data">
                             <td>
@@ -59,20 +59,20 @@
                          <form role="form" action="<?php echo base_url().'C_subditSDM/uploadfile_SKP/'.$data->ID_TUBEL;?>"class="form-group" method="POST" enctype="multipart/form-data">
                           <td>
                              <input type="hidden" class="form-control" name="nik" value="<?php echo $data->NIK; ?>" >
-                              <input type="hidden" class="form-control" name="namafile" value="Surat Pembebasan" >
+                              <input type="hidden" class="form-control" name="namafile" value="SK Pembebasan Sementara" >
                                <input type="hidden" class="form-control" name="jenisfile" value="25" >
                                 <input type="hidden" class="form-control" name="lokasi" value="<?php echo $data->LOKASI_TUBEL; ?>" >
-                                <label>Tanggal & Nomor Surat Pembebasan</label>
+                                <label>Tanggal & Nomor SK Pembebasan Sementara</label>
 
                                <input type="text" class="form-control" name="nomor_surat" placeholder="nomor surat" required="required">
 
                                <input type="date" class="form-control" name="tgl_surat" placeholder="tanggal surat" required="required">
-                              <label>Surat Pembebasan</label>
+                              <label>SK Pembebasan Sementara Sementara</label>
                               <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_TUBEL?>" required>
                           </td>
                           <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
                         </form>
-                         <?php } else { echo "<td>Surat Pembebasan Terunggah</td>"; }?>
+                         <?php } else { echo "<td>SK Pembebasan Sementara Terunggah</td>"; }?>
                       </tr>
                         <?php } ?>
                     </tbody>

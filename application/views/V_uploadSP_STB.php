@@ -39,7 +39,7 @@
                           <form role="form" action="<?php echo base_url().'C_subditSDM/uploadfile_SP/'.$data->ID_TUBEL;?>"class="form-group" method="POST" enctype="multipart/form-data">
                             <td>
                                <input type="hidden" class="form-control" name="nik" value="<?php echo $data->NIK; ?>" >
-                               <input type="hidden" class="form-control" name="namafile" value="Surat Perjanjian" >
+                               <input type="hidden" class="form-control" name="namafile" value="Perjanjian Tugas Belajar" >
                                <input type="hidden" class="form-control" name="jenisfile" value="14" >
                                <input type="hidden" class="form-control" name="lokasi" value="<?php echo $data->LOKASI_TUBEL; ?>" >
                                 <label>Tanggal & Nomor SP</label>
@@ -47,12 +47,12 @@
                                <input type="text" class="form-control" name="nomor_surat" placeholder="nomor surat" required="required">
 
                                <input type="date" class="form-control" name="tgl_surat" placeholder="tanggal surat" required="required">
-                               <label>Surat Perjanjian</label>
+                               <label>Perjanjian Tugas Belajar</label>
                                 <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="<?php echo $data->ID_TUBEL?>" required>
                             </td>
                             <td><button type="submit" class="btn btn-primary" name="btsub">Simpan</button></td>
                           </form>
-                          <?php } else { echo "<td>Surat Perjanjian Terunggah</td>"; }?>
+                          <?php } else { echo "<td>Perjanjian Tugas Belajar Terunggah</td>"; }?>
                           
                       </tr>
                       <tr>

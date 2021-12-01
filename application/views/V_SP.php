@@ -104,7 +104,7 @@ $document = str_replace("#SUMBER_PEMBIAYAAN", $dana, $document);
 $document = str_replace("#MULAI_TUBEL", $awal, $document);
 $document = str_replace("#SELESAI_TUBEL", $akhir, $document);
 header("Content-type: application/msword");
-header("Content-disposition: inline; filename=Surat Perjanjian_".$nik."_".$id_tub.".doc");
+header("Content-disposition: inline; filename=Perjanjian Tugas Belajar_".$nik."_".$id_tub.".doc");
 header("Content-lenght:".strlen($document));
 echo $document;
 
