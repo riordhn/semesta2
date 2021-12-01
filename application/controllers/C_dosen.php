@@ -334,7 +334,7 @@ class C_dosen extends CI_Controller
             $fakultas = ORMFakultas::where('ID_UNIT_KERJA', $biodata->ID_UNIT_KERJA)->first();
             $this->session->set_userdata('unit', $fakultas->FAKULTAS);
 
-            if ($post['JenisPeg'] == "CPNS" || $post['jenjang'] = 'S3' && $post['jenjang'] = 'Sp2' && $this->session->userdata('age') >= 40 && $post['JenisPeg'] = 'PNS' || $this->session->userdata('age') >= 40 && $post['JenisPeg'] = 'PNS') {
+            if ($post['JenisPeg'] == "CPNS" || $post['jenjang'] = 'S3' && $this->session->userdata('age') >= 40 && $post['JenisPeg'] = 'PNS' || $post['jenjang'] = 'S2' && $this->session->userdata('age') >= 35 && $post['JenisPeg'] = 'PNS') {
                 redirect('C_dosen/Tolak/');
             } else {
                 redirect('C_dosen/formdatatb/');}
@@ -1002,9 +1002,9 @@ class C_dosen extends CI_Controller
             }
             $un = $this->session->userdata('unit');
             if (in_array($un, $p)) {
-                redirect('C_dosen/uploadfile/');
+                // redirect('C_dosen/uploadfile/');
             } else {
-                redirect('C_dosen/uploadfileNon/');
+                // redirect('C_dosen/uploadfileNon/');
             }
         }
 
