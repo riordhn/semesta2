@@ -3,7 +3,7 @@
   <div class="container-fluid">
     <div style="background: #4F5155; color: #FFFFFF;">
       <div class="container">
-          <ul class="col-xs-12 col-sm-12 col-md-4 col-lg-4">&copy; 2020. Direktorat SDM Universitas Airlangga.</ul>
+          <ul class="col-xs-12 col-sm-12 col-md-4 col-lg-4">&copy; <?php echo date("Y"); ?>. Direktorat Sumber Daya Manusia Universitas Airlangga.</ul>
           <ul class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
               <p><strong>Helpdesk</strong></p>
               <p>Subdit PSDM, Gedung Kantor Manajemen, Lantai 3&nbsp;
@@ -12,7 +12,7 @@
                   <br>Email : semesta@sdm.unair.ac.id</p>
           </ul>
           <ul class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <p><strong>Direktorat Sumberdaya Manusia</strong></p>
+              <p><strong>Direktorat Sumber Daya Manusia</strong></p>
               <p>Gedung Kantor Manajemen, Lantai 1&nbsp;
                   <br>Kampus C Mulyorejo, Surabaya 60115&nbsp;
                   <br>Telp. (031) 5914042 ext. 119 Fax. (031) 5920032</p>

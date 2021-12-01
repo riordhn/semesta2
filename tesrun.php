@@ -1,6 +1,6 @@
 <!-- Direktorat Pendidikan
 Direktorat Sistem Informasi
-Direktorat Sumberdaya Manusia
+Direktorat Sumber Daya Manusia
 Direktorat Keuangan
 Direktorat Kemahasiswaan
 Direktorat Sarana Prasarana dan Lingkungan
@@ -39,7 +39,7 @@ LEMBAGA PENGEMBANGAN DAN PELATIHAN TERPADU -->
 
 $num = array('Direktorat Pendidikan',
 'Direktorat Sistem Informasi',
-'Direktorat Sumberdaya Manusia',
+'Direktorat Sumber Daya Manusia',
 'Direktorat Keuangan',
 'Direktorat Kemahasiswaan',
 'Direktorat Sarana Prasarana dan Lingkungan',
