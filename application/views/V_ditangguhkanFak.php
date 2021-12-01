@@ -83,7 +83,7 @@
                                     <td><button type='submit' class="btn btn-primary" name="submit"
                                             value="Simpan">Simpan</button></td>
                                     <?php }} else { ?>
-                                    <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
+                                    <td><i><b>Berkas telah Diunggah</b></i></td>
                                     <td></td>
                                     <?php } ?>
                                 </tr>
@@ -153,7 +153,7 @@
                                             value="Simpan">Simpan</button></td>
                                     <?php } ?>
                                     <?php } else { ?>
-                                    <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
+                                    <td><i><b>Berkas telah Diunggah</b></i></td>
                                     <td></td>
                                     <?php } ?>
                                 </tr>
@@ -235,7 +235,7 @@
                                             value="Simpan">Simpan</button></td>
                                     <?php } ?>
                                     <?php } else { ?>
-                                    <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
+                                    <td><i><b>Berkas telah Diunggah</b></i></td>
                                     <td></td>
                                     <?php } ?>
                                 </tr>
@@ -304,7 +304,7 @@
                                             value="Simpan">Simpan</button></td>
                                     <?php } ?>
                                     <?php } else { ?>
-                                    <td><i><b>Berkas Diunggah Oleh Fakultas</b></i></td>
+                                    <td><i><b>Berkas telah Diunggah</b></i></td>
                                     <td></td>
                                     <?php } ?>
                                 </tr>
