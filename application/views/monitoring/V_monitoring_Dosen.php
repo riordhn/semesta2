@@ -63,14 +63,14 @@
                                 <td>: <?php 
                       $month=array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
                       $pecah=explode('-', $data->Mulai);
-                      echo $pecah[0].' '.$month[(int)$pecah[1]].' '.$pecah[2]; ?></td>
+                      echo date_format( date_create($data->Mulai), 'd M Y'); ?></td>
                             </tr>
                             <tr>
                                 <td><b>Tanggal Selesai</b></td>
                                 <td>: <?php 
                     $month=array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
                       $pecah=explode('-', $data->Selesai);
-                      echo $pecah[0].' '.$month[(int)$pecah[1]].' '.$pecah[2];?></td>
+                      echo date_format(date_create($data->Mulai), 'd M Y');?></td>
                             </tr>
 
 
