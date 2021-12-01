@@ -102,13 +102,10 @@
                                         <option value="">----Pilih Semester----</option>
                                         <?php foreach ($idmonitor as $key) { 
                           for ($i=1; $i <= $key->TOTAL_SEMESTER; $i++) {
-                           echo  "<option value=".$i." >Semester ".$i." </option>"; } }?>
-                                        <!-- <option value="1" >Semester 1 </option>
-                          <option value="2" >Semester 2 </option>
-                          <option value="3" >Semester 3 </option>
-                          <option value="4" >Semester 4 </option>
-                          <option value="5" >Semester 5 </option>
-                          <option value="6" >Semester 6 </option> -->
+                            if($data->semester_now >= $i)
+                            echo  "<option value=".$i." >Semester ".$i." </option>"; } 
+                           
+                           }?>
                                     </select>
                                     <a
                                         href="<?php echo base_url().'C_dosen/tabelMonitoringDosen/'.'$_POST[semester]' ?>"><button
