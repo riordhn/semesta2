@@ -1631,7 +1631,7 @@ class C_dosen extends CI_Controller
             $save->saveTA();
             $save->updateSemester($post['idmonitor'], $this->session->userdata('sms') + 1);
             if ($d->SEMESTER_SEKARANG > $d->TOTAL_SEMESTER) {
-                $save->updateTotalSemester($post['idmonitor'], $d->TOTAL_SEMESTER + 1);
+                // $save->updateTotalSemester($post['idmonitor'], $d->TOTAL_SEMESTER + 1);
             }
             //redirect('C_dosen/tabelMonitoringDosen/'.$post['semester']);
             redirect('C_dosen/tabelMonitoringDosen');
@@ -2359,7 +2359,7 @@ class C_dosen extends CI_Controller
             $save->saveTA();
             $save->updateSemester($post['idmonitor'], $this->session->userdata('sms') + 1);
             if ($d->SEMESTER_SEKARANG > $TOTAL_SEMESTER) {
-                $save->updateTotalSemester($post['idmonitor'], $d->TOTAL_SEMESTER + 1);
+                // $save->updateTotalSemester($post['idmonitor'], $d->TOTAL_SEMESTER + 1);
             }
             redirect('C_dosen/tabelMonitoringIBDosen');
         }
