@@ -18,7 +18,7 @@
                         <th>Status Pegawai</th>
                         <th>Jenis Kepegawaian</th>
                         <th>Unduh Template</th>
-                        <th width="200px">Unggah File (pdf, max.2Mb)</th>
+                        <th width="200px">Unggah File (pdf, max.5MB)</th>
                         <th width="100px">Aksi</th>
                       </tr>
                     </thead>

@@ -13,7 +13,7 @@
                         <th>Unit Kerja Fakultas</th>
                         <th>Tanggal Pengajuan</th>
                         <th>Status</th>
-                        <th>Unggah Berkas SETNEG (format PDF, maks.2MB)</th>
+                        <th>Unggah Berkas SETNEG (format PDF, maks.5MB)</th>
                         <th width="100px"></th>
                       </tr>
                     </thead>

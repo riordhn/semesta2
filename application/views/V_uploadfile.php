@@ -19,7 +19,7 @@
                               <th>Dokumen</th>
                               <th>Template</th>
                               <th>File Upload</th>
-                              <th>Upload(Format: pdf/image maxsize 2mb)</th>
+                              <th>Upload(Format: pdf/image maxsize 5MB)</th>
                             </tr>
                             <tr>
                               <td>1. </td>

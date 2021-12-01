@@ -16,7 +16,7 @@
                         <th>Jenis Kepegawaian</th>
                         <th>Status</th>
                         <th>Unduh Template</th>
-                        <th width="200px">Unggah Berkas (format PDF, maks.2MB)</th>
+                        <th width="200px">Unggah Berkas (format PDF, maks.5MB)</th>
                         <th width="100px"></th>
                       </tr>
                     </thead>

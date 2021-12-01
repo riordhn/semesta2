@@ -14,7 +14,7 @@
                         <th>Tanggal Pengajuan</th>
                         <th>Status</th>
                         <th>Unggah Berkas Perpanjangan SETNEG
-                        (format PDF, maks.2MB)</th>
+                        (format PDF, maks.5MB)</th>
                         <th width="100px"></th>
                       </tr>
                     </thead>

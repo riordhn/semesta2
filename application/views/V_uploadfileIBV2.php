@@ -16,7 +16,7 @@
                                     <th>No.</th>
                                     <th>Dokumen</th>
                                     <th>Status Berkas</th>
-                                    <th>Upload(Format: pdf/image max size 2mb)</th>
+                                    <th>Upload(Format: pdf/image max size 5MB)</th>
                                 </tr>
 
                                 <form role="form"

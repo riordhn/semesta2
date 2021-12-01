@@ -18,7 +18,7 @@
                                 <th>No.</th>
                                 <th>Nama Dokumen</th>
                                 <!-- <th>Template</th> -->
-                                <th>Unggah (Format: pdf maxsize 2mb)</th>
+                                <th>Unggah (Format: pdf maxsize 5MB)</th>
                                 <!-- <th>Status</th> -->
                             </tr>
 

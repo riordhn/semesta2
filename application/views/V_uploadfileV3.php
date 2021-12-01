@@ -18,7 +18,7 @@
                               <th>Dokumen</th>
                               <th>Template</th>
                               <th>Status Berkas</th>
-                              <th>Upload(Format: pdf max size 2mb)</th>
+                              <th>Upload(Format: pdf max size 5MB)</th>
                             </tr>
                             
 

@@ -17,7 +17,7 @@
                                     <th>Jenis Pengajuan</th>
                                     <th>Dokumen</th>
                                     <th>Keterangan Kesalahan</th>
-                                    <th>Upload(Format: pdf max size 2mb)</th>
+                                    <th>Upload(Format: pdf max size 5MB)</th>
                                 </tr>
 
 
