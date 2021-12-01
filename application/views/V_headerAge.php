@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SEMESTA</title>
+    <title>SEMESTA - Sistem Informasi Pendaftaran, Monitoring dan Evaluasi Studi Lanjut</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link href="<?php echo base_url().'assets/css/main.css?v=3' ?>" rel="stylesheet" />
     <!-- Bootstrap 3.3.2 -->
