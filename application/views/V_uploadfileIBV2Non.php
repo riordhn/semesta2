@@ -255,7 +255,7 @@
                                     <?php foreach ($file as $key) {
                                  if ($key->FILE_J==NULL) {?>
                                     <td>Berkas belum diunggah</td>
-                                    <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
+                                    <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                                     <td><button type='submit' class="btn btn-primary" name="submit"
                                             value="Simpan">Simpan</button></td>
                                     <?php } else { ?>
@@ -278,7 +278,7 @@
                                     <?php foreach ($file as $key) {
                                  if ($key->FILE_K==NULL) {?>
                                     <td>Berkas belum diunggah</td>
-                                    <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file" required></td>
+                                    <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file"></td>
                                     <td><button type='submit' class="btn btn-primary" name="submit"
                                             value="Simpan">Simpan</button></td>
                                     <?php } else { ?>

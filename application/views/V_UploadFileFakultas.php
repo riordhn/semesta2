@@ -47,7 +47,7 @@
                                         <td>SK Kenaikan Jabatan Terakhir</td>
                                         <!-- <td></td> -->
                                         <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp"
-                                                class="form-control" name="file15" required></td>
+                                                class="form-control" name="file15"></td>
 
                                     </tr>
                                     <tr style="background-color:  #F0F0F0">
@@ -55,7 +55,7 @@
                                         <td>SK Kenaikan Pangkat Terakhir</td>
                                         <!-- <td></td> -->
                                         <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp"
-                                                class="form-control" name="file16" required></td>
+                                                class="form-control" name="file16"></td>
 
                                     </tr>
                                     <tr>

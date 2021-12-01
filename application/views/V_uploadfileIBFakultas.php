@@ -39,13 +39,13 @@
                             <tr>
                               <td>4. </td>
                               <td>SK Kenaikan Pangkat Terakhir</td>
-                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file51" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file51"></td>
                             </tr>
 
                             <tr>
                               <td>5. </td>
                               <td>SK Kenaikan Jabatan Terakhir</td>
-                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file52" required></td>
+                              <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file52"></td>
                             </tr>
                             <tr>
                               <td>6. </td>

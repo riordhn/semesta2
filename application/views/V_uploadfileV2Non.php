@@ -468,7 +468,7 @@
                                 if ($key->FILE_P==NULL) {?>
                                     <td>Berkas belum diunggah</td>
                                     <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control"
-                                            name="file" required></td>
+                                            name="file"></td>
                                     <td><button type='submit' class="btn btn-primary" name="submit"
                                             value="Simpan">Simpan</button></td>
                                     <?php } else { ?>
