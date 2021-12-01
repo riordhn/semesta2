@@ -192,8 +192,8 @@ class M_biodata extends CI_Model
         // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
         $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
-        // $this->status_jabatan = null;
-        // $this->nama_jabatan = null;
+        // $this->status_jabatan = $this->status_jabatan;;
+        // $this->nama_jabatan = $this->nama_jabatan;;
 
         // echo '<pre>';
         // print_r($this);
@@ -250,8 +250,8 @@ class M_biodata extends CI_Model
         // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
         $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
-        // $this->status_jabatan = null;
-        // $this->nama_jabatan = null;
+        // $this->status_jabatan = $this->status_jabatan;;
+        // $this->nama_jabatan = $this->nama_jabatan;;
 
         // echo '<pre>';
         // print_r($this);
@@ -303,8 +303,8 @@ class M_biodata extends CI_Model
         // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Tendik";
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        // $this->status_jabatan = null;
-        // $this->nama_jabatan = null;
+        // $this->status_jabatan = $this->status_jabatan;;
+        // $this->nama_jabatan = $this->nama_jabatan;;
 
         $this->db->insert($this->table, $this);
 
@@ -352,8 +352,8 @@ class M_biodata extends CI_Model
         // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Tendik";
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        // $this->status_jabatan = null;
-        // $this->nama_jabatan = null;
+        $this->status_jabatan = $this->status_jabatan;
+        $this->nama_jabatan = $this->nama_jabatan;
         $this->db->update($this->table, $this, array('NIK' => $this->nik));
 
     }
