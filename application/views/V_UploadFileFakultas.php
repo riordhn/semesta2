@@ -128,7 +128,7 @@
                                         <td width="700px">Kartu Pegawai / ID Card (untuk PT) <br><i>*diharapkan untuk
                                                 bisa mengunggah karpeg</i></td>
                                         <td><input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp"
-                                                class="form-control" name="file10" required></td>
+                                                class="form-control" name="file10"></td>
                                         <td></td>
                                     </tr>
 
