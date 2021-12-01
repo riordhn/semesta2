@@ -32,8 +32,8 @@ class M_biodata extends CI_Model
     public $tmt_pns;
     public $status_pegawai;
     public $jenis_kepegawaian;
-    public $status_jabatan;
-    public $nama_jabatan;
+    // public $status_jabatan;
+    // public $nama_jabatan;
 
     public function rules()
     {
@@ -352,8 +352,8 @@ class M_biodata extends CI_Model
         // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Tendik";
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        $this->status_jabatan = $this->status_jabatan;
-        $this->nama_jabatan = $this->nama_jabatan;
+        // $this->status_jabatan = $this->status_jabatan;
+        // $this->nama_jabatan = $this->nama_jabatan;
         $this->db->update($this->table, $this, array('NIK' => $this->nik));
 
     }
