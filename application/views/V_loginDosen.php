@@ -31,7 +31,7 @@
                             <input type="text" name="username" placeholder="NIP/NIK" required />
                             <input type="password" name="password" placeholder="Password" />
                             <button>Masuk</button>
-                            <p class="message"> Admin Fakultassss / SDM / AGE masuk<a
+                            <p class="message"> Admin Fakultas / SDM / AGE masuk<a
                                     href="<?php echo base_url().'C_loginStaff/'?>">
                                     disini</a></p>
                         </form>
@@ -69,7 +69,7 @@
                     <input type="text" name="username" placeholder="NIP/NIK" required />
                     <input type="password" name="password" placeholder="Password" />
                     <button>Masuk</button>
-                    <p class="message"> Admin Fakultassss / SDM / AGE masuk<a
+                    <p class="message"> Admin Fakultas / SDM / AGE masuk<a
                             href="<?php echo base_url().'C_loginStaff/'?>">
                             disini</a></p>
                 </form>
