@@ -115,7 +115,7 @@
                         <td><?php echo $data3->TANGGAL_LULUS ?></td>
                         <td><?php echo $data3->TANGGAL_SPMT?></td>
                         <td>
-                          <?php if($data3->STATUS_SL == 7){
+                          <?php if($data3->ID_STATUS_SL == 7){
                             echo 'Tugas Belajar Selesai';
                           } else{
                             echo 'Sedang Proses';
