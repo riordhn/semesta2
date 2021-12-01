@@ -102,6 +102,7 @@
                         <th>Tanggal Pengajuan Pengaktifan</th>
                         <th>Tanggal Lulus</th>
                         <th>Tanggal SPMT</th>
+                        <th>Status</th>
                         <th>Aksi</th>
                       </tr>
                     </thead>
@@ -113,6 +114,13 @@
                         <td><?php echo $data3->TANGGAL_SUBMIT_PK ?></td>
                         <td><?php echo $data3->TANGGAL_LULUS ?></td>
                         <td><?php echo $data3->TANGGAL_SPMT?></td>
+                        <td>
+                          <?php if($data3->STATUS_SL == 7){
+                            echo 'Tugas Belajar Selesai';
+                          } else{
+                            echo 'Sedang Proses';
+                          } ?>
+                        </td>
                         <td><a href="<?php echo base_url().'C_dosen/unduhDosenAkt/'.$data3->ID_PENGAKTIFAN;?>">Lihat/Unduh</a></td>
                       
                       </tr>
