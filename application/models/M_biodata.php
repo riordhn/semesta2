@@ -137,11 +137,11 @@ class M_biodata extends CI_Model
         // $this->unit_kerja = $post['unitfak'];
         // $this->universitas = "UNAIR";
         // $this->pangkat_golongan = $post['golongan'];
-        $this->tmt_pns = $post['TMT'];
+        // $this->tmt_pns = $post['TMT'];
         // $this->status_pegawai = $post['StatusPeg'];
         // $this->jenis_kepegawaian = $post['JenisPeg'];
-        $this->status_jabatan = $post['StatusJab'];
-        $this->nama_jabatan = $post['namaJab'];
+        // $this->status_jabatan = $post['StatusJab'];
+        // $this->nama_jabatan = $post['namaJab'];
 
         // echo '<pre>';
         // print_r($this);
@@ -189,11 +189,11 @@ class M_biodata extends CI_Model
         // $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        $this->tmt_pns = $data['TMT_PNS'];
+        // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
         $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
-        $this->status_jabatan = null;
-        $this->nama_jabatan = null;
+        // $this->status_jabatan = null;
+        // $this->nama_jabatan = null;
 
         // echo '<pre>';
         // print_r($this);
@@ -300,11 +300,11 @@ class M_biodata extends CI_Model
         $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        $this->tmt_pns = $data['TMT_PNS'];
+        // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Tendik";
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        $this->status_jabatan = null;
-        $this->nama_jabatan = null;
+        // $this->status_jabatan = null;
+        // $this->nama_jabatan = null;
 
         $this->db->insert($this->table, $this);
 

@@ -101,7 +101,7 @@
                                         name="semester" id="semester" required>
                                         <option value="">----Pilih Semester----</option>
                                         <?php foreach ($idmonitor as $key) { 
-                          for ($i=1; $i <= $key->TOTAL_SEMESTER; $i++) {
+                          for ($i=1; $i <= $data->semester_now; $i++) {
                             if($data->semester_now >= $i)
                             echo  "<option value=".$i." >Semester ".$i." </option>"; } 
                            
