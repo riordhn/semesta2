@@ -29,7 +29,7 @@ class M_biodata extends CI_Model
     public $gelar_belakang;
     //public $unit_kerja_fakultas;
     public $pangkat_golongan;
-    public $tmt_pns;
+    // public $tmt_pns;
     public $status_pegawai;
     public $jenis_kepegawaian;
     // public $status_jabatan;

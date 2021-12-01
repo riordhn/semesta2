@@ -18,7 +18,7 @@
                       <tr>
                         <td><?php echo $a.'.' ;?></td>
                         <td><?php echo $data->NAMA_FILE_AKT ?></td>
-                        <td align="center"><a href="<?php echo base_url();?>file/perpanjangan/<?php echo $data->ID_UP_FILE_AKT?>" target="_blank">Lihat/Unduh</a></td>
+                        <td align="center"><a href="<?php echo base_url();?>file/pengaktifan/<?php echo $data->ID_UP_FILE_AKT?>" target="_blank">Lihat/Unduh</a></td>
                       </tr>
                       <?php } ?>
                     
