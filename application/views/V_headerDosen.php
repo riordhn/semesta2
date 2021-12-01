@@ -6,7 +6,7 @@
     <title>SEMESTA</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css' />
-    <link href="<?php echo base_url().'assets/css/main.css?v=1' ?>" rel="stylesheet" />
+    <link href="<?php echo base_url().'assets/css/main.css?v=2' ?>" rel="stylesheet" />
     <!-- Bootstrap 3.3.2 -->
     <link href="<?php echo base_url().'assets/Admin/bootstrap/css/bootstrap.min.css'?>" rel="stylesheet"
         type="text/css" />
