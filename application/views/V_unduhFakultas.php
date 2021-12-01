@@ -17,7 +17,7 @@
                     
                       <tr>
                         <td>1.</td>
-                        <td>Surat Perjanjian</td>
+                        <td>Perjanjian Tugas Belajar</td>
                         <td align="center"><a href="<?php echo base_url();?>file/tubel/<?php echo 'Surat Perjanjian_'.$nik.'_'.$fil.'.pdf'?>" target="_blank">Lihat</a></td>
                       </tr>
                       <tr>
@@ -27,12 +27,12 @@
                       </tr>
                       <tr>
                       <td>3.</td>
-                        <td>Surat Keterangan</td>
+                        <td>SK Tugas Belajar</td>
                         <td align="center"><a href="<?php echo base_url();?>file/tubel/<?php echo 'SK Tugas Belajar_'.$nik.'_'.$fil.'.pdf'?>" target="_blank">Lihat</a></td>
                       </tr>
                       <tr>
                       <td>4.</td>
-                        <td>Surat Pembebasan</td>
+                        <td>SK Pembebasan Sementara</td>
                         <td align="center"><a href="<?php echo base_url();?>file/tubel/<?php echo 'Surat Pembebasan_'.$nik.'_'.$fil.'.pdf'?>" target="_blank">Lihat</a></td>
                       </tr>
                     
