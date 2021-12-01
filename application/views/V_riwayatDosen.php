@@ -31,10 +31,11 @@
                         }elseif($data->status_sl=="Selesai"){
                           echo $data->status_sl;
                           echo " | Disetujui" ;
-                        }elseif($data->STATUS_SL=="Submit dari Fakultas" && $data->ID_FAKULTAS >= 16){
+                        }elseif($data->status_sl=="Submit dari Fakultas" && $data->id_fakultas >= 16){
                           echo "Submit dari Dosen/Tendik non-fakultas" ;
                         }else{
-                        echo $data->status_sl;}
+                        echo $data->status_sl;
+                      }
                         ?></td>
                         <td><?php echo $data->LOKASI_DATA?></td>
             

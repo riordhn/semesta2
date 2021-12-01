@@ -141,13 +141,13 @@ class M_Tubel_Dosen extends CI_Model{
 
 	public function getData3(){ 
 		$nik=$this->session->userdata('NIK'); 
-		$q=$this->db->query("Select t.*,b.*,s.status_sl,s.LOKASI_DATA ,DATE_FORMAT(t.SELESAI_TUBEL, '%d-%M-%Y') as Selesai from tugas_belajar t, negara n, biodata b, status_studilanjut s where t.NIK='$nik' and b.NIK=t.NIK and t.ID_NEGARA=n.ID_NEGARA  and t.ID_STATUS_SL=s.ID_STATUS_SL ORDER BY t.ID_TUBEL DESC LIMIT 1"); 
+		$q=$this->db->query("Select t.*,b.*,s.status_sl,s.LOKASI_DATA ,DATE_FORMAT(t.SELESAI_TUBEL, '%d-%M-%Y') as Selesai, f.id_fakultas from tugas_belajar t, negara n, biodata b, status_studilanjut s, fakultas f where t.NIK='$nik' and b.NIK=t.NIK and f.id_unit_kerja = b.id_unit_kerja and t.ID_NEGARA=n.ID_NEGARA  and t.ID_STATUS_SL=s.ID_STATUS_SL ORDER BY t.ID_TUBEL DESC LIMIT 1"); 
 		return $q->result();
 	}
 
 	public function getData4(){ 
 		$nik=$this->session->userdata('NIK'); 
-		$q=$this->db->query("Select b.*,p.*, t.PERGURUAN_TINGGI_PENYELENGGARA, s.status_sl, n.nama_negara from tugas_belajar t, perpanjangan p, biodata b, negara n, status_studilanjut s where t.NIK='$nik' and t.ID_TUBEL = p.ID_TUBEL and b.NIK='$nik' and t.ID_NEGARA=n.ID_NEGARA and p.ID_STATUS_SL=s.ID_STATUS_SL ORDER BY p.ID_PERPANJANGAN DESC LIMIT 1"); 
+		$q=$this->db->query("Select b.*,p.*, t.PERGURUAN_TINGGI_PENYELENGGARA, s.status_sl, n.nama_negara, f.id_fakultas from tugas_belajar t, perpanjangan p, biodata b, negara n, status_studilanjut s, fakultas f where t.NIK='$nik' and t.ID_TUBEL = p.ID_TUBEL and f.id_unit_kerja = b.id_unit_kerja and b.NIK='$nik' and t.ID_NEGARA=n.ID_NEGARA and p.ID_STATUS_SL=s.ID_STATUS_SL ORDER BY p.ID_PERPANJANGAN DESC LIMIT 1"); 
 		return $q->result();
 	}
 
