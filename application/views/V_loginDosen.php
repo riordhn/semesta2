@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <div class="info">
-            <h1>SEMESTA (Sistem Monitoring Evaluasi Studi Lanjut) UNIVERSITAS AIRLANGGA</h1>
+            <h1>SEMESTA (Sistem Informasi Pendaftaran, Monitoring dan Evaluasi Studi Lanjut) UNIVERSITAS AIRLANGGA</h1>
         </div>
         <div class="info bg-login">
             <div class="row">

@@ -20,7 +20,7 @@
 <div class="container">
   <div class="info">
     <h1>SEMESTA</h1>
-    <h2>(Sistem Monitoring Evaluasi Studi Lanjut)</h2> <br>
+    <h2>(Sistem Informasi Pendaftaran, Monitoring dan Evaluasi Studi Lanjut)</h2> <br>
     <h1>UNIVERSITAS AIRLANGGA</h1>
   </div>
 </div>
