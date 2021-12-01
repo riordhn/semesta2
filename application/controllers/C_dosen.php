@@ -499,7 +499,7 @@ class C_dosen extends CI_Controller
         // // print_r($jenis);
         // die;
 
-        if ($validasi->run()) {
+        // if ($validasi->run()) {
             $save->saveTB();
             $fakultas = $this->M_Tubel_Dosen->getFak();
             $array = json_decode(json_encode($fakultas), true);
@@ -513,10 +513,10 @@ class C_dosen extends CI_Controller
             } else {
                 redirect('C_dosen/uploadfileNon/');
             }
-        }
+        // }
 
         //redirect('C_dosen/uploadfile/');
-        echo "gagal";
+        // echo "gagal";
     }
 
     public function updateTb()
@@ -638,6 +638,8 @@ class C_dosen extends CI_Controller
         } else {
             $data['count'] = 0;
         }
+
+        // var_dump($data['count']);die;
 
         $data['file'] = $this->M_Tubel_Dosen->upFile($id);
         $this->load->view('V_headerDosen');
@@ -901,10 +903,10 @@ class C_dosen extends CI_Controller
         if ($this->input->post('status') == 11) {
             if ($post['jenis'] == 1) {
                 $save->status($this->input->post('status'));
-                redirect('C_dosen/uploadfile');
+                redirect($_SERVER['HTTP_REFERER']);
             } else {
                 $save->status($this->input->post('status'));
-                redirect('C_dosen/uploadfileNon');
+                redirect($_SERVER['HTTP_REFERER']);
             }
         } elseif ($this->input->post('status') == 1 || $this->input->post('status') == 2) {
             if ($post['jenis'] == 2) {
