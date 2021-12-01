@@ -215,7 +215,7 @@ class C_fakultas extends CI_Controller
 
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -267,7 +267,7 @@ class C_fakultas extends CI_Controller
 
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -328,7 +328,7 @@ class C_fakultas extends CI_Controller
 
         $config['upload_path'] = './file/pengaktifan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -413,7 +413,7 @@ class C_fakultas extends CI_Controller
         $idfile = array('4', '15', '16', '17', '18', '19', '5', '7', '10', '65', '67');
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $idtubel;
         $config['id_tubel'] = $idnew;
 
@@ -501,7 +501,7 @@ class C_fakultas extends CI_Controller
         $idf = array('46', '49', '50', '51', '52', '70');
         $config['upload_path'] = './file/ibel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $idtubel;
         $config['id_ib'] = $idnew;
 
@@ -554,7 +554,7 @@ class C_fakultas extends CI_Controller
 
         $config['upload_path'] = './file/ibel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -708,7 +708,7 @@ class C_fakultas extends CI_Controller
         $idfile = array('30', '56', '57', '68');
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
         $idnew = $id;
         $config['id_perpanjangan'] = $idnew;
@@ -812,7 +812,7 @@ class C_fakultas extends CI_Controller
         $jenisfile1 = array('35', '66', '37', '69', '58', '59');
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
         $idnew = $id;
         $config['id_pengaktifan'] = $idnew;

@@ -4,7 +4,7 @@
   <body class="skin-blue" onload="cek()">
   <div class="container">
         <div class="container-fluid">
-          <div class="col-md-6 col-md-offset-3" >
+          <div class="col-md-12" >
               <!-- general form elements -->
               <div class="box box-primary" >
                 <div class="box-header">

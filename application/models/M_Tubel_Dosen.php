@@ -153,7 +153,7 @@ class M_Tubel_Dosen extends CI_Model{
 
 	public function getDataAllTubel(){
 		$iduser=$this->session->userdata('NIK');
-		$query=$this->db->query("select t.*,p.*,a.*,b.*,n.nama_negara, s.status_sl, s.LOKASI_DATA from negara n, tugas_belajar t, perpanjangan p, pengaktifan_kembali a, biodata b, status_studilanjut s where t.id_tubel=(select id_tubel from tugas_belajar where NIK='$iduser') and p.id_tubel=t.id_tubel and a.id_tubel=t.id_tubel and t.id_negara=n.id_negara and b.NIK='$iduser' and t.Id_status_sl=s.Id_status_sl and t.ID_STATUS_SL = 7");
+		$query=$this->db->query("select t.*,p.*,a.*,b.*,n.nama_negara, s.status_sl, s.LOKASI_DATA, f.id_fakultas from negara n, tugas_belajar t, perpanjangan p, pengaktifan_kembali a, biodata b, status_studilanjut s, fakultas f where t.id_tubel=(select id_tubel from tugas_belajar where NIK='$iduser') and p.id_tubel=t.id_tubel and a.id_tubel=t.id_tubel and t.id_negara=n.id_negara and f.id_unit_kerja = b.id_unit_kerja and b.NIK='$iduser' and t.Id_status_sl=s.Id_status_sl and t.ID_STATUS_SL = 7");
 		// foreach ($query->result() as $row)
 		// {
 		// 		echo $row->id_tubel;

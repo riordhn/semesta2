@@ -77,12 +77,12 @@
 
                             <div class="form-group">
                                 <label for="NoHp">Nomor Ponsel</label>
-                                <input type="text" class="form-control" name="nomor" placeholder="No.HP"
+                                <input type="text" class="form-control" name="nomor" minlength="7" placeholder="No.HP"
                                     value="<?php echo $data->HANDPHONE ?>" required />
                             </div>
 
                             <div class="form-group">
-                                <label for="Email">Surel</label>
+                                <label for="Email">Email</label>
                                 <input readonly="" type="text" class="form-control" name="email" placeholder="Email"
                                     value="<?php echo $data->EMAIL ?>" required />
                             </div>
@@ -168,15 +168,9 @@
                             <div class="form-group">
                                 <label for="StatusJab">Status Jabatan</label></br>
                                 <select class="form-control" name="StatusJab" id="StatusJab" required>
-                                    <?php if ($data->STATUS_JABATAN==NULL) {?>
-                                    <option selected>Pilih Status Jabatan</option>
-                                    <?php } else { ?>
-                                    <option value="<?php echo $data->STATUS_JABATAN ?>" selected>
-                                        <?php echo $data->STATUS_JABATAN ?>
-                                    </option>
-                                    <?php } ?>
-                                    <option value="Fungsional">Fungsional</option>
-                                    <option value="Struktural">Struktural</option>
+                                    <option>Pilih Status Jabatan</option>
+                                    <option <?php if($data->STATUS_JABATAN == 'Fungsional') echo 'selected'; ?> value="Fungsional">Fungsional</option>
+                                    <option <?php if($data->STATUS_JABATAN == 'Struktural') echo 'selected'; ?> value="Struktural">Struktural</option>
                                 </select>
                             </div>
 

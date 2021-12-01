@@ -247,11 +247,11 @@ class M_biodata extends CI_Model
         }
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        $this->tmt_pns = $data['TMT_PNS'];
+        // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
         $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
-        $this->status_jabatan = null;
-        $this->nama_jabatan = null;
+        // $this->status_jabatan = null;
+        // $this->nama_jabatan = null;
 
         // echo '<pre>';
         // print_r($this);
@@ -349,11 +349,11 @@ class M_biodata extends CI_Model
         $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        $this->tmt_pns = $data['TMT_PNS'];
+        // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Tendik";
         $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        $this->status_jabatan = null;
-        $this->nama_jabatan = null;
+        // $this->status_jabatan = null;
+        // $this->nama_jabatan = null;
         $this->db->update($this->table, $this, array('NIK' => $this->nik));
 
     }

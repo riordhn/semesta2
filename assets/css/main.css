@@ -208,3 +208,7 @@ li.section.visited.current:before {
     color: white;
     background-color: #d81b60 !important;
   }
+
+  .main-footer{
+    margin-top: 5rem;
+  }

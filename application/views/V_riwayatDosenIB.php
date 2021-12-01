@@ -36,8 +36,11 @@
                     }elseif($data->STATUS_SL=="Selesai"){
                         echo $data->STATUS_SL;
                         echo " | Disetujui" ;
+                    }elseif($data->STATUS_SL=="Submit dari Fakultas" && $data->ID_FAKULTAS >= 16){
+                        echo "Submit dari Dosen/Tendik non-fakultas" ;
                     }else{
-                    echo $data->STATUS_SL;}
+                        echo $data->STATUS_SL;
+                    }
                     ?></td>
                         <td align="center"><a
                                 href="<?php echo base_url().'C_dosen/detailIbel/'.$data->ID_IB;?>"><button

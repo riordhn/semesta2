@@ -849,7 +849,7 @@ class C_dosen extends CI_Controller
         $namafile = array('Surat Jaminan Pembiayaan', 'LOA', 'Surat Keterangan Sehat', 'Surat Rekomendasi Pimpinan', 'Surat Keterangan Linier', 'SKP 2 Tahun Terakhir', 'Surat Pernyataan Bermaterai(9)', 'Bukti Akreditasi Prodi dan Instansi', 'Akta Nikah', 'KARPEG', 'Scan KTP', 'Scan CV', 'Paspor');
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_tubel'] = $idnew;
         $nik = $this->session->userdata['NIK'];
@@ -976,7 +976,7 @@ class C_dosen extends CI_Controller
 
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_tubel'] = $idnew;
         $nik = $this->session->userdata('NIK');
@@ -1023,12 +1023,14 @@ class C_dosen extends CI_Controller
             }
             $un = $this->session->userdata('unit');
             if (in_array($un, $p)) {
-                redirect('C_dosen/uploadfile/');
+                // redirect('C_dosen/uploadfile/');
             } else {
-                redirect('C_dosen/uploadfileNon/');
+                // redirect('C_dosen/uploadfileNon/');
             }
 
         }
+
+        redirect($_SERVER['HTTP_REFERER']);
 
     }
 
@@ -1055,7 +1057,7 @@ class C_dosen extends CI_Controller
 
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -1087,7 +1089,7 @@ class C_dosen extends CI_Controller
                 // if (empty($data['cek'])) {
                 //     $model2->updateStatusSLtangguhkan($idnew);
                 // }
-                redirect('C_dosen/fileDitangguhkan/');
+                // redirect('C_dosen/fileDitangguhkan/');
             }
 
             //echo "File berhasil di upload";
@@ -1096,6 +1098,7 @@ class C_dosen extends CI_Controller
 
         // die;
         //redirect('C_dosen/submitTB/');
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
     public function upload_filepanjangulang($id = null)
@@ -1111,7 +1114,7 @@ class C_dosen extends CI_Controller
 
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -1135,12 +1138,13 @@ class C_dosen extends CI_Controller
             } else {
                 $upload = $this->upload->data();
                 $model->updatePerpanjangan($config);
-                redirect('C_dosen/fileDitangguhkan/');
+                // redirect('C_dosen/fileDitangguhkan/');
             }
             // echo "<pre>";
             // print_r($config);
             // echo "</pre>";
         }
+        redirect($_SERVER['HTTP_REFERER']);
 
     }
 
@@ -1157,7 +1161,7 @@ class C_dosen extends CI_Controller
 
         $config['upload_path'] = './file/pengaktifan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -1181,13 +1185,13 @@ class C_dosen extends CI_Controller
             } else {
                 $upload = $this->upload->data();
                 $model->updatePengaktifandosen($config['file_name']);
-                redirect('C_dosen/fileDitangguhkan/');
+                // redirect('C_dosen/fileDitangguhkan/');
             }
             // echo "<pre>";
             // print_r($config);
             // echo "</pre>";
         }
-
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
     public function upload_fileIB($id = null)
@@ -1200,7 +1204,7 @@ class C_dosen extends CI_Controller
         $namafile = array('Surat Pernyataan Bermaterai(3)', 'Bukti Akreditasi Prodi dan Instansi IB', 'SKP 2 Tahun Terakhir IB', 'Surat Keterangan Sehat IB', 'Surat Keterangan Linier IB', 'Bukti Penerimaan IB');
         $config['upload_path'] = './file/ibel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_ib'] = $idnew;
         $nik = $this->session->userdata['NIK'];
@@ -1227,7 +1231,7 @@ class C_dosen extends CI_Controller
 
                 $model->save($config);
                 if ($i == 47) {
-                    redirect('C_dosen/submitIB/');
+                    // redirect('C_dosen/submitIB/');
                 }
 
                 // echo "<pre>";
@@ -1242,6 +1246,7 @@ class C_dosen extends CI_Controller
         }
         // die;
         // redirect('C_dosen/submitTB/');
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
     public function upload_fileIBV2($id = null)
@@ -1255,7 +1260,7 @@ class C_dosen extends CI_Controller
 
         $config['upload_path'] = './file/ibel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_ib'] = $idnew;
         $nik = $this->session->userdata('NIK');
@@ -1279,8 +1284,9 @@ class C_dosen extends CI_Controller
             }
 
             $model->save($config);
-            redirect($_SERVER['HTTP_REFERER']);
         }
+        
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
     public function upload_fileIbelulang($id = null)
@@ -1296,7 +1302,7 @@ class C_dosen extends CI_Controller
 
         $config['upload_path'] = './file/ibel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['overwrite'] = true;
 
         $idnew = $id;
@@ -1320,10 +1326,10 @@ class C_dosen extends CI_Controller
             } else {
                 $upload = $this->upload->data();
                 $model->updateIbel($config);
-                redirect('C_dosen/fileDitangguhkan/');
+                // redirect('C_dosen/fileDitangguhkan/');
             }
         }
-
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
     // BATAS FUNCTION MONITORING
@@ -1804,7 +1810,7 @@ class C_dosen extends CI_Controller
         //$idjenis1 = array('26','27','28','54','60');
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_perpanjangan'] = $idnew;
         $nik = $this->session->userdata['NIK'];
@@ -1863,7 +1869,7 @@ class C_dosen extends CI_Controller
         //$idjenis1 = array('26','27','28','54','60');
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_perpanjangan'] = $idnew;
         $nik = $this->session->userdata['NIK'];
@@ -1984,7 +1990,7 @@ class C_dosen extends CI_Controller
         $idjenis1 = array('33', '34');
         $config['upload_path'] = './file/pengaktifan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_pengaktifan'] = $idnew;
         $nik = $this->session->userdata['NIK'];
@@ -2028,7 +2034,7 @@ class C_dosen extends CI_Controller
         $idjenis1 = array('33', '35', '66', '37', '69', '58', '59');
         $config['upload_path'] = './file/pengaktifan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $idnew = $id;
         $config['id_pengaktifan'] = $idnew;
         $nik = $this->session->userdata['NIK'];

@@ -136,7 +136,7 @@ class M_Ibel_Dosen extends CI_Model{
 
 	public function getIbel1(){
 		$iduser=$this->session->userdata('NIK');  
-		$q=$this->db->query("SELECT t.*,j.NAMA_JENJANG , b.NAMA, b.UNIT_KERJA, b.TEMPAT_LAHIR, b.TGL_LAHIR, s.STATUS_SL, s.LOKASI_DATA from biodata b, izin_belajar t,  status_studilanjut s,  jenjang_pendidikan j where t.NIK=b.NIK and t.ID_status_sl=s.ID_status_sl and t.ID_JENJANG=j.ID_JENJANG and t.NIK='$iduser' ORDER BY t.ID_IB DESC LIMIT 1"); 
+		$q=$this->db->query("SELECT t.*,j.NAMA_JENJANG , b.NAMA, b.UNIT_KERJA, f.ID_FAKULTAS, b.TEMPAT_LAHIR, b.TGL_LAHIR, s.STATUS_SL, s.LOKASI_DATA from biodata b, izin_belajar t,  status_studilanjut s,  jenjang_pendidikan j, fakultas f where t.NIK=b.NIK and t.ID_status_sl=s.ID_status_sl and t.ID_JENJANG=j.ID_JENJANG and f.id_unit_kerja = b.id_unit_kerja and t.NIK='$iduser' ORDER BY t.ID_IB DESC LIMIT 1"); 
 		return $q->result();
 	}
 

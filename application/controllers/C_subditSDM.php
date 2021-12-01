@@ -147,7 +147,7 @@ class C_subditSDM extends CI_Controller
         $lokasi = $this->input->post('lokasi');
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_tubel'] = $id;
         $nama = basename($_FILES[$id]['name']);
         $size = $_FILES[$id]['size'];
@@ -218,7 +218,7 @@ class C_subditSDM extends CI_Controller
         $lokasi = $this->input->post('lokasi');
         $config['upload_path'] = './file/tubel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_tubel'] = $id;
         $nama = basename($_FILES[$id]['name']);
         $size = $_FILES[$id]['size'];
@@ -352,7 +352,7 @@ class C_subditSDM extends CI_Controller
         $idjenis = '53'; //ntar diganti
         $config['upload_path'] = './file/ibel/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_ibel'] = $id;
         $nik = $this->input->post('nik');
         $nama = basename($_FILES[$id]['name']);
@@ -746,7 +746,7 @@ class C_subditSDM extends CI_Controller
         $idjenis = '29'; //ntar diganti
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_perpanjangan'] = $id;
         $nik = $this->input->post('nik');
         $lokasi = $this->input->post('lokasi');
@@ -801,7 +801,7 @@ class C_subditSDM extends CI_Controller
         $idjenis = '31'; //ntar diganti
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_perpanjangan'] = $id;
         $nik = $this->input->post('nik');
         $lokasi = $this->input->post('lokasi');
@@ -868,7 +868,7 @@ class C_subditSDM extends CI_Controller
         $idjenis = '55'; //ntar diganti
         $config['upload_path'] = './file/perpanjangan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_perpanjangan'] = $id;
         $nik = $this->input->post('nik');
         $lokasi = $this->input->post('lokasi');
@@ -977,7 +977,7 @@ class C_subditSDM extends CI_Controller
         $idjenis = '40'; //ntar diganti
         $config['upload_path'] = './file/pengaktifan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
-        $config['max_size'] = '2000000';
+        $config['max_size'] = '6000000';
         $config['id_pengaktifan'] = $id;
         $nik = $this->input->post('nik');
         $lokasi = $this->input->post('lokasi');

@@ -9,6 +9,7 @@
                   <center><h3 class="box-title">Konfirmasi Usulan Izin Belajar</h3></center>
                 </div>
                 <div class="box-body">
+                <center>
                  <form action="<?php echo base_url().'C_dosen/ubahStatusIB'?>" method="post">
                   <input type="hidden" class="form-control" name="ID_tubels" value="<?php echo $data[1]; ?>" >
                   <input type="hidden" name="status" value="<?php echo $data[0]; ?>">
@@ -23,6 +24,7 @@
                         <button type="submit" class="btn btn-success" name="btsub">Ajukan</button>
 
                 </form>
+                </center>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
 
