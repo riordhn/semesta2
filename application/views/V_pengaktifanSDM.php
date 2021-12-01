@@ -2,7 +2,7 @@
     <div class="container-fluid">
        <div class="box">
                 <div class="box-header">
-                  <center><h3 class="box-title">Verifikasi Usulan Izin Belajar</h3></center> <br>
+                  <center><h3 class="box-title">Verifikasi Usulan Pengaktifan Kembali</h3></center> <br>
                 </div><!-- /.box-header -->
                 <div class="box-body">
                   <table id="example1" class="table table-bordered table-striped">

@@ -810,7 +810,7 @@ class C_fakultas extends CI_Controller
         $namafile = array(
             'Berita Acara Pemeriksaan', 'DP3 Tahun Terakhir', 'Surat Keterangan Melaksanakan Tugas dan Mata Kuliah Yang Dibina', 'Surat Pengantar Pengajuan Pengaktifan', 'SK Kenaikan Pangkat', 'SK Kenaikan Jabatan');
         $jenisfile1 = array('35', '66', '37', '69', '58', '59');
-        $config['upload_path'] = './file/perpanjangan/'; //path folder
+        $config['upload_path'] = './file/pengaktifan/'; //path folder
         $config['allowed_types'] = 'pdf'; //type yang dapat diakses bisa anda sesuaikan
         $config['max_size'] = '6000000';
         $config['overwrite'] = true;
@@ -832,7 +832,7 @@ class C_fakultas extends CI_Controller
 
             $this->load->library('upload', $config);
             if (!empty($_FILES['file' . $j]['name'])) {
-                if (!move_uploaded_file($_FILES['file' . $j]["tmp_name"], "./file/perpanjangan/" . $new_name)) {
+                if (!move_uploaded_file($_FILES['file' . $j]["tmp_name"], "./file/pengaktifan/" . $new_name)) {
                     $this->upload->display_errors();
                 } else {
                     $upload = $this->upload->data();
@@ -852,7 +852,7 @@ class C_fakultas extends CI_Controller
         $update->saveSpmt($id);
         $update->update_status($id);
         //die;
-        redirect('C_fakultas/usulanPerpanjangan/');
+        redirect('C_fakultas/usulanPengaktifan/');
     }
 
     public function dokumenSetnegFak()
