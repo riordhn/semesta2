@@ -25,7 +25,7 @@
                         foreach($file as $file){?>
                       <tr>
                         <td><?php echo $a.".";?></td>
-                        <td><?php echo $file->ID_UP_FILE_T;?></td>
+                        <td><?php echo $file->NAMA_FILE_T;?></td>
                         <td><a href="<?php echo base_url();?>file/tubel/<?php echo $file->ID_UP_FILE_T?>" target="_blank">Lihat</a></td>
                         <form method="post" action="<?php echo base_url().'C_subditSDM/prosesFileTB'?>">
                           <input type="hidden" class="form-control" name="ID_TUB" value="<?php echo $file->ID_TUBEL?>" id="ID_UP_FILE_T">
