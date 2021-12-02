@@ -21,6 +21,8 @@
     <!-- <link href="<?php echo base_url().'assets/css/footer.css'?>" rel="stylesheet" type="text/css" /> -->
     <link href="<?php echo base_url().'assets/Argon/css/argon.css'?>" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('assets/favicon.png')?>">
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 
@@ -31,7 +33,7 @@
             <nav class="navbar navbar-static-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a href="<?php echo base_url().'C_dosen';?>" class="navbar-brand"><b>SEMESTA</b></a>
+                        <a href="<?php echo base_url().'C_dosen';?>" class="navbar-brand"><img height="30" src="<?php echo base_url('assets/login/logo-semesta-black.jpg?v=3')?>" /></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>

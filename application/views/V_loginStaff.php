@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="<?php echo base_url().'assets/login/bootstrap.min.css?v=2'?>">
     <link rel="stylesheet" href="<?php echo base_url().'assets/login/style.css?v=6'?>">
 
-
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('assets/favicon.png')?>">
 </head>
 
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
-
+        <img src="<?php echo base_url('assets/login/logo unair.png')?>" alt="Unair" width="100" height="100">
+        <img src="<?php echo base_url('assets/login/logo-sdm.png?v=1')?>" alt="Unair" height="100">
     </header><!-- End #header -->
     <main id="main">
         <div class="container d-flex flex-column align-items-center">
-            <img src="<?php echo base_url('assets/login/logo unair.png')?>" alt="Unair" width="100" height="100">
-            <h2 align="center">SEMESTA<br><small>Universitas Airlangga</small></h2>
+            <img src="<?php echo base_url('assets/login/logo-semesta.png?v=1')?>" alt="Unair" height="100">
         </div>
 
         <section id="contact" class="contact">

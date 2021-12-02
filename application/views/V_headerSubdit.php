@@ -28,6 +28,7 @@
         <script src="../../https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="../../https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+    <link rel="icon" type="image/x-icon" href="<?php echo base_url('assets/favicon.png')?>">
 </head>
 <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
 
@@ -38,7 +39,7 @@
             <nav class="navbar navbar-static-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a href="<?php echo base_url().'C_subditSDM';?>" class="navbar-brand"><b>SEMESTA</b></a>
+                        <a href="<?php echo base_url().'C_subditSDM';?>" class="navbar-brand"><img height="30" src="<?php echo base_url('assets/login/logo-semesta-black.jpg?v=3')?>" /></a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar-collapse">
                             <i class="fa fa-bars"></i>

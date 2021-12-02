@@ -54,6 +54,7 @@ p {
 	margin: 12px 15px 12px 15px;
 }
 </style>
+<link rel="icon" type="image/x-icon" href="<?php echo base_url('assets/favicon.png')?>">
 </head>
 <body>
 	<div id="container">

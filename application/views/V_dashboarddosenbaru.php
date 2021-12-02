@@ -3,6 +3,7 @@
     <head>
     <title>SEMESTA - Sistem Informasi Pendaftaran, Monitoring dan Evaluasi Studi Lanjut</title>
       <!-- <link href="<?php echo base_url().'assets/css/main.css?v=3'?>" rel="stylesheet" />-->
+      <link rel="icon" type="image/x-icon" href="<?php echo base_url('assets/favicon.png')?>">
     </head>
 <div class="container">
 <section class="content">
