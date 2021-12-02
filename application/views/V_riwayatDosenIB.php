@@ -55,7 +55,7 @@
 
         <div class="box-header">
             <center>
-                <h3 class="box-title">Riwayat Usulan Pengaktifan Kembali dari Izin Belajar</h3>
+                <h3 class="box-title">Riwayat Lapor Kelulusan dari Izin Belajar</h3>
             </center> <br>
         </div><!-- /.box-header -->
         <div class="box-body">
@@ -68,6 +68,7 @@
                         <th>Tanggal Pengajuan Pengaktifan Izin Belajar</th>
                         <th>Tanggal Lulus Izin Belajar</th>
                         <th>Detail Ibel</th>
+                        <th>Status</th>
                         <th>File Ijazah</th>
                     </tr>
                 </thead>
@@ -80,6 +81,11 @@
                             <?php echo $data->TEMPAT_LAHIR ?>, <?php echo $data->TGL_LAHIR ?></td>
                         <td><?php echo $data->TANGGAL_SUBMIT_PK_IB ?></td>
                         <td><?php echo $data->TGL_LULUS_IB ?></td>
+                        <?php if(!empty($data->APPROVAL_DATE)){ ?>
+                        <td>Izin Belajar Selesai</td>
+                        <?php } else { ?>
+                        <td>Menunggu Persetujuan SDM</td>
+                        <?php }?>
                         <td align="center"><a
                                 href="<?php echo base_url().'C_dosen/detailIbel/'.$data->ID_IB;?>"><button
                                     class="btn btn-primary btn-xs">Lihat Detail</button></a></td>
