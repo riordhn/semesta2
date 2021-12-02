@@ -188,8 +188,8 @@
                                         <option>Pilih Status Jabatan</option>
                                         <option <?php if($data->STATUS_JABATAN == 'Jabatan Fungsional Umum') echo 'selected'; ?>
                                             value="Fungsional">Jabatan Fungsional Umum</option>
-                                        <option <?php if($data->STATUS_JABATAN == 'Jabatan Fungsional Umum') echo 'selected'; ?>
-                                            value="Struktural">Jabatan Fungsional Umum</option>
+                                        <option <?php if($data->STATUS_JABATAN == 'Jabatan Fungsional Tertentu') echo 'selected'; ?>
+                                            value="Struktural">Jabatan Fungsional Tertentu</option>
                                     </select>
                                 </div>
     
