@@ -15,6 +15,7 @@
                         <th>Status Pegawai</th>
                         <th>Jenis Kepegawaian</th>
                         <th>Tanggal Lulus IB</th>
+                        <th>Status</th>
                         <th width="200px">Laporan</th>
                         <th width="100px"></th>
                       </tr>
@@ -30,11 +31,14 @@
                         <td><?php echo $data->STATUS_PEGAWAI?></td>
                         <td><?php echo $data->TANGGAL_SUBMIT_PK_IB?></td>
                         <?php if(!empty($data->APPROVAL_DATE)){ ?>
-                          <td>Menunggu Persetujuan SDM</td>
-                        <?php } else { ?>
                           <td>Izin Belajar Selesai</td>
+                          <?php } else { ?>
+                            <td>Menunggu Persetujuan SDM</td>
                           <?php } ?>
                         <td><a href='<?php echo base_url()."file/laporan/".$data->FILE_IJAZAH; ?>' target='_blank'>Ijazah</a></td>
+                        <td>
+                          <?php if(empty($data->APPROVAL_DATE)){ ?><a href="<?php echo base_url().'C_subditSDM/approveIB/'.$data->ID_PENGAKTIFAN;?>" class="btn btn-block btn-primary btn-sm" >Proses</a><?php } ?>
+                        </td>
                       </tr>
                         <?php } ?>
                     </tbody>
