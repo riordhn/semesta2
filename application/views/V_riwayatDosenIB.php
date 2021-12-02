@@ -67,8 +67,8 @@
                         <th>Nama | NIP | TTL</th>
                         <th>Tanggal Pengajuan Pengaktifan Izin Belajar</th>
                         <th>Tanggal Lulus Izin Belajar</th>
-                        <th>Detail Ibel</th>
                         <th>Status</th>
+                        <th>Detail Ibel</th>
                         <th>File Ijazah</th>
                     </tr>
                 </thead>
