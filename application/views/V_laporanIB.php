@@ -29,8 +29,12 @@
                         <td><?php echo $data->PANGKAT_GOLONGAN?></td>
                         <td><?php echo $data->STATUS_PEGAWAI?></td>
                         <td><?php echo $data->TANGGAL_SUBMIT_PK_IB?></td>
-                        <td><a href='<?php base_url()."file/laporan/".$data->FILE_IJAZAH
-?>' target='_blank'>Ijazah</a></td>
+                        <?php if(!empty($data->APPROVAL_DATE)){ ?>
+                          <td>Menunggu Persetujuan SDM</td>
+                        <?php } else { ?>
+                          <td>Izin Belajar Selesai</td>
+                          <?php } ?>
+                        <td><a href='<?php echo base_url()."file/laporan/".$data->FILE_IJAZAH; ?>' target='_blank'>Ijazah</a></td>
                       </tr>
                         <?php } ?>
                     </tbody>
