@@ -142,26 +142,43 @@
                                     value="<?php echo $data->JENIS_KEPEGAWAIAN ?>" required />
                             </div>
 
-                            <div class="form-group">
-                                <label for="StatusJab">Status Jabatan</label></br>
-                                <select class="form-control" name="StatusJab" id="StatusJab" required="">
-                                    <option>Pilih Status Jabatan</option>
-                                    <option <?php if($data->STATUS_JABATAN == 'Fungsional') echo 'selected'; ?>
-                                        value="Fungsional">Fungsional</option>
-                                    <option <?php if($data->STATUS_JABATAN == 'Struktural') echo 'selected'; ?>
-                                        value="Struktural">Struktural</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="Nama Jabatan">Nama Jabatan</label>
-                                <input type="text" class="form-control" name="namaJab" placeholder="Nama Jabatan"
-                                    value="<?php echo $data->NAMA_JABATAN ?>" required />
-                            </div>
+                            <?php if($data->STATUS_PEGAWAI == 'Dosen'){ ?>
+                                <div class="form-group">
+                                    <label for="StatusJab">Status Jabatan</label></br>
+                                    <input type="text" class="form-control" name="StatusJab" readonly="" value="Fungsional" required />
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="Nama Jabatan">Nama Jabatan</label>
+                                    <select class="form-control" name="namaJab" id="namaJab" required="">
+                                        <option value="">Pilih Jabatan</option>
+                                        <option value="Asisten Ahli" <?php if($data->NAMA_JABATAN =='Asisten Ahli') echo 'selected'; ?> >Asisten Ahli</option>
+                                        <option value="Lektor" <?php if($data->NAMA_JABATAN =='Lektor') echo 'selected'; ?> >Lektor</option>
+                                        <option value="Lektor Kepala" <?php if($data->NAMA_JABATAN =='Lektor Kepala') echo 'selected'; ?> >Lektor Kepala</option>
+                                        <option value="Guru Besar" <?php if($data->NAMA_JABATAN =='Guru Besar') echo 'selected'; ?> >Guru Besar</option>
+                                    </select>
+                                </div>
+                            <?php } else{ ?>
+                                <div class="form-group">
+                                    <label for="StatusJab">Status Jabatan</label></br>
+                                    <select class="form-control" name="StatusJab" id="StatusJab" required="">
+                                        <option>Pilih Status Jabatan</option>
+                                        <option <?php if($data->STATUS_JABATAN == 'Jabatan Fungsional Umum') echo 'selected'; ?>
+                                            value="Fungsional">Jabatan Fungsional Umum</option>
+                                        <option <?php if($data->STATUS_JABATAN == 'Jabatan Fungsional Umum') echo 'selected'; ?>
+                                            value="Struktural">Jabatan Fungsional Umum</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="Nama Jabatan">Nama Jabatan</label>
+                                    <input type="text" class="form-control" name="namaJab" value="<?php echo $data->STATUS_JABATAN; ?>" required />
+                                </div>
+                            <?php } ?>
 
                             <div class="form-group">
                                 <label for="Nama Jabatan">Foto (*Get dari cyber)</label>
-                                <p><img src="<?php echo $data->FOTO1; ?>" /></p>
+                                <p><img style="width: 350px;" src="<?php echo $data->FOTO1; ?>" /></p>
                             </div><!-- /.form group -->
 
                             <!-- /.box-body -->
