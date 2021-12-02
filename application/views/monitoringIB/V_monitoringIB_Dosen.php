@@ -69,7 +69,7 @@
                     $month=array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
                       $pecah=explode('-', $data->Selesai);
                       echo date_format(date_create($data->Selesai), 'd M Y');?></td>
-                  ?></td>
+                  </td>
                             </tr>
 
 
