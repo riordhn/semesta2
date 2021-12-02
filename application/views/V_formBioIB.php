@@ -195,7 +195,7 @@
     
                                 <div class="form-group">
                                     <label for="Nama Jabatan">Nama Jabatan</label>
-                                    <input type="text" class="form-control" name="namaJab" value="<?php echo $data->STATUS_JABATAN; ?>" required />
+                                    <input type="text" class="form-control" name="namaJab" value="<?php echo $data->NAMA_JABATAN; ?>" required />
                                 </div>
                             <?php } ?>
 

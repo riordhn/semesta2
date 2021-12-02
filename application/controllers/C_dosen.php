@@ -178,12 +178,6 @@ class C_dosen extends CI_Controller
             $this->load->view('V_ditangguhkanDosenNon', $data);
             $this->load->view('V_footerDosen');
         }
-
-        //if ($row==0) {
-        // if (empty($data['tubel'])) {
-        //     $this->M_Tubel_Dosen->updateStatusSL($id1);
-        //  }
-
     }
 
     public function formtb()

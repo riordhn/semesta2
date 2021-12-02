@@ -22,7 +22,15 @@
                         <td><?php echo $a.'.' ?></td>
                         <td><?php echo $data->NAMA ?><br> <?php echo $data->NIK ?><br> <?php echo $data->TEMPAT_LAHIR ?>, <?php echo $data->TGL_LAHIR ?></td>
                         <td><?php echo $data->UNIT_KERJA ?></td>
-                        <td><?php echo $data->STATUS_SL?></td>
+                        <td><?php 
+                        if($data->STATUS_SL=="Submit dari Fakultas" && $data->ID_FAKULTAS >= 16){
+                            echo "Submit dari Dosen/Tendik non-fakultas" ;
+                          }else{
+                          echo $data->STATUS_SL;
+                        }
+                        ?>
+                        </td>
+                        
                         <td><?php echo $data->LOKASI_DATA?></td>
                       </tr>
                        <?php } ?>

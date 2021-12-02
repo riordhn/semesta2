@@ -269,13 +269,13 @@ class M_Ibel_Dosen extends CI_Model{
 
 	public function fileIbelditangguhkan($id)
 	{
-		$q=$this->db->query("SELECT * FROM upload_file_ib WHERE ID_IB='$id' and STATUS_FILE_IB=1 and ID_JENIS IN (42,43,45,46,47,48);");
+		$q=$this->db->query("SELECT * FROM upload_file_ib WHERE ID_IB='$id' and STATUS_FILE_IB=1 and ID_JENIS IN (42,43,44,45,46,47,48);");
 		return $q->result();
 	}
 
 	public function fileIbelditangguhkanNon($id)
 	{
-		$q=$this->db->query("SELECT * FROM upload_file_ib WHERE ID_IB='$id' and STATUS_FILE_IB=1 and ID_JENIS IN (42,43,45,46,47,48,46,49,50,51,52,70);");
+		$q=$this->db->query("SELECT * FROM upload_file_ib WHERE ID_IB='$id' and STATUS_FILE_IB=1 and ID_JENIS IN (42,43,44,45,46,47,48,46,49,50,51,52,70);");
 		return $q->result();
 	}
 

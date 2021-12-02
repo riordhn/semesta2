@@ -28,7 +28,13 @@
                          <td><?php echo $data->PANGKAT_GOLONGAN?></td>
                         <td><?php echo $data->STATUS_PEGAWAI?></td>
                         <td><?php echo $data->JENIS_KEPEGAWAIAN?></td>
-                         <td><?php echo $data->STATUS_SL?></td>
+                         <td><?php
+                         if($data->STATUS_SL=="Submit dari Fakultas" && $data->ID_FAKULTAS >= 16){
+                          echo "Submit dari Dosen/Tendik non-fakultas" ;
+                        }else{
+                        echo $data->STATUS_SL;
+                      }
+                         ?></td>
                         <td><?php echo $data->LOKASI_DATA?></td>
                         <td><?php if($data->ID_STATUS_SL>=2){ ?><a href="<?php echo base_url().'C_subditSDM/prosesIBSubdit/'.$data->ID_IB;?>" class="btn btn-block btn-primary btn-sm" >Proses</a><?php } ?></td>
                       </tr>
