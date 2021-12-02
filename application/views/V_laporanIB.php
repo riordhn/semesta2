@@ -37,7 +37,7 @@
                           <?php } ?>
                         <td><a href='<?php echo base_url()."file/laporan/".$data->FILE_IJAZAH; ?>' target='_blank'>Ijazah</a></td>
                         <td>
-                          <?php if(empty($data->APPROVAL_DATE)){ ?><a href="<?php echo base_url().'C_subditSDM/approveIB/'.$data->ID_PENGAKTIFAN;?>" class="btn btn-block btn-primary btn-sm" >Proses</a><?php } ?>
+                          <?php if(empty($data->APPROVAL_DATE)){ ?><a href="<?php echo base_url().'C_subditSDM/approveIB/'.$data->ID_PENGAKTIFAN_IB;?>" class="btn btn-block btn-primary btn-sm" >Proses</a><?php } ?>
                         </td>
                       </tr>
                         <?php } ?>

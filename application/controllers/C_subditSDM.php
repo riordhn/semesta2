@@ -9,6 +9,7 @@ class C_subditSDM extends CI_Controller
         parent::__construct();
 
         $this->load->helper(array('form'));
+        $this->load->model('ORMPengaktifanIB');
         if ($this->session->userdata('masuk') != true) {
             $url = base_url('C_loginStaff');
             redirect($url);
@@ -1260,5 +1261,13 @@ class C_subditSDM extends CI_Controller
         $data['rekap'] = $this->M_Tubel_Subdit->excelRegister();
         $data['rekapib'] = $this->M_Tubel_Subdit->excelRegisterIB();
         $this->load->view('V_excelRegister', $data);
+    }
+
+    public function approveIB($id){
+        $item = ORMPengaktifanIB::find($id);
+        $item->APPROVAL_DATE = date("Y-m-d H:i:s");
+        $item->save();
+
+        redirect($_SERVER['HTTP_REFERER']);
     }
 }
