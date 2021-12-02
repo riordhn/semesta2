@@ -30,9 +30,9 @@ class M_Ibel_Dosen extends CI_Model{
             'label' => 'Tgl Mulai',
 			'rules' => 'required'],
 			
-			['field' => 'selesai',
-            'label' => 'Tgl Selesai',
-			'rules' => 'required']
+			// ['field' => 'selesai',
+            // 'label' => 'Tgl Selesai',
+			// 'rules' => 'required']
 
 		
 		];

@@ -46,10 +46,10 @@
                         <input type="date" class="form-control" name="mulai" required/>
                     </div>
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="Rumpun">Selesai Izin Belajar</label>
                         <input type="date" class="form-control" name="selesai" required/>
-                    </div>
+                    </div> -->
 
 
                     
