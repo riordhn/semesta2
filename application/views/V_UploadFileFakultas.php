@@ -141,7 +141,7 @@
                                         <td></td>
                                     </tr>
 
-                                    <!-- <tr>
+                                    <tr>
                                         <td>11.</td>
                                         <td width="700px">Surat Pengantar Pengajuan Tugas Belajar</td>
                                         <td>
@@ -157,7 +157,7 @@
                                             <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp"
                                                 class="form-control" name="file67"></td>
                                         <td></td>
-                                    </tr> -->
+                                    </tr>
                                 </table>
 
                                 <div class="box-footer">

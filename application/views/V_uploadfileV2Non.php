@@ -664,7 +664,7 @@
                                 </tr>
                                 </form>
 
-                                <!-- <form role="form"
+                                <form role="form"
                                     action="<?php echo base_url().'C_dosen/upload_fileV2/'.$id->id_tubel; ?>"
                                     method="POST" enctype="multipart/form-data" />
                                 <input type="hidden" name="idjenis" value="67">
@@ -694,7 +694,7 @@
                                     <td align="center">&#9989;</td>
                                     <?php } }?>
                                 </tr>
-                                </form> -->
+                                </form>
 
                             </table>
 
