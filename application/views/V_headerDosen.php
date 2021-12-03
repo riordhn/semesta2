@@ -52,7 +52,7 @@
                                             <?php if($this->session->userdata('tugas_belajar_active') && !in_array($this->session->userdata('tugas_belajar_active')->ID_STATUS_SL, [7])){ ?>
                                                 (Proses pengajuan)
                                             <?php } else if($this->session->userdata('tugas_belajar_active') && in_array($this->session->userdata('tugas_belajar_active')->ID_STATUS_SL, [7])){ ?>
-                                                (Sudah diajukan)
+                                                <!-- (Sudah diajukan) -->
                                             <?php } ?>
                                         </a>
                                     </li>
@@ -74,7 +74,7 @@
                                             <?php if($this->session->userdata('izin_belajar_active') && !in_array($this->session->userdata('izin_belajar_active')->ID_STATUS_SL, [7])){ ?>
                                                 (Proses pengajuan)
                                             <?php } else if($this->session->userdata('izin_belajar_active') && in_array($this->session->userdata('izin_belajar_active')->ID_STATUS_SL, [7])){ ?>
-                                                (Sudah diajukan)
+                                                <!-- (Sudah diajukan) -->
                                             <?php } ?>
                                         </a>
                                     </li>
