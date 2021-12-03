@@ -194,7 +194,7 @@ class M_Tubel_Subdit extends CI_Model{
 
 	//proses tb belum selesai
 	public function getTubelPros(){  
-		$q=$this->db->query("Select t.*, b.NAMA, b.UNIT_KERJA, b.PANGKAT_GOLONGAN, b.STATUS_PEGAWAI, b.JENIS_KEPEGAWAIAN, b.TEMPAT_LAHIR, b.TGL_LAHIR, t.ID_status_sl, s.STATUS_SL, s.LOKASI_DATA, (SELECT COUNT(ID_UP_FILE_T) FROM upload_file_tubel WHERE ID_TUBEL=t.ID_TUBEL and STATUS_FILE_TUBEL=1) as NUM, (SELECT COUNT(ID_UP_FILE_T) FROM upload_file_tubel WHERE ID_TUBEL=t.ID_TUBEL and STATUS_FILE_TUBEL=2) as CEK from biodata b, tugas_belajar t,  status_studilanjut s where t.NIK=b.NIK and t.ID_status_sl=s.ID_status_sl and t.ID_status_sl!=7"); 
+		$q=$this->db->query("Select t.*, b.NAMA, b.UNIT_KERJA, b.PANGKAT_GOLONGAN, b.STATUS_PEGAWAI, b.JENIS_KEPEGAWAIAN, b.TEMPAT_LAHIR, b.TGL_LAHIR, t.ID_status_sl, s.STATUS_SL, s.LOKASI_DATA, (SELECT COUNT(ID_UP_FILE_T) FROM upload_file_tubel WHERE ID_TUBEL=t.ID_TUBEL and STATUS_FILE_TUBEL=1) as NUM, (SELECT COUNT(ID_UP_FILE_T) FROM upload_file_tubel WHERE ID_TUBEL=t.ID_TUBEL and STATUS_FILE_TUBEL=2) as CEK from biodata b, tugas_belajar t,  status_studilanjut s where t.NIK=b.NIK and t.ID_status_sl=s.ID_status_sl and t.ID_status_sl in (2,3,6,10)"); 
 		return $q->result();
 	}
 
