@@ -19,7 +19,7 @@
                                         <th>No.</th>
                                         <th>Nama Dokumen</th>
                                         <!-- <th>Template</th> -->
-                                        <th>Unggah (Format PDF dengan ukuran maksimal 2 MB)</th>
+                                        <th>Unggah (Format PDF dengan ukuran maksimal 5 MB)</th>
 
                                     </tr>
 

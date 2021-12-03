@@ -44,37 +44,37 @@
                     <div class="form-group">
                       <li><label>Berkas Pernyataan Keterlambatan Tugas Belajar Bukan atas Kelalaian ybs:</label></li></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file0" required /></br>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <li><label>Surat Rekomendasi dari Lembaga Pendidikan Tempat Pegawai Pelajar untuk <br> Memperpanjang Masa Tugas Belajar:</label></li></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file1" required/></br>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <li><label>Surat Rekomendasi jaminan perpanjangan pembiayaan tugas belajar dari pemberi beasiswa:</label></li></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file2" required/></br>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                      <div class="form-group">
                       <li><label>Surat Rekomendasi Perpanjangan Tubel dari pimpinan unit kerja<br> (ttd. Kedep mengetahui Dekan Fak):</label></li><br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file3" required>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                      </div><!-- /.form group -->
 
                      <div class="form-group">
                       <li><label>SK Kenaikan Pangkat Terakhir (*jika mengalami kenaikan pangkat saat masa studi):</label></li><br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file4">
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                      </div><!-- /.form group -->
 
                      <div class="form-group">
                       <li><label>SK Kenaikan Jabatan Terakhir (*jika mengalami kenaikan jabatan saat masa studi):</label></li><br> 
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file5">
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                      </div><!-- /.form group -->
                      
                      <div class="form-group">
@@ -87,7 +87,7 @@
                         <input type="text" class="form-control" name="jabatan" placeholder="Jabatan Atasan" required><br>
                         <strong>Unggah Berkas:</strong><br>
                         <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file6" required>
-                         *Format berkas PDF dengan ukuran maksimal 2 MB
+                         *Format berkas PDF dengan ukuran maksimal 5 MB
                      </div><!-- /.form group -->
                         
 

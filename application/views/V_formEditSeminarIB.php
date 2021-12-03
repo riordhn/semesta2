@@ -64,7 +64,7 @@
                       <label>Pindaian (Scan) Sertifikat:</label></br>
                       <a href="<?php echo base_url();?>file/monitoring/<?php echo $data->FILE_UPLOAD_BUKTI ?>" target="_blank"><?php echo $data->FILE_UPLOAD_BUKTI ?></a> 
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="sertif" /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <input type="Hidden" class="form-control" name="filekeg" placeholder="NIK" value="<?php echo $data->FILE_UPLOAD_BUKTI;?> "/>

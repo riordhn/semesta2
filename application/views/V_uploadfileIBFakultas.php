@@ -16,7 +16,7 @@
                             <tr>
                               <th>No.</th>
                               <th>Dokumen</th>
-                              <th>Unggah (format PDF/image, maks. 2 MB)</th>
+                              <th>Unggah (format PDF/image, maks. 5 MB)</th>
                             </tr>
                             <tr>
                               <td>1. </td>

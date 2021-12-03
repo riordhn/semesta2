@@ -203,7 +203,7 @@
                             <div class="form-group">
                                 <label>Unggah Pas Foto:</label></br>
                                 <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto" required /></br>
-                                format berkas jpg. dengan ukuran maksimal 2 MB
+                                format berkas jpg. dengan ukuran maksimal 5 MB
                             </div><!-- /.form group -->
                             <?php } else { ?>
                             <div class="form-group">
@@ -212,7 +212,7 @@
                                         target="_blank"><?php echo $data->FOTO1 ?></a></p>
                                 <p><strong>Jika ingin merubah</strong>, silahkan unggah kembali Pas Foto:</p></br>
                                 <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="foto" /></br>
-                                format berkas jpg. dengan ukuran maksimal 2 MB
+                                format berkas jpg. dengan ukuran maksimal 5 MB
                             </div><!-- /.form group -->
                             <?php } ?>
 

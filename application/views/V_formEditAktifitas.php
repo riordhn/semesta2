@@ -44,7 +44,7 @@
                     <div class="form-group">
                       <label>Berkas KHS:</label>&nbsp&nbsp</br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="khs" /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <input type="Hidden" class="form-control" name="filekhs" placeholder="NIK" value="<?php echo $data->FILE_KHS;?> "/>
@@ -52,7 +52,7 @@
                     <div class="form-group">
                       <label>Berkas KRS:</label>&nbsp&nbsp</br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="krs" /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <input type="Hidden" class="form-control" name="filekrs" placeholder="NIK" value="<?php echo $data->FILE_KRS;?> "/>
@@ -70,7 +70,7 @@
                     <div class="form-group">
                       <label>Berkas Disertasi:</label></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="disertasi" /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <input type="Hidden" class="form-control" name="filediser" placeholder="NIK" value="<?php echo $data->FILE_DISERTASI_THESIS;?> "/>

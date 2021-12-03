@@ -16,7 +16,7 @@
                               <th>Jenis Pengajuan</th>
                               <th>Tanggal ditangguhkan</th>
                               <th>Keterangan Kesalahan</th>
-                              <th>Unggah (format PDF, maks. 2 MB)</th>
+                              <th>Unggah (format PDF, maks. 5 MB)</th>
                             </tr>
                             
 

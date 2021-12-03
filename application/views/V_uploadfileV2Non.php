@@ -17,7 +17,7 @@
                                     <th>Dokumen</th>
                                     <!-- <th>Template</th> -->
                                     <th width="250px">Status Berkas</th>
-                                    <th colspan="2">Unggah(format PDF, maks. 2 MB)</th>
+                                    <th colspan="2">Unggah(format PDF, maks. 5 MB)</th>
                                 </tr>
 
 

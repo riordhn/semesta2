@@ -43,19 +43,19 @@
                     <div class="form-group">
                       <label>Berkas Pernyataan Keterlambatan Tugas Belajar Bukan atas Kelalaian ybs:</label></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file0" required /></br>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <label>Surat Rekomendasi dari Lembaga Pendidikan Tempat Pegawai Pelajar untuk Memperpanjang Masa Tugas Belajar:</label></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file1" required/></br>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <label>Surat Rekomendasi jaminan perpanjangan pembiayaan tugas belajar dari pemberi beasiswa:</label></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="file2" required/></br>
-                      *Format berkas PDF dengan ukuran maksimal 2 MB
+                      *Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
                   <div class="box-footer" >
                   <a href="<?php echo base_url().'C_dosen' ?>" class="btn btn-primary">Kembali</a>

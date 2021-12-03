@@ -42,13 +42,13 @@
                     <div class="form-group">
                       <label>Berkas KHS:</label>&nbsp&nbsp</br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="khs" required /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <label>Berkas KRS:</label>&nbsp&nbsp</br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="krs" required /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
@@ -64,13 +64,13 @@
                     <div class="form-group">
                       <label>Berkas Disertasi:</label></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="disertasi" /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                     <div class="form-group">
                       <label>Berkas Evaluasi Bimbingan:</label></br>
                       <input type="file" accept=".png, .jpg, .jpeg, .pdf, .bmp" class="form-control" name="evaluasi" required /></br>
-                      Format berkas PDF dengan ukuran maksimal 2 MB
+                      Format berkas PDF dengan ukuran maksimal 5 MB
                     </div><!-- /.form group -->
 
                   <!-- /.box-body -->
