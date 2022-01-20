@@ -166,9 +166,10 @@ class C_loginDosen extends CI_Controller
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         $result = curl_exec($ch);
-        // $res = json_decode($result, true);
+        $res = json_decode($result, true);
 
-        var_dump($result); die;
+        var_dump($result);
+        var_dump($res); die;
 
     }
 
