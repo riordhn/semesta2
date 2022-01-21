@@ -91,7 +91,7 @@ class C_loginDosen extends CI_Controller
             $postdata = "token=" . $token;
             $postdata .= "&nip=" . $nik;
 
-            $ch = curl_init($url);
+            $ch = curl_init($urldosen);
 
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
