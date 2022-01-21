@@ -83,10 +83,25 @@ class C_loginDosen extends CI_Controller
         
 
         if($status_user == 'Dosen'){
-            $urldosen = "https://apicybercampus.unair.ac.id/api/dosen/view1?access-token=" . $token . "&nip=" . $nik;
+            $token = $this->authuser2();
+
+            // $urldosen = "https://apicybercampus.unair.ac.id/api/dosen/view1?access-token=" . $token . "&nip=" . $nik;
+            $urldosen = "https://apicybercampus.unair.ac.id/api/dosen/view1";
+
+            $postdata = "token=" . $token;
+            $postdata .= "&nip=" . $nik;
+
+            $ch = curl_init($url);
+
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+            $json = curl_exec($ch);
 
             // for dosen
-            $json = file_get_contents($urldosen);
+            // $json = file_get_contents($urldosen);
             $response = json_decode($json, true);
             $data_dosen = $response['items'];
 
@@ -168,9 +183,7 @@ class C_loginDosen extends CI_Controller
         $result = curl_exec($ch);
         $res = json_decode($result, true);
 
-        var_dump($result);
-        var_dump($res); die;
-
+        return $res;
     }
 
     public function authuser()
