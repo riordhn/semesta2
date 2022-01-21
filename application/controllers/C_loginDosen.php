@@ -183,7 +183,13 @@ class C_loginDosen extends CI_Controller
         $result = curl_exec($ch);
         $res = json_decode($result, true);
 
-        return $res;
+        $callbacktype = isset($_GET['callbacktype']) ? $_GET['callbacktype'] : NULL;
+
+        if(!empty($callbacktype)){
+            var_dump($res); die;
+        }else{
+            return $res;
+        }
     }
 
     public function authuser()
