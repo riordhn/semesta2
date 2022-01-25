@@ -32,6 +32,11 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
+                        <?php if(isset($_SESSION['er'])) { ?>
+                            <div class="alert alert-danger" role="alert">
+                                <?php echo $_SESSION['er']; ?>
+                            </div>
+                        <?php } ?>
                         <form id="w0" class="php-email-form" action="<?php echo base_url().'C_loginDosen/authuser1';?>"
                             method="post">
                             <div class="row">
