@@ -115,10 +115,25 @@ class C_loginDosen extends CI_Controller
                 $bio->updateDosen($data_dosen, $dataken);
             }
         }else{
-            $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1?access-token=" . $token . "&nip=" . $nik;
+            $token = $this->authuser2();
+
+            // $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1?access-token=" . $token . "&nip=" . $nik;
+            $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1";
+
+            $postdata = "token=" . $token;
+            $postdata .= "&nip=" . $nik;
+
+            $ch = curl_init($urlpegawai);
+
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+            $json1 = curl_exec($ch);
 
             // for tendik
-            $json1 = file_get_contents($urlpegawai);
+            // $json1 = file_get_contents($urlpegawai);
             $response = json_decode($json1, true);
             $data_pegawai = $response['items'];
 
