@@ -208,12 +208,12 @@ class M_Tubel_Subdit extends CI_Model{
 
 	//tabel register
 	public function excelRegister(){  
-		$q=$this->db->query("Select t.*, t.mulai_tubel as mul, b.*, (Select mulai_perpanjangan from perpanjangan where ID_TUBEL=t.ID_TUBEL order by id_perpanjangan ASC limit 1) mulai_perpanjangan, (Select tanggal_lulus from pengaktifan_kembali where ID_TUBEL=t.ID_TUBEL order by id_pengaktifan ASC limit 1) tanggal_lulus, j.lama_studi, n.nama_negara from tugas_belajar t join biodata b on t.nik=b.nik join jenjang_pendidikan j on t.ID_JENJANG=j.ID_JENJANG join negara n on t.ID_NEGARA=n.ID_NEGARA"); 
+		$q=$this->db->query("Select t.*, t.mulai_tubel as mul, b.*, (Select mulai_perpanjangan from perpanjangan where ID_TUBEL=t.ID_TUBEL order by id_perpanjangan ASC limit 1) mulai_perpanjangan, (Select tanggal_lulus from pengaktifan_kembali where ID_TUBEL=t.ID_TUBEL order by id_pengaktifan ASC limit 1) tanggal_lulus, j.lama_studi, n.nama_negara from tugas_belajar t join biodata b on t.nik=b.nik join jenjang_pendidikan j on t.ID_JENJANG=j.ID_JENJANG join negara n on t.ID_NEGARA=n.ID_NEGARA where t.ID_status_sl in (2,3,6,10)"); 
 		return $q->result();
 	}
 
 	public function excelRegisterIB(){  
-		$q=$this->db->query("Select t.*, b.*, (Select tgl_lulus_ib from pengaktifan_ib where ID_IB=t.ID_IB) tanggal_lulus, j.lama_studi from izin_belajar t join biodata b on t.nik=b.nik join jenjang_pendidikan j on t.ID_JENJANG=j.ID_JENJANG "); 
+		$q=$this->db->query("Select t.*, b.*, (Select tgl_lulus_ib from pengaktifan_ib where ID_IB=t.ID_IB) tanggal_lulus, j.lama_studi from izin_belajar t join biodata b on t.nik=b.nik join jenjang_pendidikan j on t.ID_JENJANG=j.ID_JENJANG where t.ID_status_sl in (2,3,6,10)"); 
 		return $q->result();
 	}
 
