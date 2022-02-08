@@ -135,7 +135,7 @@ class C_loginDosen extends CI_Controller
                 }
             }
 
-        if ($sta == "success") {
+        // if ($sta == "success") {
 
             $cek_user = $this->M_dosen->getAuth($username);
             //foreach ($items as $user) {
@@ -156,11 +156,11 @@ class C_loginDosen extends CI_Controller
 
                 echo "gagal";
             }
-        } else { // jika username dan password tidak ditemukan atau salah
-            $url = base_url();
-            echo $this->session->set_flashdata('er', 'Username Atau Password Salah');
-            redirect($url);
-        }
+        // } else { // jika username dan password tidak ditemukan atau salah
+        //     $url = base_url();
+        //     echo $this->session->set_flashdata('er', 'Username Atau Password Salah');
+        //     redirect($url);
+        // }
 
     }
 
