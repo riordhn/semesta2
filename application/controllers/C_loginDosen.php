@@ -32,57 +32,38 @@ class C_loginDosen extends CI_Controller
         $username = htmlspecialchars($this->input->post('username', true), ENT_QUOTES);
         $password = htmlspecialchars($this->input->post('password', true), ENT_QUOTES);
 
-        //$url = "https://uacc.unair.ac.id/api/auth/login"; // The POST URL
-        $url = "https://apicybercampus.unair.ac.id/api/auth/login";
-        // The POST Data
-        $postdata = "LoginForm[username]=" . $username;
-        $postdata .= "&LoginForm[password]=" . $password;
+        $nik = $username;
 
-        // print_r($postdata);
-        // die;
+        // $url = "https://apicybercampus.unair.ac.id/api/auth/login";
+        // $postdata = "LoginForm[username]=" . $username;
+        // $postdata .= "&LoginForm[password]=" . $password;
 
-        $ch = curl_init($url);
+        // $ch = curl_init($url);
 
-        // Set the request type to POST
-        curl_setopt($ch, CURLOPT_POST, true);
-        // Pass the post parameters as a naked string
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+        // curl_setopt($ch, CURLOPT_POST, true);
+        // curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        // $result = curl_exec($ch);
+        // $res = json_decode($result, true);
 
-        // Option to Return the Result, rather than just true/false
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        // $sta = $res['status'];
 
-        // Perform the request, and save content to $result
-        $result = curl_exec($ch);
-        $res = json_decode($result, true);
+        // if ($sta == "error") {
+        //     $this->session->set_flashdata('er', 'NIK/Password anda salah atau tidak ditemukan');
+        //     redirect('C_loginDosen/');
+        // }
 
-        // Show the result?
+        // $dataken = $res['data'];
+        // $token = $res['data']['token'];
+        // $nik = $res['data']['username'];
+        // $namauser = $res['data']['name'];
+        // $status_user = (!empty($res['data']['pegawai']))? 'Tendik' : 'Dosen';
 
-        //      echo "<pre>";
-        //      print_r($result);
+        // $this->session->set_userdata('token', $token);
+        // $this->session->set_userdata('NIK', $nik);
+        // $this->session->set_userdata('Nama', $namauser);
 
-        // die;
-        $sta = $res['status'];
-
-        if ($sta == "error") {
-            $this->session->set_flashdata('er', 'NIK/Password anda salah atau tidak ditemukan');
-            redirect('C_loginDosen/');
-
-        }
-
-        $dataken = $res['data'];
-        $token = $res['data']['token'];
-        $nik = $res['data']['username'];
-        $namauser = $res['data']['name'];
-        $status_user = (!empty($res['data']['pegawai']))? 'Tendik' : 'Dosen';
-
-        $this->session->set_userdata('token', $token);
-        $this->session->set_userdata('NIK', $nik);
-        $this->session->set_userdata('Nama', $namauser);
-
-        //$url = "https://uacc.unair.ac.id/api/view-beasiswa-sdm?access-token=".$token."&USERNAME=".$nik;
-        
-
-        if($status_user == 'Dosen'){
+        // if($status_user == 'Dosen'){
             $token = $this->authuser2();
 
             // $urldosen = "https://apicybercampus.unair.ac.id/api/dosen/view1?access-token=" . $token . "&nip=" . $nik;
@@ -105,53 +86,54 @@ class C_loginDosen extends CI_Controller
             $response = json_decode($json, true);
             $data_dosen = $response['items'];
 
-            $cek_user = $this->M_dosen->getAuth($username);
+            if(empty($data_dosen)){
+                $token = $this->authuser2();
 
-            //Cek Apakah user sudah tersimpan di database
-
-            if ($cek_user->num_rows() == 0) {
-                $bio->insertDosen($data_dosen, $dataken);
+                // $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1?access-token=" . $token . "&nip=" . $nik;
+                $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1";
+    
+                $postdata = "token=" . $token;
+                $postdata .= "&nip=" . $nik;
+    
+                $ch = curl_init($urlpegawai);
+    
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+    
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    
+                $json1 = curl_exec($ch);
+    
+                // for tendik
+                // $json1 = file_get_contents($urlpegawai);
+                $response = json_decode($json1, true);
+                $data_pegawai = $response['items'];
+    
+                $cek_user = $this->M_dosen->getAuth($username);
+    
+                //Cek Apakah user sudah tersimpan di database
+                if ($cek_user->num_rows() == 0) {
+                    $bio->insertTendik($data_pegawai, $dataken);
+                }else{
+                    $bio->updateTendik($data_pegawai, $dataken);
+                }
+    
+                $biodata = ORMBiodata::find($nik);
+                if($fakultas = ORMFakultas::where('ID_UNIT_KERJA', $biodata->ID_UNIT_KERJA)->first()){
+                    $biodata->UNIT_KERJA = $fakultas->FAKULTAS;
+                    $biodata->save();
+                }
             }else{
-                $bio->updateDosen($data_dosen, $dataken);
+                $cek_user = $this->M_dosen->getAuth($username);
+    
+                //Cek Apakah user sudah tersimpan di database
+    
+                if ($cek_user->num_rows() == 0) {
+                    $bio->insertDosen($data_dosen, $dataken);
+                }else{
+                    $bio->updateDosen($data_dosen, $dataken);
+                }
             }
-        }else{
-            $token = $this->authuser2();
-
-            // $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1?access-token=" . $token . "&nip=" . $nik;
-            $urlpegawai = "https://apicybercampus.unair.ac.id/api/pegawai/view1";
-
-            $postdata = "token=" . $token;
-            $postdata .= "&nip=" . $nik;
-
-            $ch = curl_init($urlpegawai);
-
-            curl_setopt($ch, CURLOPT_POST, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
-
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-            $json1 = curl_exec($ch);
-
-            // for tendik
-            // $json1 = file_get_contents($urlpegawai);
-            $response = json_decode($json1, true);
-            $data_pegawai = $response['items'];
-
-            $cek_user = $this->M_dosen->getAuth($username);
-
-            //Cek Apakah user sudah tersimpan di database
-            if ($cek_user->num_rows() == 0) {
-                $bio->insertTendik($data_pegawai, $dataken);
-            }else{
-                $bio->updateTendik($data_pegawai, $dataken);
-            }
-
-            $biodata = ORMBiodata::find($nik);
-            if($fakultas = ORMFakultas::where('ID_UNIT_KERJA', $biodata->ID_UNIT_KERJA)->first()){
-                $biodata->UNIT_KERJA = $fakultas->FAKULTAS;
-                $biodata->save();
-            }
-        }
 
         if ($sta == "success") {
 
