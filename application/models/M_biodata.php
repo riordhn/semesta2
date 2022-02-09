@@ -154,10 +154,6 @@ class M_biodata extends CI_Model
     public function insertDosen($data2, $datadiri)
     {
         $data = $data2[0];
-        //echo "<pre>";
-        //          print_r ($data2);
-        //print_r ($datadiri['dosen']['NO_KTP']);
-        //die;
 
         $this->nik = $data['NIP_DOSEN'];
         $this->email = $data['EMAIL_PENGGUNA'];
@@ -186,18 +182,10 @@ class M_biodata extends CI_Model
         $this->gelar_depan = $data['GELAR_DEPAN'];
         $this->gelar_belakang = $data['GELAR_BELAKANG'];
         $this->unit_kerja  = 'Fakultas '.$data['NM_FAKULTAS'];
-        // $this->unit_kerja = null;
         $this->universitas = "Universitas Airlangga";
         $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        // $this->tmt_pns = $data['TMT_PNS'];
         $this->status_pegawai = "Dosen";
         $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
-        // $this->status_jabatan = $this->status_jabatan;;
-        // $this->nama_jabatan = $this->nama_jabatan;;
-
-        // echo '<pre>';
-        // print_r($this);
-        // die;
 
         $this->db->insert($this->table, $this);
 
@@ -205,60 +193,48 @@ class M_biodata extends CI_Model
 
     public function updateDosen($data2, $datadiri)
     {
-        $data = $data2[0];
-        //echo "<pre>";
-        //          print_r ($data2);
-        //print_r ($datadiri['dosen']['NO_KTP']);
-        //die;
+        // $data = $data2[0];
 
-        $this->nik = $data['NIP_DOSEN'];
-        $this->email = $data['EMAIL_PENGGUNA'];
-        $this->nama = $data['NM_ASLI'];
-        $this->foto = $data['FOTO'];
-        $this->foto1 = $data['FOTO'];
-        $this->no_ktp = $datadiri['dosen']['NO_KTP'];
-        $this->nidn = $datadiri['dosen']['NIDN_DOSEN'];
-        $this->jenis_kelamin = $datadiri['gender'];
-        $this->status_menikah = 0;
-        $this->tempat_lahir = $data['KOTA_LAHIR'];
-        $this->tgl_lahir = $datadiri['birth_date'];
-        $this->alamat = $data['ALAMAT_RUMAH_DOSEN'];
-        $this->kota = '';
-        if (!empty($datadiri['dosen']['KODE_POS'])) {
-            $this->kode_pos = $datadiri['dosen']['KODE_POS'];
-        } else {
-            $this->kode_pos = 0000;
-        }
+        // $this->nik = $data['NIP_DOSEN'];
+        // $this->email = $data['EMAIL_PENGGUNA'];
+        // $this->nama = $data['NM_ASLI'];
+        // $this->foto = $data['FOTO'];
+        // $this->foto1 = $data['FOTO'];
+        // $this->no_ktp = $datadiri['dosen']['NO_KTP'];
+        // $this->nidn = $datadiri['dosen']['NIDN_DOSEN'];
+        // $this->jenis_kelamin = $datadiri['gender'];
+        // $this->status_menikah = 0;
+        // $this->tempat_lahir = $data['KOTA_LAHIR'];
+        // $this->tgl_lahir = $datadiri['birth_date'];
+        // $this->alamat = $data['ALAMAT_RUMAH_DOSEN'];
+        // $this->kota = '';
+        // if (!empty($datadiri['dosen']['KODE_POS'])) {
+        //     $this->kode_pos = $datadiri['dosen']['KODE_POS'];
+        // } else {
+        //     $this->kode_pos = 0000;
+        // }
 
-        $this->handphone = $data['HP'];
-        $this->status = $datadiri['dosen']['STATUS_DOSEN'];
-        $this->npwp = $datadiri['dosen']['NPWP'];
-        $this->prodi = $data['NM_PROGRAM_STUDI'];
-        $this->ipk = null;
-        $this->gelar_depan = $data['GELAR_DEPAN'];
-        $this->gelar_belakang = $data['GELAR_BELAKANG'];
-        $this->unit_kerja  = 'Fakultas '.$data['NM_FAKULTAS'];
+        // $this->handphone = $data['HP'];
+        // $this->status = $datadiri['dosen']['STATUS_DOSEN'];
+        // $this->npwp = $datadiri['dosen']['NPWP'];
+        // $this->prodi = $data['NM_PROGRAM_STUDI'];
+        // $this->ipk = null;
+        // $this->gelar_depan = $data['GELAR_DEPAN'];
+        // $this->gelar_belakang = $data['GELAR_BELAKANG'];
+        // $this->unit_kerja  = 'Fakultas '.$data['NM_FAKULTAS'];
 
-        $fakultas = $this->getUnitKerjaByName($this->unit_kerja);
-        if ($fakultas->num_rows() > 0) {
-            $this->id_unit_kerja = $fakultas->row_array()['ID_UNIT_KERJA'];
-        }else{
-            $this->id_unit_kerja = 321;
-        }
-        $this->universitas = "Universitas Airlangga";
-        $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        // $this->tmt_pns = $data['TMT_PNS'];
-        $this->status_pegawai = "Dosen";
-        $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
-        // $this->status_jabatan = $this->status_jabatan;;
-        // $this->nama_jabatan = $this->nama_jabatan;;
+        // $fakultas = $this->getUnitKerjaByName($this->unit_kerja);
+        // if ($fakultas->num_rows() > 0) {
+        //     $this->id_unit_kerja = $fakultas->row_array()['ID_UNIT_KERJA'];
+        // }else{
+        //     $this->id_unit_kerja = 321;
+        // }
+        // $this->universitas = "Universitas Airlangga";
+        // $this->pangkat_golongan = $data['NM_GOLONGAN'];
+        // $this->status_pegawai = "Dosen";
+        // $this->jenis_kepegawaian = $datadiri['dosen']['STATUS_DOSEN'];
 
-        // echo '<pre>';
-        // print_r($this);
-        // die;
-
-        $this->db->update($this->table, $this, array('NIK' => $this->nik));
-
+        // $this->db->update($this->table, $this, array('NIK' => $this->nik));
     }
 
     public function insertTendik($data2, $datadiri)
@@ -312,50 +288,45 @@ class M_biodata extends CI_Model
 
     public function updateTendik($data2, $datadiri)
     {
-        $data = $data2[0];
+        // $data = $data2[0];
 
-        $this->nik = $data['NIP_PEGAWAI'];
-        $this->email = $data['EMAIL_PENGGUNA'];
-        $this->nama = $data['NM_PENGGUNA'];
-        $this->foto = $data['FOTO'];
-        $this->foto1 = $data['FOTO'];
-        $this->no_ktp = $data['NIP_PEGAWAI'];
-        $this->nidn = $datadiri['dosen']['NIDN_DOSEN'];
-        $this->jenis_kelamin = $datadiri['gender'];
-        if (!empty($datadiri['pegawai']['STATUS_NIKAH_PEGAWAI'])) {
-            $this->status_menikah = $datadiri['pegawai']['STATUS_NIKAH_PEGAWAI'];
-        } else {
-            $this->status_menikah = 0;
-        }
-        $this->tempat_lahir = $data['KOTA_LAHIR'];
-        $this->tgl_lahir = $datadiri['birth_date'];
-        $this->alamat = $data['ALAMAT_PEGAWAI'];
-        $this->kota = '';
-        if (!empty($datadiri['dosen']['KODE_POS'])) {
-            $this->kode_pos = $datadiri['dosen']['KODE_POS'];
-        } else {
-            $this->kode_pos = 0000;
-        }
+        // $this->nik = $data['NIP_PEGAWAI'];
+        // $this->email = $data['EMAIL_PENGGUNA'];
+        // $this->nama = $data['NM_PENGGUNA'];
+        // $this->foto = $data['FOTO'];
+        // $this->foto1 = $data['FOTO'];
+        // $this->no_ktp = $data['NIP_PEGAWAI'];
+        // $this->nidn = $datadiri['dosen']['NIDN_DOSEN'];
+        // $this->jenis_kelamin = $datadiri['gender'];
+        // if (!empty($datadiri['pegawai']['STATUS_NIKAH_PEGAWAI'])) {
+        //     $this->status_menikah = $datadiri['pegawai']['STATUS_NIKAH_PEGAWAI'];
+        // } else {
+        //     $this->status_menikah = 0;
+        // }
+        // $this->tempat_lahir = $data['KOTA_LAHIR'];
+        // $this->tgl_lahir = $datadiri['birth_date'];
+        // $this->alamat = $data['ALAMAT_PEGAWAI'];
+        // $this->kota = '';
+        // if (!empty($datadiri['dosen']['KODE_POS'])) {
+        //     $this->kode_pos = $datadiri['dosen']['KODE_POS'];
+        // } else {
+        //     $this->kode_pos = 0000;
+        // }
 
-        $this->handphone = $data['HP'];
-        $this->status = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        $this->npwp = $datadiri['pegawai']['NOMOR_NPWP'];
-        $this->prodi = $data['NM_PROGRAM_STUDI'];
-        $this->ipk = null;
-        $this->gelar_depan = $data['GELAR_DEPAN'];
-        $this->gelar_belakang = $data['GELAR_BELAKANG'];
-        //$this->unit_kerja  = $data['NM_FAKULTAS'];
-        $this->id_unit_kerja = $datadiri['pegawai']['ID_UNIT_KERJA'];
-        $this->unit_kerja = null;
-        $this->universitas = "Universitas Airlangga";
-        $this->pangkat_golongan = $data['NM_GOLONGAN'];
-        // $this->tmt_pns = $data['TMT_PNS'];
-        $this->status_pegawai = "Tendik";
-        $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
-        // $this->status_jabatan = $this->status_jabatan;
-        // $this->nama_jabatan = $this->nama_jabatan;
-        $this->db->update($this->table, $this, array('NIK' => $this->nik));
-
+        // $this->handphone = $data['HP'];
+        // $this->status = $datadiri['pegawai']['STATUS_PEGAWAI'];
+        // $this->npwp = $datadiri['pegawai']['NOMOR_NPWP'];
+        // $this->prodi = $data['NM_PROGRAM_STUDI'];
+        // $this->ipk = null;
+        // $this->gelar_depan = $data['GELAR_DEPAN'];
+        // $this->gelar_belakang = $data['GELAR_BELAKANG'];
+        // $this->id_unit_kerja = $datadiri['pegawai']['ID_UNIT_KERJA'];
+        // $this->unit_kerja = null;
+        // $this->universitas = "Universitas Airlangga";
+        // $this->pangkat_golongan = $data['NM_GOLONGAN'];
+        // $this->status_pegawai = "Tendik";
+        // $this->jenis_kepegawaian = $datadiri['pegawai']['STATUS_PEGAWAI'];
+        // $this->db->update($this->table, $this, array('NIK' => $this->nik));
     }
 
     public function getBiodata($id)

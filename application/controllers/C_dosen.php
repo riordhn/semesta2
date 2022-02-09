@@ -331,8 +331,9 @@ class C_dosen extends CI_Controller
             // if ($post['JenisPeg'] == "CPNS" || $post['jenjang'] = 'S3' && $this->session->userdata('age') >= 40 && $post['JenisPeg'] = 'PNS' || $post['jenjang'] = 'S2' && $this->session->userdata('age') >= 37 && $post['JenisPeg'] = 'PNS' || $post['jenjang'] = 'S1' && $this->session->userdata('age') >= 25 && $post['JenisPeg'] = 'PNS') {
             //     redirect('C_dosen/Tolak/');
             // } else {
-                redirect('C_dosen/formdatatb/');}
-        // }
+                redirect('C_dosen/formdatatb/');
+            // }
+        }
 
         // redirect('C_dosen/formdatatb/');
         echo "gagal";
