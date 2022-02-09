@@ -26,6 +26,7 @@ class C_loginDosen extends CI_Controller
 
     public function authuser1()
     {
+        
         $this->load->model('M_biodata');
         $bio = $this->M_biodata;
 
