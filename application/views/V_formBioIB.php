@@ -55,7 +55,7 @@
                             <div class="form-group">
                                 <label for="Rumpun">Unit Kerja</label><br>
 
-                                <select name="unitfak" class="form-control" disabled>
+                                <select name="unitfak" class="form-control">
                                     <option value="">------Pilih Unit Kerja-------</option>
                                     <?php foreach($unit as $uni){?>
                                     <option <?php if($data->ID_UNIT_KERJA == $uni->ID_UNIT_KERJA) { echo 'selected'; } ?> value="<?php echo $uni->ID_UNIT_KERJA;?>"><?php echo $uni->FAKULTAS;?></option>

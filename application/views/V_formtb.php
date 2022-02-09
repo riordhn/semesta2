@@ -90,7 +90,7 @@
                           <?php } ?>
                         </datalist> -->
 
-                                <select name="unitfak" class="form-control" disabled>
+                                <select name="unitfak" class="form-control">
                                     <option value="">------Pilih Unit Kerja-------</option>
                                     <?php foreach($unit as $uni){?>
                                     <option
