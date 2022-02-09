@@ -404,7 +404,7 @@ class M_biodata extends CI_Model
     }
 
     public function getUnitKerjaByName($name){  
-		$query = $this->db->query("select * from fakultas where FAKULTAS = '$name'"); 
+		$query = $this->db->query("select * from fakultas where FAKULTAS LIKE '%$name%'"); 
 		return $query;
 	}
 
