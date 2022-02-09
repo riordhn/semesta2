@@ -161,7 +161,7 @@ class M_biodata extends CI_Model
 
         $this->nik = $data['NIP_DOSEN'];
         $this->email = $data['EMAIL_PENGGUNA'];
-        $this->nama = $datadiri['name'];
+        $this->nama = $data['NM_ASLI'];
         $this->foto = $data['FOTO'];
         $this->foto1 = $data['FOTO'];
         $this->no_ktp = $datadiri['dosen']['NO_KTP'];
@@ -213,7 +213,7 @@ class M_biodata extends CI_Model
 
         $this->nik = $data['NIP_DOSEN'];
         $this->email = $data['EMAIL_PENGGUNA'];
-        $this->nama = $datadiri['name'];
+        $this->nama = $data['NM_ASLI'];
         $this->foto = $data['FOTO'];
         $this->foto1 = $data['FOTO'];
         $this->no_ktp = $datadiri['dosen']['NO_KTP'];
@@ -267,7 +267,7 @@ class M_biodata extends CI_Model
 
         $this->nik = $data['NIP_PEGAWAI'];
         $this->email = $data['EMAIL_PENGGUNA'];
-        $this->nama = $datadiri['name'];
+        $this->nama = $data['NM_ASLI'];
         $this->foto = $data['FOTO'];
         $this->foto1 = $data['FOTO'];
         $this->no_ktp = $data['NIP_PEGAWAI'];
@@ -316,7 +316,7 @@ class M_biodata extends CI_Model
 
         $this->nik = $data['NIP_PEGAWAI'];
         $this->email = $data['EMAIL_PENGGUNA'];
-        $this->nama = $datadiri['name'];
+        $this->nama = $data['NM_ASLI'];
         $this->foto = $data['FOTO'];
         $this->foto1 = $data['FOTO'];
         $this->no_ktp = $data['NIP_PEGAWAI'];
