@@ -27,13 +27,13 @@
                             <div class="form-group"
                                 <?php if($data->STATUS_PEGAWAI=='Tendik'){ echo 'style="display: none;"'; } ?>>
                                 <label for="NIDN">NIDN</label>
-                                <input type="text" readonly="" class="form-control" name="NIDN" placeholder="NIDN"
+                                <input type="text" class="form-control" name="NIDN" placeholder="NIDN"
                                     value="<?php echo $data->NIDN ?>" />
                             </div>
 
                             <div class="form-group">
                                 <label for="Rumpun">NIP</label>
-                                <input type="text" readonly="" class="form-control" name="NIP" placeholder="NIP"
+                                <input type="text" class="form-control" name="NIP" placeholder="NIP"
                                     value="<?php echo $data->NIK ?>" required />
                             </div>
 
@@ -41,21 +41,21 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Gelar Depan:</label>
-                                        <input type="text" readonly="" class="form-control" name="gelardepan"
+                                        <input type="text" class="form-control" name="gelardepan"
                                         placeholder="Gelar Depan" value="<?php echo $data->GELAR_DEPAN ?>" />
                                     </div><!-- /.form group -->
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="Sektor">Nama Lengkap:</label>
-                                        <input type="text" readonly="" class="form-control" name="nama"
+                                        <input type="text" class="form-control" name="nama"
                                         placeholder="Nama Lengkap" value="<?php echo $data->NAMA ?>" required />
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="Rumpun">Gelar Belakang</label>
-                                        <input type="text" readonly="" class="form-control" name="gelarbelakang"
+                                        <input type="text" class="form-control" name="gelarbelakang"
                                             placeholder="Gelar Belakang" value="<?php echo $data->GELAR_BELAKANG ?>" required />
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@
                             <?php if($data->STATUS_PEGAWAI == 'Dosen'){ ?>
                                 <div class="form-group">
                                     <label for="StatusJab">Status Jabatan</label></br>
-                                    <input type="text" class="form-control" name="StatusJab" readonly="" value="Fungsional" required />
+                                    <input type="text" class="form-control" name="StatusJab" value="Fungsional" required />
                                 </div>
     
                                 <div class="form-group">
