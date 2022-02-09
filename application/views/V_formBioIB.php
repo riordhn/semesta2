@@ -123,7 +123,7 @@
 
                                 </select> -->
 
-                                <input type="text" readonly class="form-control" name="golongan" value="<?php echo $data->PANGKAT_GOLONGAN ?>" required/>
+                                <input type="text" class="form-control" name="golongan" value="<?php echo $data->PANGKAT_GOLONGAN ?>" required/>
                             </div>
 
                             <div class="form-group">
@@ -134,7 +134,7 @@
 
                             <div class="form-group">
                                 <label for="StatusPeg">Status Pegawai</label></br>
-                                <input type="text" readonly class="form-control" name="StatusPeg" value="<?php echo $data->STATUS_PEGAWAI ?>" required/>
+                                <input type="text" class="form-control" name="StatusPeg" value="<?php echo $data->STATUS_PEGAWAI ?>" required/>
                             </div>
 
                             <div class="form-group">
@@ -162,7 +162,7 @@
                                     <!--<option value="KHUSUS">KHUSUS</option>-->
                                     <!--<option value="LUAR BIASA">LUAR BIASA</option>-->
                                 <!-- </select> -->
-                                <input type="text" readonly class="form-control" name="JenisPeg" value="<?php echo $data->JENIS_KEPEGAWAIAN ?>" required/>
+                                <input type="text" class="form-control" name="JenisPeg" value="<?php echo $data->JENIS_KEPEGAWAIAN ?>" required/>
                             </div>
 
                             <?php if($data->STATUS_PEGAWAI == 'Dosen'){ ?>
