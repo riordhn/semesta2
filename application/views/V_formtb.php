@@ -65,14 +65,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="Rumpun">Tempat Lahir</label></br>
-                                        <input type="text" readonly class="form-control" name="tempatlahir"
+                                        <input type="text" class="form-control" name="tempatlahir"
                                             placeholder="Tempat Lahir" value="<?php echo $data->TEMPAT_LAHIR ?>" required />
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="Tanggal Lahir">Tanggal Lahir</label>
-                                        <input type="date" readonly class="form-control" name="tgllahir"
+                                        <input type="date" class="form-control" name="tgllahir"
                                             placeholder="Tangggal Lahir" value="<?php echo $data->TGL_LAHIR ?>" required />
                                     </div>
                                 </div>
@@ -109,7 +109,7 @@
 
                             <div class="form-group">
                                 <label for="Email">Email</label>
-                                <input type="text" readonly class="form-control" name="email" placeholder="Email"
+                                <input type="text" class="form-control" name="email" placeholder="Email"
                                     value="<?php echo $data->EMAIL ?>" required />
                             </div>
 
@@ -120,7 +120,7 @@
 
                             <div class="form-group">
                                 <label for="Pangkat">Pangkat/Gol</label></br>
-                                <input type="text" readonly class="form-control" name="golongan"
+                                <input type="text" class="form-control" name="golongan"
                                     value="<?php echo $data->PANGKAT_GOLONGAN ?>" required />
                             </div>
 
@@ -132,13 +132,13 @@
 
                             <div class="form-group">
                                 <label for="StatusPeg">Status Pegawai</label></br>
-                                <input type="text" readonly class="form-control" name="StatusPeg"
+                                <input type="text" class="form-control" name="StatusPeg"
                                     value="<?php echo $data->STATUS_PEGAWAI ?>" required />
                             </div>
 
                             <div class="form-group">
                                 <label for="StatusPeg">Jenis Kepegawaian</label></br>
-                                <input type="text" readonly class="form-control" name="JenisPeg"
+                                <input type="text" class="form-control" name="JenisPeg"
                                     value="<?php echo $data->JENIS_KEPEGAWAIAN ?>" required />
                             </div>
 

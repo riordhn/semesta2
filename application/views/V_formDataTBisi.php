@@ -68,7 +68,7 @@
                           <div class="form-group">
                             <label>Pilih Negara:</label></br>
                              <input class="form-control" type="hidden" value="109" id="dn">
-                            <input class="form-control" type="text" name="nama_negara" value="Indonesia" readonly>                 
+                            <input class="form-control" type="text" name="nama_negara" value="Indonesia">                 
                           </div>
                         </div>
                       </div>

@@ -24,31 +24,31 @@
                             <div class="form-group"
                                 <?php if($data->STATUS_PEGAWAI=='Tendik'){ echo 'style="display: none;"'; } ?>>
                                 <label for="NIDN">NIDN</label>
-                                <input type="text" readonly="" class="form-control" name="NIDN" placeholder="NIDN"
+                                <input type="text" class="form-control" name="NIDN" placeholder="NIDN"
                                     value="<?php echo $data->NIDN ?>" required />
                             </div>
 
                             <div class="form-group">
                                 <label>Gelar Depan:</label>
-                                <input type="text" readonly="" class="form-control" name="gelardepan"
+                                <input type="text" class="form-control" name="gelardepan"
                                     placeholder="Gelar Depan" value="<?php echo $data->GELAR_DEPAN ?>" />
                             </div>
 
                             <div class="form-group">
                                 <label for="Sektor">Nama Lengkap:</label>
-                                <input type="text" readonly="" class="form-control" name="nama"
+                                <input type="text" class="form-control" name="nama"
                                     placeholder="Nama Lengkap" value="<?php echo $data->NAMA ?>" required />
                             </div>
 
                             <div class="form-group">
                                 <label for="Rumpun">Gelar Belakang</label>
-                                <input type="text" readonly="" class="form-control" name="gelarbelakang"
+                                <input type="text" class="form-control" name="gelarbelakang"
                                     placeholder="Gelar Belakang" value="<?php echo $data->GELAR_BELAKANG ?>" />
                             </div>
 
                             <div class="form-group">
                                 <label for="Rumpun">NIP</label>
-                                <input type="text" readonly="" class="form-control" name="NIP" placeholder="NIP"
+                                <input type="text" class="form-control" name="NIP" placeholder="NIP"
                                     value="<?php echo $data->NIK ?>" required />
                             </div>
 
@@ -65,13 +65,13 @@
 
                             <div class="form-group">
                                 <label for="Rumpun">Tempat Lahir</label></br>
-                                <input readonly="" type="text" class="form-control" name="tempatlahir" placeholder="Tempat Lahir"
+                                <input type="text" class="form-control" name="tempatlahir" placeholder="Tempat Lahir"
                                     value="<?php echo $data->TEMPAT_LAHIR ?>" required />
                             </div>
 
                             <div class="form-group">
                                 <label for="Tanggal Lahir">Tanggal Lahir</label>
-                                <input readonly="" type="date" class="form-control" name="tgllahir" placeholder="Tangggal Lahir"
+                                <input type="date" class="form-control" name="tgllahir" placeholder="Tangggal Lahir"
                                     value="<?php echo $data->TGL_LAHIR ?>" required />
                             </div>
 
@@ -83,7 +83,7 @@
 
                             <div class="form-group">
                                 <label for="Email">Email</label>
-                                <input readonly="" type="text" class="form-control" name="email" placeholder="Email"
+                                <input type="text" class="form-control" name="email" placeholder="Email"
                                     value="<?php echo $data->EMAIL ?>" required />
                             </div>
 
@@ -168,7 +168,7 @@
                             <?php if($data->STATUS_PEGAWAI == 'Dosen'){ ?>
                                 <div class="form-group">
                                     <label for="StatusJab">Status Jabatan</label></br>
-                                    <input type="text" class="form-control" name="StatusJab" readonly="" value="Fungsional" required />
+                                    <input type="text" class="form-control" name="StatusJab" value="Fungsional" required />
                                 </div>
     
                                 <div class="form-group">
