@@ -43,7 +43,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         <ul class="nav navbar-nav">
-                            <li><a href="https://sintesa.sdm.unair.ac.id/public/signin-from-semestea?nik=<?php echo $this->session->userdata('NIK'); ?>">EVALUASI</a></li>
+                            <li><a href="https://sintesa.sdm.unair.ac.id/signin-from-semestea?nik=<?php echo $this->session->userdata('NIK'); ?>">EVALUASI</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tugas Belajar <span
                                         class="caret"></span></a>
